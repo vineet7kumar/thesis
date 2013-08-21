@@ -1,112 +1,86 @@
 \matlab is a popular numeric programming language, used by millions of
-scientists, engineers and students worldwide\cite{MatlabGrowth}.  \matlab
+scientists, engineers as well as students worldwide\cite{MatlabGrowth}.  \matlab
 programmers appreciate the high-level matrix operators,  the fact that
 variables and types do not need to be declared, the large number of library and
 builtin functions available, and the interactive style of program development
 available through the IDE and the interpreter-style read-eval-print loop.
 However, even though \matlab programmers appreciate all of the features that
-enable rapid prototyping,  they often have other ultimate goals.  Frequently
-their computations are quite computationally intensive and they really want an
-efficient implementation.  Programmers also often want to integrate their
-\matlab program into existing static systems.  As just one example, one of our
-users wanted to generate {\sc FORTRAN} code that can be plugged into a weather
-simulation environment.    
+enable rapid prototyping,  their applications are often quite compute intensive
+and time consuming. These applications could perform much more efficiently if
+they could be easily ported to a high performance computing system.  
 
-This thesis addresses the problem of how to provide the bridge between
-the dynamic realities of \matlab and the ultimate goal of wanting
-efficient and static programs in languages like {\sc FORTRAN}.  It is
-not realistic to support all the \matlab features, but our goal is to
-define and provide support for a very large subset of \matlab which
-includes dynamic typing, support of the \matlab function lookup
-semantics, variable numbers of input and output arguments, support for
-a variety of \matlab data types including arrays, cell arrays and
-structs, and support for function handles and lambda expressions.
+On the other hand, \xten is an object-oriented and statically-typed language
+which uses cilk-style arrays indexed by \emph{Point} objects, and has been
+designed with well-defined semantics and high performance computing in mind.
+\xten compiler can generate C++ or Java code and supports various communication
+interfaces including sockets and MPI for communication between nodes on a
+parallel computing system.
 
-Providing this bridge presents two main challenges.  The first is that \matlab
-is actually quite a complex language which has evolved over many years and
-which has non-standard type rules and function lookup semantics.  The second
-major challenge is properly dealing with the large number of builtin and
-library functions,  which have also been developed over time and which
-sometimes have unexpected or irregular behavior. 
+In this thesis we present \mixten, a source-to-source compiler that helps
+to bridge the gap between \matlab, a language familiar to scientists,
+and \xten,  a language designed for high performance. \mixten statically
+compiles \matlab programs to \xten and thus
+allows scientists and engineers to write programs in \matlab (and use old 
+programs already written in \matlab) and still get the benefits of high 
+performance computing without having to learn a new language. Also, systems that
+use \matlab for prototyping and C++ or Java for production, can benefit from
+\mixten by quickly converting \matlab prototypes to C++ or Java programs via 
+\xten. In particular, this thesis identifies the key challenges in compiling a
+dynamically-typed language like \matlab to a statically-typed object-orinted
+high performance computing language like \xten, our approach to 
+compiling \matlab to \xten.
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=3.5in]{Figures/overview.eps}
-\caption[Overview of the \matlab Tamer]{Overview
-of our \matlab Tamer.  The shaded boxes indicate the components
-presented in this thesis.  The other solid boxes correspond to
-existing \mclab tools we use, and the dashed boxes correspond to
-ongoing projects which are using the results of this
-thesis.}\label{Fig:Overview}
-\end{center}
-\end{figure}
+The ultimate goal of the \mixten compiler is two-fold.  First, it can be used
+as a back-end for a \matlab system,  producing high-performance code via \xten.
+Second, it can be used to help programmers port their \matlab code to \xten
+source code.   The techniques presented in this paper provide the core upon
+which these two ultimate goals can be achieved.
 
-Our solution is an open-source extensible objected-oriented framework,
-implemented in Java, as presented in \figref{Fig:Overview}.   The overall
-goal of the system is to take \matlab programs as input and produce output
-which is suitable for static compilation, a process that we call
-\textit{Taming} \matlab.   Given a \texttt{.m} file as input, which is the
-entry point, the \matlab Tamer produces as output: (1) a Tame
-IR \rednote{(intermediate representation)} for all functions (both user
-and library) which are reachable from the entry point, (2) a complete
-call graph, and (3) an estimation of classes/types for all variables.
+\begin{comment}
+\mixten is built on top of the \mclab front-end and analysis toolkits.  
+- Introduce \matlab briefly, why is it difficult but important to have a
+  static compiler for it and why do we choose \xten as our target.- concentrate
+more on high -level issues like lack of documentation, scientists are not
+programmers,performance issues, popularity, need for static compilation to
+other high-level languages. We talk about \matlab semantics and wild features
+in the next section\smallskip
+- Briefly introduce the high-level design of \mixten.\smallskip 
+\end{comment}
+  
+The major contributions  of this paper are as follows:
 
-There are some features in \matlab that are simply too wild to handle, and so
-our system will reject programs using those features, and the user will need to
-refactor their program to eliminate that feature.   Thus, another important
-goal in our work is to define as large as possible subset of \matlab that can
-be tamed without user intervention. 
+\begin{description}
 
-\section{Contributions}
+\item[Identifying key challenges:] We have identified the key challenges
+in performing a semantics-preserving translation of \matlab to \xten.
 
-The main contributions of this thesis are as follows.
+\item[Overall design of \mixten:] We provide the design of a 
+source-to-source translator, building upon the McLab front-end and
+analysis toolkits.
 
-\begin{itemize}
-\item We present an overall design and implementation for the \matlab Tamer,
-an extensible object-oriented framework
-which provides the bridge between the dynamic \matlab language and a static back-end
-compiler. 
+\item[\mixten IR design:] In order to provide a convenient
+target for the first level of translation, we have defined a high-level
+\mixten IR.  This IR is currently used for code generation,  but in the
+future will also be used for code simplifications and transformations.
 
-\item We describe the key features of \matlab necessary for compiler developers
-and for tool writers to understand \matlab and the analyses in this thesis.  We hope
-that by carefully explaining these ideas, we can enable other researchers
-to also work on static tools for \matlab.  Our discussion of \matlab features
-also motivates our choice of the subset of \matlab that we aim to tame. 
+\item[Template-based builtin framework:] \matlab supports many builtin
+operations that can operate over a wide variety of run-time types.  We
+have designed and implemented a template-based system that allows us to
+generate specialized \xten code for a collection of important builtin
+operations.
 
-\item We provide a principled approach to understanding, grouping, and
-analyzing the large number of \matlab builtin functions.
+\item[Code generation strategies for key language constructs:]  There
+are some very significant differences between the semantics of \matlab
+and \xten.  A key difference is that \matlab is dynamically-typed,
+whereas \xten is statically-typed.   Furthermore, the type rules are
+quite different, which means that the generated \xten code must include
+the appropriate explicit type conversion rules, so as to match the
+\matlab semantics.   Other \matlab features, such as multiple returns
+from functions, a non-standard semantics for \texttt{for} loops, and a
+very general range operator, must also be handled correctly.
 
-\item We developed extensions to the \mcsaf\cite{JesseThesis} framework to support a lower-level
-and more specialized Tame IR, suitable for back-end static code generation.
+\item[Working core implementation:] We have implemented the core
+functionality for the \mixten compiler, concentrating on the sequential
+part of \xten, and we provide some initial results.
 
-\item We present an interprocedural flow analysis framework that allows
- extending intraprocedural analysis written for the \mcsaf framework to
- analyze whole programs.
- 
-\item We present an interprocedural flow analysis framework that computes both
-abstract values and the complete call graph.  This flow analysis
-provides an object-oriented approach which allows for extension and
-refinement of the abstract value representations.
-
-\end{itemize}
-
-
-\section{Thesis Outline}
-This thesis is divided into \ref{chap:Conclusions} chapters, including this one, which are structured as follows.
-
-\chapref{chap:MATLAB} introduces key \matlab features,
-showing some of the challenges of static compilation.
-\chapref{chap:Builtin} describes our
-approach to dealing with \matlab builtin functions, starting with some
-examination of which builtin functions are relevant, and how they
-behave.
-\chapref{chap:TameIR} presents the Tame IR and
-transformations, including how these were integrated with the existing
-analysis framework.
-\chapref{chap:inter} describes our interprocedural analysis framework.
-\chapref{chap:ValueAnalysis} explains our 
-extensible and modular interprocedural value analysis and how it
-constructs complete callgraphs. We also show some results of running
-this analysis on a set of benchmarks.
-\chapref{chap:Related} provides an overview of related work and
-\chapref{chap:Conclusions} concludes.
+\end{description}
