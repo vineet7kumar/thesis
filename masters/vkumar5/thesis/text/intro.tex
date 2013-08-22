@@ -27,14 +27,29 @@ use \matlab for prototyping and C++ or Java for production, can benefit from
 \mixten by quickly converting \matlab prototypes to C++ or Java programs via 
 \xten. In particular, this thesis identifies the key challenges in compiling a
 dynamically-typed language like \matlab to a statically-typed object-orinted
-high performance computing language like \xten, our approach to 
+high performance computing language like \xten and our approach to 
 compiling \matlab to \xten.
+\begin{comment}
+INSERT PIC
+compilation flow
+\end{comment}
+
+On one hand, all the aforementioned characteristics of \matlab make it a very 
+user-friendly and thus popular application to develop software among a
+non-programmer community. On the other hand, these same characteristics make
+\matlab a difficult language to write a static compiler for. Lack of formal 
+language specification, unconventional semantics and closed source make compiler
+writers' task even harder. Mathworks implementation of \matlab is essentially an
+interpreter 
 
 The ultimate goal of the \mixten compiler is two-fold.  First, it can be used
 as a back-end for a \matlab system,  producing high-performance code via \xten.
 Second, it can be used to help programmers port their \matlab code to \xten
-source code.   The techniques presented in this paper provide the core upon
+source code by paying attention to readability of the generated code.
+The techniques presented in this paper provide the core upon
 which these two ultimate goals can be achieved.
+
+
 
 \begin{comment}
 \mixten is built on top of the \mclab front-end and analysis toolkits.  
