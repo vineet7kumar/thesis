@@ -40,7 +40,11 @@ non-programmer community. On the other hand, these same characteristics make
 \matlab a difficult language to write a static compiler for. Lack of formal 
 language specification, unconventional semantics and closed source make compiler
 writers' task even harder. Mathworks implementation of \matlab is essentially an
-interpreter 
+interpreter with a JIT accelarator which is generally slower than statically
+compiled languages. \mixten provides static compilation for \matlab via the C++
+backend for \xten and thus ultimately aims to have better performance even with
+sequential code. Other goal of this thesis is to allow users to port their code
+from \matlab to \xten.    
 
 The ultimate goal of the \mixten compiler is two-fold.  First, it can be used
 as a back-end for a \matlab system,  producing high-performance code via \xten.
