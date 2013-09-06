@@ -27,16 +27,35 @@ use \matlab for prototyping and C++ or Java for production, can benefit from
 \mixten by quickly converting \matlab prototypes to C++ or Java programs via 
 \xten. In particular, this thesis identifies the key challenges in compiling a
 dynamically-typed language like \matlab to a statically-typed object-orinted
-high performance computing language like \xten, our approach to 
+high performance computing language like \xten and our approach to 
 compiling \matlab to \xten.
+\begin{comment}
+INSERT PIC
+compilation flow
+\end{comment}
 
+On one hand, all the aforementioned characteristics of \matlab make it a very 
+user-friendly and thus popular application to develop software among a
+non-programmer community. On the other hand, these same characteristics make
+\matlab a difficult language to write a static compiler for. Lack of formal 
+language specification, unconventional semantics and closed source make compiler
+writers' task even harder. Mathworks implementation of \matlab is essentially an
+interpreter with a JIT accelarator which is generally slower than statically
+compiled languages. Built on top of \mclab frontend and static analysis tools,
+ \mixten provides static compilation for \matlab via the C++
+backend for \xten and thus ultimately aims to have better performance even with
+sequential code. \mixten also concentrates on readability of the generated \xten
+code to meet the other goal of this thesis, which is to help users port 
+their code from \matlab to \xten.    
+
+\begin{comment}
 The ultimate goal of the \mixten compiler is two-fold.  First, it can be used
 as a back-end for a \matlab system,  producing high-performance code via \xten.
 Second, it can be used to help programmers port their \matlab code to \xten
-source code.   The techniques presented in this paper provide the core upon
+source code by paying attention to readability of the generated code.
+The techniques presented in this paper provide the core upon
 which these two ultimate goals can be achieved.
 
-\begin{comment}
 \mixten is built on top of the \mclab front-end and analysis toolkits.  
 - Introduce \matlab briefly, why is it difficult but important to have a
   static compiler for it and why do we choose \xten as our target.- concentrate
@@ -47,7 +66,7 @@ in the next section\smallskip
 - Briefly introduce the high-level design of \mixten.\smallskip 
 \end{comment}
   
-The major contributions  of this paper are as follows:
+The major contributions  of this thesis are as follows:
 
 \begin{description}
 
@@ -60,8 +79,12 @@ analysis toolkits.
 
 \item[\mixten IR design:] In order to provide a convenient
 target for the first level of translation, we have defined a high-level
-\mixten IR.  This IR is currently used for code generation,  but in the
-future will also be used for code simplifications and transformations.
+\mixten IR.  This IR is used for code generation, \xten specific analyses, 
+code simplifications and transformations.
+
+\item[Comparison of different kinds of \xten arrays:] version 2.4 of \xten 
+(latest version as of this writing) provides two kinds of multi-dimensional 
+arrays, region-based arrays and rail-backed arrays.  
 
 \item[Template-based builtin framework:] \matlab supports many builtin
 operations that can operate over a wide variety of run-time types.  We
