@@ -86,6 +86,12 @@ code simplifications and transformations.
 (latest version as of this writing) provides two kinds of multi-dimensional 
 arrays, region-based arrays and rail-backed arrays.  
 
+\item[Static analyses:] We developed various static analyses to aid generation
+of better optimized code and to support wider range of \matlab functionalities.
+Identification of complex numerical values, handling variables with	
+type-conflicts, array-bounds checks and identification of non-mutable variables
+are the important analyses that we describe in this thesis.
+
 \item[Template-based builtin framework:] \matlab supports many builtin
 operations that can operate over a wide variety of run-time types.  We
 have designed and implemented a template-based system that allows us to
