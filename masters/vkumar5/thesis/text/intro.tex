@@ -25,14 +25,18 @@ programs already written in \matlab) and still get the benefits of high
 performance computing without having to learn a new language. Also, systems that
 use \matlab for prototyping and C++ or Java for production, can benefit from
 \mixten by quickly converting \matlab prototypes to C++ or Java programs via 
-\xten. In particular, this thesis identifies the key challenges in compiling a
+\xten. \figref{Fig:flow} shows the flow of compilation from \matlab to
+executable code via \mixten. In particular, this thesis identifies the key 
+challenges in compiling a
 dynamically-typed language like \matlab to a statically-typed object-orinted
 high performance computing language like \xten and our approach to 
 compiling \matlab to \xten.
-\begin{comment}
-INSERT PIC
-compilation flow
-\end{comment}
+\begin{figure}[htbp]                                                            
+\begin{center}                                                                  
+\includegraphics[scale=0.4]{images/mix10_compilation_flow}                             
+\caption {Compilation flow via \mixten}\label{Fig:flow}                    
+\end{center}                                                                    
+\end{figure}     
 
 On one hand, all the aforementioned characteristics of \matlab make it a very 
 user-friendly and thus popular application to develop software among a
@@ -44,9 +48,11 @@ interpreter with a \emph{JIT accelarator} which is generally slower than statica
 compiled languages. Built on top of \mclab frontend and static analysis tools,
  \mixten provides static compilation for \matlab via the C++
 backend for \xten and thus ultimately aims to have better performance even with
-sequential code. \mixten also concentrates on readability of the generated \xten
-code to meet the other goal of this thesis, which is to help users port 
-their code from \matlab to \xten.    
+sequential code. 
+%uncomment below if tamer+ used
+%\mixten also concentrates on readability of the generated \xten
+%code to meet the other goal of this thesis, which is to help users port 
+%their code from \matlab to \xten.    
 
 \section{Contributions}
   

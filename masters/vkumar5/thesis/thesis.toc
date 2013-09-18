@@ -12,8 +12,8 @@
 \contentsline {chapter}{\listfigurename }{xiii}{chapter.V}
 \contentsline {chapter}{\listtablename }{xv}{chapter.VI}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Thesis Outline}{3}{section.1.2}
+\contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}
 \contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace and contrast with {\sc Matlab}\xspace }{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Basics}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}{\sc Matlab}\xspace Operators}{6}{section.2.2}
@@ -60,7 +60,7 @@
 \contentsline {chapter}{\numberline {5}{\sc X10}\xspace Arrays}{57}{chapter.5}
 \contentsline {section}{\numberline {5.1}The Function Collection Object}{58}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Interprocedural Analysis Framework}{59}{section.5.2}
-\contentsline {subsubsection}{Algorithm}{60}{subsubsection*.14}
+\contentsline {subsubsection}{Algorithm}{60}{subsubsection*.15}
 \contentsline {subsection}{\numberline {5.2.1}Contexts}{60}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Call Strings}{61}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Callsite}{62}{subsection.5.2.3}
@@ -112,10 +112,10 @@
 \contentsline {section}{\numberline {B.2} Class Specification }{114}{section.B.2}
 \contentsline {subsection}{\numberline {B.2.1}Basics}{114}{subsection.B.2.1}
 \contentsline {subsection}{\numberline {B.2.2}Language Features}{114}{subsection.B.2.2}
-\contentsline {subsubsection}{Operators}{114}{subsubsection*.28}
-\contentsline {subsubsection}{Non-parametric Expressions}{116}{subsubsection*.29}
-\contentsline {subsubsection}{Functions}{118}{subsubsection*.30}
-\contentsline {subsubsection}{Number}{118}{subsubsection*.31}
+\contentsline {subsubsection}{Operators}{114}{subsubsection*.29}
+\contentsline {subsubsection}{Non-parametric Expressions}{116}{subsubsection*.30}
+\contentsline {subsubsection}{Functions}{118}{subsubsection*.31}
+\contentsline {subsubsection}{Number}{118}{subsubsection*.32}
 \contentsline {section}{\numberline {B.3}Extra Notes on Semantics }{119}{section.B.3}
 \contentsline {subsection}{\numberline {B.3.1}RHS Can Have LHS Sub-expressions, and Vice Versa}{119}{subsection.B.3.1}
 \contentsline {subsection}{\numberline {B.3.2}Overall Evaluation of Class Attribute Expressions}{119}{subsection.B.3.2}
