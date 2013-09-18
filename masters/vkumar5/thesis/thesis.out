@@ -1,0 +1,116 @@
+\BOOKMARK [0][-]{chapter.I}{Abstract}{}
+\BOOKMARK [0][-]{chapter.II}{R\351sum\351}{}
+\BOOKMARK [0][-]{chapter.III}{Acknowledgements}{}
+\BOOKMARK [0][-]{chapter.IV}{Table of Contents}{}
+\BOOKMARK [0][-]{chapter.V}{List of Figures}{}
+\BOOKMARK [0][-]{chapter.VI}{List of Tables}{}
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{Contributions}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Thesis Outline}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Introduction to X10 and contrast with Matlab}{}
+\BOOKMARK [1][-]{section.2.1}{Basics}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Matlab Operators}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Array vs Matrix Operators}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{The Colon Operator}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Indexing Operators}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.4}{Operators vs Builtin Functions}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Matlab Type System}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Matlab Functions and Overloading}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{Matlab Classes }{chapter.2}
+\BOOKMARK [1][-]{section.2.6}{Function Handles}{chapter.2}
+\BOOKMARK [1][-]{section.2.7}{Compound Types}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.7.1}{Cell Arrays}{section.2.7}
+\BOOKMARK [2][-]{subsection.2.7.2}{Structures}{section.2.7}
+\BOOKMARK [1][-]{section.2.8}{Function Parameters and Arguments }{chapter.2}
+\BOOKMARK [1][-]{section.2.9}{Matlab User-Defined Classes}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.9.1}{Constructors}{section.2.9}
+\BOOKMARK [2][-]{subsection.2.9.2}{Methods, Attributes and Operators}{section.2.9}
+\BOOKMARK [2][-]{subsection.2.9.3}{New Syntax after version 7.6}{section.2.9}
+\BOOKMARK [1][-]{section.2.10}{Matlab Lookup Semantics}{chapter.2}
+\BOOKMARK [1][-]{section.2.11}{Wild Dynamic Features}{chapter.2}
+\BOOKMARK [1][-]{section.2.12}{Summary}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Background}{}
+\BOOKMARK [1][-]{section.3.1}{Learning about Builtins}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.1.1}{Identifying Builtins}{section.3.1}
+\BOOKMARK [2][-]{subsection.3.1.2}{Finding Builtin Behaviors}{section.3.1}
+\BOOKMARK [1][-]{section.3.2}{Specifying Builtins}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{Builtin Visitor Class}{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{Builtin Function Categories}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Specifying Builtin attributes}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{The Class and MatlabClass attribute}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{Summary}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Design of the MiX10 compiler and MiX10 IR}{}
+\BOOKMARK [1][-]{section.4.1}{The Tame IR}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.1.1}{Assignment Statements}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.2}{Control Flow Statements}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.3}{Other Statements}{section.4.1}
+\BOOKMARK [2][-]{subsection.4.1.4}{Non-Statement Nodes}{section.4.1}
+\BOOKMARK [1][-]{section.4.2}{Tame IR Transformations}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Reduction of Operations to Calls}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Lambda Simplification}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Switch simplification}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{X10 Arrays}{}
+\BOOKMARK [1][-]{section.5.1}{The Function Collection Object}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{The Interprocedural Analysis Framework}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{Contexts}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.2}{Call Strings}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.3}{Callsite}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.4}{Recursion}{section.5.2}
+\BOOKMARK [1][-]{section.5.3}{Summary}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Framework for handling builtin functions}{}
+\BOOKMARK [1][-]{section.6.1}{Learning about Builtins}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.1.1}{Identifying Builtins}{section.6.1}
+\BOOKMARK [2][-]{subsection.6.1.2}{Finding Builtin Behaviors}{section.6.1}
+\BOOKMARK [1][-]{section.6.2}{Specifying Builtins}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.2.1}{Builtin Visitor Class}{section.6.2}
+\BOOKMARK [1][-]{section.6.3}{Builtin Function Categories}{chapter.6}
+\BOOKMARK [1][-]{section.6.4}{Specifying Builtin attributes}{chapter.6}
+\BOOKMARK [1][-]{section.6.5}{The Class and MatlabClass attribute}{chapter.6}
+\BOOKMARK [1][-]{section.6.6}{Summary}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Analyses}{}
+\BOOKMARK [1][-]{section.7.1}{Introducing the Value Analysis}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.1.1}{Mclasses, Values and Value Sets:}{section.7.1}
+\BOOKMARK [2][-]{subsection.7.1.2}{Flow Sets:}{section.7.1}
+\BOOKMARK [2][-]{subsection.7.1.3}{Argument and Return sets:}{section.7.1}
+\BOOKMARK [2][-]{subsection.7.1.4}{Builtin Propagators:}{section.7.1}
+\BOOKMARK [1][-]{section.7.2}{Flow Equations}{chapter.7}
+\BOOKMARK [1][-]{section.7.3}{Structures, Cell Arrays and Function Handles}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.3.1}{struct, cell:}{section.7.3}
+\BOOKMARK [2][-]{subsection.7.3.2}{function\137handle:}{section.7.3}
+\BOOKMARK [1][-]{section.7.4}{The Simple Matrix Abstraction}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{Code generation}{}
+\BOOKMARK [1][-]{section.8.1}{McFor}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{Other Static Matlab compilers}{chapter.8}
+\BOOKMARK [1][-]{section.8.3}{Other Matlab-like systems}{chapter.8}
+\BOOKMARK [1][-]{section.8.4}{Static Approaches to other Dynamic Languages}{chapter.8}
+\BOOKMARK [2][-]{subsection.8.4.1}{Python}{section.8.4}
+\BOOKMARK [2][-]{subsection.8.4.2}{Ruby}{section.8.4}
+\BOOKMARK [0][-]{chapter.9}{Evaluation}{}
+\BOOKMARK [0][-]{chapter.10}{Related work}{}
+\BOOKMARK [1][-]{section.10.1}{McFor}{chapter.10}
+\BOOKMARK [1][-]{section.10.2}{Other Static Matlab compilers}{chapter.10}
+\BOOKMARK [1][-]{section.10.3}{Other Matlab-like systems}{chapter.10}
+\BOOKMARK [1][-]{section.10.4}{Static Approaches to other Dynamic Languages}{chapter.10}
+\BOOKMARK [2][-]{subsection.10.4.1}{Python}{section.10.4}
+\BOOKMARK [2][-]{subsection.10.4.2}{Ruby}{section.10.4}
+\BOOKMARK [0][-]{chapter.11}{Conclusions and Future Work}{}
+\BOOKMARK [1][-]{section.11.1}{Future Work}{chapter.11}
+\BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}
+\BOOKMARK [0][-]{appendix.B}{isComplex analysis Propagation Language}{}
+\BOOKMARK [1][-]{section.B.1}{ Introduction }{appendix.B}
+\BOOKMARK [1][-]{section.B.2}{ Class Specification }{appendix.B}
+\BOOKMARK [2][-]{subsection.B.2.1}{Basics}{section.B.2}
+\BOOKMARK [2][-]{subsection.B.2.2}{Language Features}{section.B.2}
+\BOOKMARK [1][-]{section.B.3}{Extra Notes on Semantics }{appendix.B}
+\BOOKMARK [2][-]{subsection.B.3.1}{RHS Can Have LHS Sub-expressions, and Vice Versa}{section.B.3}
+\BOOKMARK [2][-]{subsection.B.3.2}{Overall Evaluation of Class Attribute Expressions}{section.B.3}
+\BOOKMARK [2][-]{subsection.B.3.3}{Greedy Matching}{section.B.3}
+\BOOKMARK [1][-]{section.B.4}{ Examples }{appendix.B}
+\BOOKMARK [2][-]{subsection.B.4.1}{Grammar}{section.B.4}
+\BOOKMARK [0][-]{appendix.C}{MiX10 IR Grammar}{}
+\BOOKMARK [1][-]{section.C.1}{Compound Structures}{appendix.C}
+\BOOKMARK [1][-]{section.C.2}{Non-Assignment Statements}{appendix.C}
+\BOOKMARK [1][-]{section.C.3}{Assignment Statements}{appendix.C}
+\BOOKMARK [1][-]{section.C.4}{Other Tame IR Nodes}{appendix.C}
+\BOOKMARK [0][-]{appendix.D}{Bibliography}{}

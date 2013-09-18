@@ -1,0 +1,130 @@
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{\abstractname }{i}{chapter.I}
+\select@language {english}
+\select@language {french}
+\contentsline {chapter}{\abstractname }{iii}{chapter.II}
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\contentsline {chapter}{Acknowledgements}{v}{chapter.III}
+\contentsline {chapter}{\contentsname }{vii}{chapter.IV}
+\contentsline {chapter}{\listfigurename }{xiii}{chapter.V}
+\contentsline {chapter}{\listtablename }{xv}{chapter.VI}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Thesis Outline}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace and contrast with {\sc Matlab}\xspace }{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Basics}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}{\sc Matlab}\xspace Operators}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Array vs Matrix Operators}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}The Colon Operator}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Indexing Operators}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Operators vs Builtin Functions}{10}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}{\sc Matlab}\xspace Type System}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}{\sc Matlab}\xspace Functions and Overloading}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}{\sc Matlab}\xspace Classes }{14}{section.2.5}
+\contentsline {section}{\numberline {2.6}Function Handles}{14}{section.2.6}
+\contentsline {section}{\numberline {2.7}Compound Types}{15}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Cell Arrays}{15}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Structures}{16}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Function Parameters and Arguments }{18}{section.2.8}
+\contentsline {section}{\numberline {2.9}{\sc Matlab}\xspace User-Defined Classes}{19}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Constructors}{19}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Methods, Attributes and Operators}{20}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}New Syntax after version 7.6}{21}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}{\sc Matlab}\xspace Lookup Semantics}{21}{section.2.10}
+\contentsline {section}{\numberline {2.11}Wild Dynamic Features}{24}{section.2.11}
+\contentsline {section}{\numberline {2.12}Summary}{25}{section.2.12}
+\contentsline {chapter}{\numberline {3}Background}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Learning about Builtins}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Identifying Builtins}{28}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Finding Builtin Behaviors}{28}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Specifying Builtins}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Builtin Visitor Class}{32}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Builtin Function Categories}{35}{section.3.3}
+\contentsline {section}{\numberline {3.4}Specifying Builtin attributes}{38}{section.3.4}
+\contentsline {section}{\numberline {3.5}The Class and MatlabClass attribute}{40}{section.3.5}
+\contentsline {section}{\numberline {3.6}Summary}{41}{section.3.6}
+\contentsline {chapter}{\numberline {4}Design of the {\sc MiX10}\xspace compiler and {\sc MiX10}\xspace IR}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Tame IR}{44}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Assignment Statements}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Control Flow Statements}{48}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Other Statements}{49}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Non-Statement Nodes}{49}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Tame IR Transformations}{50}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Reduction of Operations to Calls}{52}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Lambda Simplification}{54}{section.4.3}
+\contentsline {section}{\numberline {4.4}Switch simplification}{55}{section.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{55}{section.4.5}
+\contentsline {chapter}{\numberline {5}{\sc X10}\xspace Arrays}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}The Function Collection Object}{58}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Interprocedural Analysis Framework}{59}{section.5.2}
+\contentsline {subsubsection}{Algorithm}{60}{subsubsection*.14}
+\contentsline {subsection}{\numberline {5.2.1}Contexts}{60}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Call Strings}{61}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Callsite}{62}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Recursion}{63}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Summary}{65}{section.5.3}
+\contentsline {chapter}{\numberline {6}Framework for handling builtin functions}{67}{chapter.6}
+\contentsline {section}{\numberline {6.1}Learning about Builtins}{67}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Identifying Builtins}{68}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Finding Builtin Behaviors}{68}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Specifying Builtins}{70}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Builtin Visitor Class}{72}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Builtin Function Categories}{75}{section.6.3}
+\contentsline {section}{\numberline {6.4}Specifying Builtin attributes}{78}{section.6.4}
+\contentsline {section}{\numberline {6.5}The Class and MatlabClass attribute}{80}{section.6.5}
+\contentsline {section}{\numberline {6.6}Summary}{81}{section.6.6}
+\contentsline {chapter}{\numberline {7}Analyses}{83}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introducing the Value Analysis}{84}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Mclasses, Values and Value Sets:}{84}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Flow Sets:}{85}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Argument and Return sets:}{86}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Builtin Propagators:}{87}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Flow Equations}{87}{section.7.2}
+\contentsline {section}{\numberline {7.3}Structures, Cell Arrays and Function Handles}{88}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}{\tt struct}, {\tt cell}:}{88}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}{\tt function\_handle}:}{89}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}The Simple Matrix Abstraction}{90}{section.7.4}
+\contentsline {chapter}{\numberline {8}Code generation}{91}{chapter.8}
+\contentsline {section}{\numberline {8.1}{\sc McFor}\xspace }{91}{section.8.1}
+\contentsline {section}{\numberline {8.2}Other Static {\sc Matlab}\xspace compilers}{93}{section.8.2}
+\contentsline {section}{\numberline {8.3}Other {\sc Matlab}\xspace -like systems}{94}{section.8.3}
+\contentsline {section}{\numberline {8.4}Static Approaches to other Dynamic Languages}{94}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Python}{94}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Ruby}{95}{subsection.8.4.2}
+\contentsline {chapter}{\numberline {9}Evaluation}{97}{chapter.9}
+\contentsline {chapter}{\numberline {10}Related work}{99}{chapter.10}
+\contentsline {section}{\numberline {10.1}{\sc McFor}\xspace }{99}{section.10.1}
+\contentsline {section}{\numberline {10.2}Other Static {\sc Matlab}\xspace compilers}{101}{section.10.2}
+\contentsline {section}{\numberline {10.3}Other {\sc Matlab}\xspace -like systems}{102}{section.10.3}
+\contentsline {section}{\numberline {10.4}Static Approaches to other Dynamic Languages}{102}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Python}{102}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Ruby}{103}{subsection.10.4.2}
+\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{105}{chapter.11}
+\contentsline {section}{\numberline {11.1}Future Work}{105}{section.11.1}
+\addvspace {10pt}
+\contentsline {part}{Appendices}{}{}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{109}{appendix.A}
+\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{113}{appendix.B}
+\contentsline {section}{\numberline {B.1} Introduction }{113}{section.B.1}
+\contentsline {section}{\numberline {B.2} Class Specification }{114}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Basics}{114}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Language Features}{114}{subsection.B.2.2}
+\contentsline {subsubsection}{Operators}{114}{subsubsection*.28}
+\contentsline {subsubsection}{Non-parametric Expressions}{116}{subsubsection*.29}
+\contentsline {subsubsection}{Functions}{118}{subsubsection*.30}
+\contentsline {subsubsection}{Number}{118}{subsubsection*.31}
+\contentsline {section}{\numberline {B.3}Extra Notes on Semantics }{119}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}RHS Can Have LHS Sub-expressions, and Vice Versa}{119}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Overall Evaluation of Class Attribute Expressions}{119}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Greedy Matching}{120}{subsection.B.3.3}
+\contentsline {section}{\numberline {B.4} Examples }{120}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}Grammar}{122}{subsection.B.4.1}
+\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{123}{appendix.C}
+\contentsline {section}{\numberline {C.1}Compound Structures}{124}{section.C.1}
+\contentsline {section}{\numberline {C.2}Non-Assignment Statements}{124}{section.C.2}
+\contentsline {section}{\numberline {C.3}Assignment Statements}{125}{section.C.3}
+\contentsline {section}{\numberline {C.4}Other Tame IR Nodes}{126}{section.C.4}
+\contentsline {chapter}{\bibname }{127}{appendix.D}

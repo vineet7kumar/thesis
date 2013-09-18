@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: thesis.aux
+The style file: web-alpha.bst
+Database file #1: progtools.bib
+Database file #2: matlab.bib
+Database file #3: jun.bib
+Warning--entry type for "Scilab" isn't style-file defined
+--line 28 of file jun.bib
+Warning--to sort, need author or key in Octave
+You've used 17 entries,
+            2703 wiz_defined-function locations,
+            684 strings with 6985 characters,
+and the built_in function-call counts, 6882 in all, are:
+= -- 709
+> -- 247
+< -- 15
++ -- 80
+- -- 79
+* -- 428
+:= -- 1030
+add.period$ -- 55
+call.type$ -- 17
+change.case$ -- 107
+chr.to.int$ -- 16
+cite$ -- 19
+duplicate$ -- 307
+empty$ -- 588
+format.name$ -- 103
+if$ -- 1514
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 87
+num.names$ -- 48
+pop$ -- 151
+preamble$ -- 1
+purify$ -- 114
+quote$ -- 0
+skip$ -- 259
+stack$ -- 0
+substring$ -- 335
+swap$ -- 76
+text.length$ -- 15
+text.prefix$ -- 8
+top$ -- 0
+type$ -- 153
+warning$ -- 1
+while$ -- 61
+width$ -- 22
+write$ -- 227
+(There were 2 warnings)
