@@ -60,8 +60,8 @@ Pramod~G. Joisha.
 \newblock \href{http://www.ece.northwestern.edu/cpdc/pjoisha/mat2c/}{a
   {MATLAB-to-C} translator}, 2003.
 \newblock  \\
-  \(<\)\href{http://www.ece.northwestern.edu/cpdc/pjoisha/mat2c/}{http://www.ece.northwestern.edu/cpdc/pjoisha/mat2c/}\(>\)
-  .
+  \(<\)\href{http://www.ece.northwestern.edu/cpdc/pjoisha/mat2c/}{http://www.e%
+ce.northwestern.edu/cpdc/pjoisha/mat2c/}\(>\) .
 
 \bibitem[LH11]{CC2011}
 Nurudeen Lameed and Laurie~J. Hendren.
@@ -81,17 +81,11 @@ MathWorks.
 \newblock {{ MATLAB Coder}}.
 \newblock \\ \url{http://www.mathworks.com/products/matlab-coder/}.
 
-\bibitem[Mola]{MatlabGrowth}
+\bibitem[Mol]{MatlabGrowth}
 Cleve Moler.
 \newblock {{The Growth of MATLAB and The MathWorks over Two Decades}}.
 \newblock \url{http://www.mathworks.com/company/newsletters/} \\
   \url{news_notes/clevescorner/jan06.pdf}.
-
-\bibitem[Molb]{MatlabOrigins}
-Cleve Moler.
-\newblock {The Origins of MATLAB}.
-\newblock \url{ http://www.mathworks.com/company/newsletters/}\\
-  \url{news_notes/clevescorner/dec04.html }.
 
 \bibitem[Oct]{Octave}
 {GNU Octave}.

@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
 The style file: web-alpha.bst
 Database file #1: progtools.bib
@@ -8,45 +7,45 @@ Database file #3: jun.bib
 Warning--entry type for "Scilab" isn't style-file defined
 --line 28 of file jun.bib
 Warning--to sort, need author or key in Octave
-You've used 17 entries,
+You've used 16 entries,
             2703 wiz_defined-function locations,
-            684 strings with 6985 characters,
-and the built_in function-call counts, 6882 in all, are:
-= -- 709
-> -- 247
-< -- 15
-+ -- 80
-- -- 79
-* -- 428
-:= -- 1030
-add.period$ -- 55
-call.type$ -- 17
-change.case$ -- 107
+            680 strings with 6840 characters,
+and the built_in function-call counts, 6605 in all, are:
+= -- 683
+> -- 239
+< -- 14
++ -- 77
+- -- 77
+* -- 418
+:= -- 989
+add.period$ -- 52
+call.type$ -- 16
+change.case$ -- 102
 chr.to.int$ -- 16
-cite$ -- 19
-duplicate$ -- 307
-empty$ -- 588
-format.name$ -- 103
-if$ -- 1514
-int.to.chr$ -- 2
+cite$ -- 18
+duplicate$ -- 295
+empty$ -- 559
+format.name$ -- 99
+if$ -- 1453
+int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 8
-newline$ -- 87
-num.names$ -- 48
-pop$ -- 151
+newline$ -- 82
+num.names$ -- 45
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 114
+purify$ -- 108
 quote$ -- 0
-skip$ -- 259
+skip$ -- 252
 stack$ -- 0
-substring$ -- 335
-swap$ -- 76
-text.length$ -- 15
-text.prefix$ -- 8
+substring$ -- 328
+swap$ -- 75
+text.length$ -- 14
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 153
+type$ -- 144
 warning$ -- 1
-while$ -- 61
-width$ -- 22
-write$ -- 227
+while$ -- 59
+width$ -- 21
+write$ -- 216
 (There were 2 warnings)

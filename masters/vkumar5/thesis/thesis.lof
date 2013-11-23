@@ -8,32 +8,31 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Compilation flow via {\sc MiX10}\xspace \relax }}{2}{figure.caption.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Superior/inferior class relationships for {\sc Matlab}\xspace \relax }}{13}{figure.caption.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{29}{figure.caption.3}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{31}{figure.caption.4}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Excerpt of builtin specification}}{32}{figure.caption.5}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{34}{figure.caption.6}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{39}{figure.caption.7}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{41}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{9}{figure.caption.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{11}{figure.caption.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Excerpt of builtin specification}}{12}{figure.caption.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{14}{figure.caption.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{19}{figure.caption.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{21}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Specializations of an assignment statement\relax }}{45}{figure.caption.9}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Transforming operations to calls \relax }}{52}{figure.caption.10}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Transforming \texttt {lambda} expressions\relax }}{54}{figure.caption.12}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Transforming \texttt {switch} statements\relax }}{55}{figure.caption.13}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Specializations of an assignment statement\relax }}{25}{figure.caption.8}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Transforming operations to calls \relax }}{32}{figure.caption.9}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Transforming \texttt {lambda} expressions\relax }}{34}{figure.caption.11}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Transforming \texttt {switch} statements\relax }}{35}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{61}{figure.caption.16}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces A small program showing two calls to a function}}{62}{figure.caption.17}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Multiple possible callsites from one statement}}{63}{figure.caption.18}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A recursive example}}{64}{figure.caption.19}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Example program showing an infinite chain of calls.}}{65}{figure.caption.20}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{41}{figure.caption.15}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A small program showing two calls to a function}}{42}{figure.caption.16}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Multiple possible callsites from one statement}}{43}{figure.caption.17}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A recursive example}}{44}{figure.caption.18}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example program showing an infinite chain of calls.}}{45}{figure.caption.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{69}{figure.caption.21}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{71}{figure.caption.22}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Excerpt of builtin specification}}{72}{figure.caption.23}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{74}{figure.caption.24}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{79}{figure.caption.25}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{81}{figure.caption.26}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{49}{figure.caption.20}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{51}{figure.caption.21}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Excerpt of builtin specification}}{52}{figure.caption.22}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{54}{figure.caption.23}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{59}{figure.caption.24}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{61}{figure.caption.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
