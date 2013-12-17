@@ -3,18 +3,20 @@
 \catcode`;\active
 \catcode`!\active
 \catcode`?\active
-\ifx\hyper@anchor\@undefined
-\global \let \oldcontentsline\contentsline
-\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global \let \oldnewlabel\newlabel
-\gdef \newlabel#1#2{\newlabelxx{#1}#2}
-\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\let \contentsline\oldcontentsline
-\let \newlabel\oldnewlabel}
-\else
-\global \let \hyper@last\relax 
-\fi
-
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand*\HyPL@Entry[1]{}
 \HyPL@Entry{0<</S/D>>}
 \select@language{english}
@@ -50,10 +52,10 @@
 \@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {chapter}{Acknowledgements}{v}{chapter.III}}
 \@writefile{toc}{\contentsline {chapter}{\contentsname }{vii}{chapter.IV}}
-\@writefile{toc}{\contentsline {chapter}{\listfigurename }{xi}{chapter.V}}
-\@writefile{toc}{\contentsline {chapter}{\listtablename }{xiii}{chapter.VI}}
+\@writefile{toc}{\contentsline {chapter}{\listfigurename }{ix}{chapter.V}}
+\@writefile{toc}{\contentsline {chapter}{\listtablename }{xi}{chapter.VI}}
 \citation{MatlabGrowth}
-\HyPL@Entry{16<</S/D>>}
+\HyPL@Entry{14<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -67,245 +69,55 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Xten}{{2}{5}{Thesis Outline\relax }{chapter.2}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Background}{7}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Background and High level design}{7}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Background}{{3}{7}{Thesis Outline\relax }{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Learning about Builtins}{7}{section.3.1}}
-\citation{SoroushThesis}
-\citation{KindAnalysis}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Identifying Builtins}{8}{subsection.3.1.1}}
-\newlabel{sec:idBuiltins}{{3.1.1}{8}{Identifying Builtins\relax }{subsection.3.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Finding Builtin Behaviors}{8}{subsection.3.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{9}{figure.caption.2}}
-\newlabel{Fig:BinOps}{{3.1}{9}{Example mclass results for groups of builtin binary operators\relax }{figure.caption.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Specifying Builtins}{10}{section.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{11}{figure.caption.3}}
-\newlabel{Fig:Builtin}{{3.2}{11}{Subtree of the builtin tree, showing defined float functions\relax }{figure.caption.3}{}}
-\citation{JesseThesis}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Excerpt of builtin specification}}{12}{figure.caption.4}}
-\newlabel{Fig:Spec}{{3.3}{12}{Excerpt of builtin specification\relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Builtin Visitor Class}{12}{subsection.3.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{14}{figure.caption.5}}
-\newlabel{Fig:visitor}{{3.4}{14}{Excerpt of the generated builtin visitor class\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Builtin Function Categories}{15}{section.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Specifying Builtin attributes}{18}{section.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{19}{figure.caption.6}}
-\newlabel{Fig:subtree}{{3.5}{19}{A group of builtins, all ancestors and their siblings in the builtin tree\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}The Class and MatlabClass attribute}{20}{section.3.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{21}{figure.caption.7}}
-\newlabel{Fig:classAttributeExample}{{3.6}{21}{Example use the Class and MatlabClass attributes\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Summary}{21}{section.3.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Design of the {\sc  MiX10}\xspace  compiler and {\sc  MiX10}\xspace  IR}{23}{chapter.4}}
+\newlabel{chap:Design}{{3}{7}{Thesis Outline\relax }{chapter.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Compiling for high performance of sequential code}{9}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Design}{{4}{23}{Summary\relax }{chapter.4}{}}
-\citation{KindAnalysis}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}The Tame IR}{24}{section.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Assignment Statements}{25}{subsection.4.1.1}}
-\newlabel{sec:assignStmts}{{4.1.1}{25}{Assignment Statements\relax }{subsection.4.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Specializations of an assignment statement\relax }}{25}{figure.caption.8}}
-\newlabel{Fig:assign}{{4.1}{25}{Specializations of an assignment statement\relax \relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Control Flow Statements}{28}{subsection.4.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Other Statements}{29}{subsection.4.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Non-Statement Nodes}{29}{subsection.4.1.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Tame IR Transformations}{30}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Reduction of Operations to Calls}{32}{subsection.4.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Transforming operations to calls \relax }}{32}{figure.caption.9}}
-\newlabel{Fig:Lambda}{{4.2}{32}{Transforming operations to calls \relax \relax }{figure.caption.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces {\sc  Matlab}\xspace  operators and their corresponding builtin functions.\relax }}{33}{table.caption.10}}
-\newlabel{Fig:opTables}{{4.1}{33}{\matlab operators and their corresponding builtin functions.\relax \relax }{table.caption.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Lambda Simplification}{34}{section.4.3}}
-\newlabel{sec:lsimp}{{4.3}{34}{Lambda Simplification\relax }{section.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Transforming \texttt  {lambda} expressions\relax }}{34}{figure.caption.11}}
-\newlabel{Fig:Lambda}{{4.3}{34}{Transforming \texttt {lambda} expressions\relax \relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Switch simplification}{35}{section.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Transforming \texttt  {switch} statements\relax }}{35}{figure.caption.12}}
-\newlabel{Fig:Switch}{{4.4}{35}{Transforming \texttt {switch} statements\relax \relax }{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Summary}{35}{section.4.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}{\sc  X10}\xspace  Arrays}{37}{chapter.5}}
+\newlabel{chap:Performance}{{4}{9}{Thesis Outline\relax }{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Concurrency constructs in MiX10}{11}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Arrays}{{5}{37}{Summary\relax }{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}The Function Collection Object}{38}{section.5.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The different kinds of Function Collection objects.\relax }}{39}{table.caption.13}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}The Interprocedural Analysis Framework}{39}{section.5.2}}
-\newlabel{sec:interprocedural}{{5.2}{39}{The Interprocedural Analysis Framework\relax }{section.5.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Algorithm}{40}{subsubsection*.14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Contexts}{40}{subsection.5.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Call Strings}{41}{subsection.5.2.2}}
-\newlabel{sec:callstrings}{{5.2.2}{41}{Call Strings\relax }{subsection.5.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{41}{figure.caption.15}}
-\newlabel{Fig:callstring}{{5.1}{41}{A small program where $main$ calls $f$ calls $g$}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces A small program showing two calls to a function}}{42}{figure.caption.16}}
-\newlabel{Fig:callstring}{{5.2}{42}{A small program showing two calls to a function\relax }{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Callsite}{42}{subsection.5.2.3}}
-\newlabel{sec:callsites}{{5.2.3}{42}{Callsite\relax }{subsection.5.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Multiple possible callsites from one statement}}{43}{figure.caption.17}}
-\newlabel{Fig:callstring}{{5.3}{43}{Multiple possible callsites from one statement\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Recursion}{43}{subsection.5.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces A recursive example}}{44}{figure.caption.18}}
-\newlabel{Fig:recursive}{{5.4}{44}{A recursive example\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Example program showing an infinite chain of calls.}}{45}{figure.caption.19}}
-\newlabel{Fig:chain}{{5.5}{45}{Example program showing an infinite chain of calls}{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Summary}{45}{section.5.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Framework for handling builtin functions}{47}{chapter.6}}
+\newlabel{chap:Concurrency}{{5}{11}{Thesis Outline\relax }{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Code generation}{13}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Builtin}{{6}{47}{Summary\relax }{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Learning about Builtins}{47}{section.6.1}}
-\citation{SoroushThesis}
-\citation{KindAnalysis}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Identifying Builtins}{48}{subsection.6.1.1}}
-\newlabel{sec:idBuiltins}{{6.1.1}{48}{Identifying Builtins\relax }{subsection.6.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Finding Builtin Behaviors}{48}{subsection.6.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Example mclass results for groups of builtin binary operators}}{49}{figure.caption.20}}
-\newlabel{Fig:BinOps}{{6.1}{49}{Example mclass results for groups of builtin binary operators\relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Specifying Builtins}{50}{section.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Subtree of the builtin tree, showing defined float functions}}{51}{figure.caption.21}}
-\newlabel{Fig:Builtin}{{6.2}{51}{Subtree of the builtin tree, showing defined float functions\relax }{figure.caption.21}{}}
-\citation{JesseThesis}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Excerpt of builtin specification}}{52}{figure.caption.22}}
-\newlabel{Fig:Spec}{{6.3}{52}{Excerpt of builtin specification\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Builtin Visitor Class}{52}{subsection.6.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Excerpt of the generated builtin visitor class}}{54}{figure.caption.23}}
-\newlabel{Fig:visitor}{{6.4}{54}{Excerpt of the generated builtin visitor class\relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Builtin Function Categories}{55}{section.6.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Specifying Builtin attributes}{58}{section.6.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces A group of builtins, all ancestors and their siblings in the builtin tree}}{59}{figure.caption.24}}
-\newlabel{Fig:subtree}{{6.5}{59}{A group of builtins, all ancestors and their siblings in the builtin tree\relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}The Class and MatlabClass attribute}{60}{section.6.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Example use the Class and MatlabClass attributes}}{61}{figure.caption.25}}
-\newlabel{Fig:classAttributeExample}{{6.6}{61}{Example use the Class and MatlabClass attributes\relax }{figure.caption.25}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.6}Summary}{61}{section.6.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Analyses}{63}{chapter.7}}
+\newlabel{chap:Codegen}{{6}{13}{Thesis Outline\relax }{chapter.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}isComplex value analysis}{15}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Analyses}{{7}{63}{Summary\relax }{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Introducing the Value Analysis}{64}{section.7.1}}
-\newlabel{sec:value}{{7.1}{64}{Introducing the Value Analysis\relax }{section.7.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Mclasses, Values and Value Sets:}{64}{subsection.7.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Flow Sets:}{65}{subsection.7.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}Argument and Return sets:}{66}{subsection.7.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.4}Builtin Propagators:}{67}{subsection.7.1.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Flow Equations}{67}{section.7.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Structures, Cell Arrays and Function Handles}{68}{section.7.3}}
-\newlabel{sec:composite}{{7.3}{68}{Structures, Cell Arrays and Function Handles\relax }{section.7.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}{\tt  struct}, {\tt  cell}:}{68}{subsection.7.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}{\tt  function\_handle}:}{69}{subsection.7.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}The Simple Matrix Abstraction}{70}{section.7.4}}
-\newlabel{sec:simple}{{7.4}{70}{The Simple Matrix Abstraction\relax }{section.7.4}{}}
-\citation{JesseThesis}
-\citation{McForThesis}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Code generation}{71}{chapter.8}}
+\newlabel{chap:Analysis}{{7}{15}{Thesis Outline\relax }{chapter.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Evaluation}{17}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Codegen}{{8}{71}{The Simple Matrix Abstraction\relax }{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}{\sc  McFor}\xspace  }{71}{section.8.1}}
-\citation{falcon}
-\citation{MaJIC}
-\citation{Joisha03}
-\citation{MAGICA}
-\citation{MAT2C}
-\citation{MATLABCoder}
-\citation{Octave}
-\citation{Scilab}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Other Static {\sc  Matlab}\xspace  compilers}{73}{section.8.2}}
-\citation{RPython}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Other {\sc  Matlab}\xspace  -like systems}{74}{section.8.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.4}Static Approaches to other Dynamic Languages}{74}{section.8.4}}
-\newlabel{sec:otherStatic}{{8.4}{74}{Static Approaches to other Dynamic Languages\relax }{section.8.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.1}Python}{74}{subsection.8.4.1}}
-\citation{StaticRuby}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4.2}Ruby}{75}{subsection.8.4.2}}
-\citation{CC2011}
-\citation{falcon}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Evaluation}{77}{chapter.9}}
+\newlabel{chap:Evaluation}{{8}{17}{Thesis Outline\relax }{chapter.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Related work}{19}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Evaluation}{{9}{77}{Ruby\relax }{chapter.9}{}}
-\newlabel{sec:results}{{9}{77}{Ruby\relax }{chapter.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9.1}{\ignorespaces Results of Running Value Analysis\relax }}{78}{table.caption.26}}
-\newlabel{Fig:Bench}{{9.1}{78}{Results of Running Value Analysis\relax \relax }{table.caption.26}{}}
-\citation{JesseThesis}
-\citation{McForThesis}
-\@writefile{toc}{\contentsline {chapter}{\numberline {10}Related work}{79}{chapter.10}}
+\newlabel{chap:Related}{{9}{19}{Thesis Outline\relax }{chapter.9}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Conclusions and Future Work}{21}{chapter.10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Related}{{10}{79}{Ruby\relax }{chapter.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.1}{\sc  McFor}\xspace  }{79}{section.10.1}}
-\citation{falcon}
-\citation{MaJIC}
-\citation{Joisha03}
-\citation{MAGICA}
-\citation{MAT2C}
-\citation{MATLABCoder}
-\citation{Octave}
-\citation{Scilab}
-\@writefile{toc}{\contentsline {section}{\numberline {10.2}Other Static {\sc  Matlab}\xspace  compilers}{81}{section.10.2}}
-\citation{RPython}
-\@writefile{toc}{\contentsline {section}{\numberline {10.3}Other {\sc  Matlab}\xspace  -like systems}{82}{section.10.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {10.4}Static Approaches to other Dynamic Languages}{82}{section.10.4}}
-\newlabel{sec:otherStatic}{{10.4}{82}{Static Approaches to other Dynamic Languages\relax }{section.10.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.1}Python}{82}{subsection.10.4.1}}
-\citation{StaticRuby}
-\@writefile{toc}{\contentsline {subsection}{\numberline {10.4.2}Ruby}{83}{subsection.10.4.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{85}{chapter.11}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Conclusions}{{11}{85}{Ruby\relax }{chapter.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {11.1}Future Work}{85}{section.11.1}}
+\newlabel{chap:Conclusions}{{10}{21}{Thesis Outline\relax }{chapter.10}{}}
 \@writefile{toc}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {part}{Appendices}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{89}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{23}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Builtinxml}{{A}{89}{Future Work\relax }{appendix.A}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces List of builtins and their frequency of occurrence}}{89}{table.caption.27}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{93}{appendix.B}}
+\newlabel{chap:Builtinxml}{{A}{23}{Thesis Outline\relax }{appendix.A}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{25}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Iscomplexprop}{{B}{93}{Future Work\relax }{appendix.B}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1} Introduction }{93}{section.B.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.2} Class Specification }{94}{section.B.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.2.1}Basics}{94}{subsection.B.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.2.2}Language Features}{94}{subsection.B.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Operators}{94}{subsubsection*.28}}
-\@writefile{toc}{\contentsline {subsubsection}{Non-parametric Expressions}{96}{subsubsection*.29}}
-\@writefile{toc}{\contentsline {subsubsection}{Functions}{98}{subsubsection*.30}}
-\@writefile{toc}{\contentsline {subsubsection}{Number}{98}{subsubsection*.31}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.3}Extra Notes on Semantics }{99}{section.B.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3.1}RHS Can Have LHS Sub-expressions, and Vice Versa}{99}{subsection.B.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3.2}Overall Evaluation of Class Attribute Expressions}{99}{subsection.B.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3.3}Greedy Matching}{100}{subsection.B.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.4} Examples }{100}{section.B.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.4.1}Grammar}{102}{subsection.B.4.1}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{103}{appendix.C}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:irgrammar}{{C}{103}{Grammar\relax }{appendix.C}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.1}Compound Structures}{104}{section.C.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.2}Non-Assignment Statements}{104}{section.C.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.3}Assignment Statements}{105}{section.C.3}}
+\newlabel{chap:Iscomplexprop}{{B}{25}{Thesis Outline\relax }{appendix.B}{}}
 \bibstyle{web-alpha}
 \bibdata{progtools,matlab,jun}
-\@writefile{toc}{\contentsline {section}{\numberline {C.4}Other Tame IR Nodes}{106}{section.C.4}}
-\bibcite{RPython}{AACM07}
-\bibcite{MaJIC}{AP02}
-\bibcite{KindAnalysis}{DHR11}
-\bibcite{JesseThesis}{Doh11}
-\bibcite{StaticRuby}{FAFH09}
-\bibcite{Scilab}{INR09}
-\bibcite{MAGICA}{JB01}
-\@writefile{toc}{\contentsline {chapter}{\bibname }{107}{appendix.D}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{27}{appendix.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\bibcite{Joisha03}{JB03}
-\bibcite{MAT2C}{Joi03}
-\bibcite{CC2011}{LH11}
-\bibcite{McForThesis}{Li09}
-\bibcite{MATLABCoder}{Mat}
+\newlabel{chap:irgrammar}{{C}{27}{Thesis Outline\relax }{appendix.C}{}}
 \bibcite{MatlabGrowth}{Mol}
-\bibcite{Octave}{Oct}
-\bibcite{SoroushThesis}{Rad12}
-\bibcite{falcon}{RP99}
+\@writefile{toc}{\contentsline {chapter}{\bibname }{29}{appendix.D}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}

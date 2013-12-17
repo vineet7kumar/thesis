@@ -375,25 +375,44 @@
 
 \chapter{Introduction to \xten and contrast with \matlab} \label{chap:Xten}
 \input{text/xten}
+%introduction to x10 and Matlab, highlighting the contrasts between two
+%-intro to x10
+%-intro to Matlab
+%-Key differences between X10 and Matlab
 
-\chapter{Background} \label{chap:Background}
-\input{text/background}
+%\chapter{Background} \label{chap:Background}
+%\input{text/background}
+%-Introduction to McLab
+%-Introduction to McSAF and Tamer
+%-MiX10 as a static backend
 
-\chapter{Design of the \mixten compiler and \mixten IR} \label{chap:Design}
+\chapter{Background and High level design} \label{chap:Design}
 \input{text/design}
+%-Background
+%-High level design of x10 generator
+%-mix10 ir
 
-\chapter{\xten Arrays} \label{chap:Arrays}
-\input{text/arrays}
+\chapter{Compiling for high performance of sequential code} \label{chap:Performance}
+\input{text/performance}
+%-Arrays
+%-IntOk Analysis
 
-\chapter{Framework for handling builtin functions} \label{chap:Builtin}
-\input{text/builtin}
+\chapter{Concurrency constructs in MiX10} \label{chap:Concurrency}
+\input{text/concurrency}
+%-handling builting concurrency
+%-adding new constructs
 
-%%% this becomes the last section of the Value analysis
-\chapter{Analyses} \label{chap:Analyses}
-\input{text/analyses}
+%\chapter{Framework for handling builtin functions} \label{chap:Builtin}
+%\input{text/builtin}
 
 \chapter{Code generation} \label{chap:Codegen}
 \input{text/codegen}
+%-Builtin handling  framework
+%-Handling various matlab constructs
+
+\chapter{isComplex value analysis} \label{chap:Analysis}
+\input{text/analysis}
+%//Add variable rename analysis ?
 
 \chapter{Evaluation} \label{chap:Evaluation}
 \input{text/evaluation}
