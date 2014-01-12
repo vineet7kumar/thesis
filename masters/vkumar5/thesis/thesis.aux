@@ -3,20 +3,18 @@
 \catcode`;\active
 \catcode`!\active
 \catcode`?\active
-\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
-\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
-\global\let\oldcontentsline\contentsline
-\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global\let\oldnewlabel\newlabel
-\gdef\newlabel#1#2{\newlabelxx{#1}#2}
-\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\ifx\hyper@anchor\@undefined
-\let\contentsline\oldcontentsline
-\let\newlabel\oldnewlabel
-\fi}
-\fi}
-\global\let\hyper@last\relax 
-\gdef\HyperFirstAtBeginDocument#1{#1}
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
 \providecommand*\HyPL@Entry[1]{}
 \HyPL@Entry{0<</S/D>>}
 \select@language{english}
@@ -55,69 +53,77 @@
 \@writefile{toc}{\contentsline {chapter}{\listfigurename }{ix}{chapter.V}}
 \@writefile{toc}{\contentsline {chapter}{\listtablename }{xi}{chapter.VI}}
 \citation{MatlabGrowth}
+\citation{matlabjit}
+\citation{Octave}
+\citation{pct}
 \HyPL@Entry{14<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Introduction}{{1}{1}{\relax }{chapter.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Compilation flow via {\sc  MiX10}\xspace  \relax }}{2}{figure.caption.1}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{Fig:flow}{{1.1}{2}{Compilation flow via \mixten \relax \relax }{figure.caption.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}}
+\citation{x10}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}}
+\citation{JesseThesis}
+\citation{TamerPaper}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Introduction to {\sc  X10}\xspace  and contrast with {\sc  Matlab}\xspace  }{5}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Introduction to {\sc  X10}\xspace  and contrast with {\sc  Matlab}\xspace  }{7}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Xten}{{2}{5}{Thesis Outline\relax }{chapter.2}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Background and High level design}{7}{chapter.3}}
+\newlabel{chap:Xten}{{2}{7}{Thesis Outline\relax }{chapter.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Background and High level design}{9}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Design}{{3}{7}{Thesis Outline\relax }{chapter.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Compiling for high performance of sequential code}{9}{chapter.4}}
+\newlabel{chap:Design}{{3}{9}{Thesis Outline\relax }{chapter.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Compiling for high performance of sequential code}{11}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Performance}{{4}{9}{Thesis Outline\relax }{chapter.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Concurrency constructs in MiX10}{11}{chapter.5}}
+\newlabel{chap:Performance}{{4}{11}{Thesis Outline\relax }{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Concurrency constructs in MiX10}{13}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Concurrency}{{5}{11}{Thesis Outline\relax }{chapter.5}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Code generation}{13}{chapter.6}}
+\newlabel{chap:Concurrency}{{5}{13}{Thesis Outline\relax }{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Code generation}{15}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Codegen}{{6}{13}{Thesis Outline\relax }{chapter.6}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}isComplex value analysis}{15}{chapter.7}}
+\newlabel{chap:Codegen}{{6}{15}{Thesis Outline\relax }{chapter.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}isComplex value analysis}{17}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Analysis}{{7}{15}{Thesis Outline\relax }{chapter.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Evaluation}{17}{chapter.8}}
+\newlabel{chap:Analysis}{{7}{17}{Thesis Outline\relax }{chapter.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Evaluation}{19}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Evaluation}{{8}{17}{Thesis Outline\relax }{chapter.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Related work}{19}{chapter.9}}
+\newlabel{chap:Evaluation}{{8}{19}{Thesis Outline\relax }{chapter.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Related work}{21}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Related}{{9}{19}{Thesis Outline\relax }{chapter.9}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {10}Conclusions and Future Work}{21}{chapter.10}}
+\newlabel{chap:Related}{{9}{21}{Thesis Outline\relax }{chapter.9}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Conclusions and Future Work}{23}{chapter.10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Conclusions}{{10}{21}{Thesis Outline\relax }{chapter.10}{}}
+\newlabel{chap:Conclusions}{{10}{23}{Thesis Outline\relax }{chapter.10}{}}
 \@writefile{toc}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {part}{Appendices}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{23}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{25}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Builtinxml}{{A}{23}{Thesis Outline\relax }{appendix.A}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{25}{appendix.B}}
+\newlabel{chap:Builtinxml}{{A}{25}{Thesis Outline\relax }{appendix.A}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{27}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Iscomplexprop}{{B}{25}{Thesis Outline\relax }{appendix.B}{}}
+\newlabel{chap:Iscomplexprop}{{B}{27}{Thesis Outline\relax }{appendix.B}{}}
 \bibstyle{web-alpha}
 \bibdata{progtools,matlab,jun}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{27}{appendix.C}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{29}{appendix.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:irgrammar}{{C}{27}{Thesis Outline\relax }{appendix.C}{}}
+\newlabel{chap:irgrammar}{{C}{29}{Thesis Outline\relax }{appendix.C}{}}
+\bibcite{TamerPaper}{DH12}
+\bibcite{JesseThesis}{Doh11}
+\bibcite{pct}{Mat13}
 \bibcite{MatlabGrowth}{Mol}
-\@writefile{toc}{\contentsline {chapter}{\bibname }{29}{appendix.D}}
+\bibcite{Octave}{Oct}
+\bibcite{matlabjit}{{The}02}
+\@writefile{toc}{\contentsline {chapter}{\bibname }{31}{appendix.D}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
