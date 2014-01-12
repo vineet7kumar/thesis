@@ -12,20 +12,20 @@
 \contentsline {chapter}{\listfigurename }{ix}{chapter.V}
 \contentsline {chapter}{\listtablename }{xi}{chapter.VI}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}
-\contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace and contrast with {\sc Matlab}\xspace }{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}Background and High level design}{7}{chapter.3}
-\contentsline {chapter}{\numberline {4}Compiling for high performance of sequential code}{9}{chapter.4}
-\contentsline {chapter}{\numberline {5}Concurrency constructs in MiX10}{11}{chapter.5}
-\contentsline {chapter}{\numberline {6}Code generation}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}isComplex value analysis}{15}{chapter.7}
-\contentsline {chapter}{\numberline {8}Evaluation}{17}{chapter.8}
-\contentsline {chapter}{\numberline {9}Related work}{19}{chapter.9}
-\contentsline {chapter}{\numberline {10}Conclusions and Future Work}{21}{chapter.10}
+\contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace and contrast with {\sc Matlab}\xspace }{7}{chapter.2}
+\contentsline {chapter}{\numberline {3}Background and High level design}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}Compiling for high performance of sequential code}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}Concurrency constructs in MiX10}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}Code generation}{15}{chapter.6}
+\contentsline {chapter}{\numberline {7}isComplex value analysis}{17}{chapter.7}
+\contentsline {chapter}{\numberline {8}Evaluation}{19}{chapter.8}
+\contentsline {chapter}{\numberline {9}Related work}{21}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusions and Future Work}{23}{chapter.10}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}
-\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{23}{appendix.A}
-\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{25}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{27}{appendix.C}
-\contentsline {chapter}{\bibname }{29}{appendix.D}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{25}{appendix.A}
+\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{27}{appendix.B}
+\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{29}{appendix.C}
+\contentsline {chapter}{\bibname }{31}{appendix.D}

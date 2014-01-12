@@ -1,48 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
 The style file: web-alpha.bst
 Database file #1: progtools.bib
 Database file #2: matlab.bib
+Warning--entry type for "pct" isn't style-file defined
+--line 134 of file matlab.bib
 Database file #3: jun.bib
-You've used 1 entry,
+Warning--I didn't find a database entry for "x10"
+Warning--to sort, need author or key in Octave
+You've used 6 entries,
             2703 wiz_defined-function locations,
-            577 strings with 4152 characters,
-and the built_in function-call counts, 303 in all, are:
-= -- 26
-> -- 8
-< -- 1
-+ -- 2
-- -- 2
-* -- 12
-:= -- 53
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 12
-empty$ -- 30
-format.name$ -- 4
-if$ -- 63
+            605 strings with 4707 characters,
+and the built_in function-call counts, 1888 in all, are:
+= -- 184
+> -- 52
+< -- 5
++ -- 14
+- -- 14
+* -- 90
+:= -- 279
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 30
+chr.to.int$ -- 6
+cite$ -- 8
+duplicate$ -- 86
+empty$ -- 186
+format.name$ -- 23
+if$ -- 420
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 15
+missing$ -- 1
+newline$ -- 32
+num.names$ -- 15
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 36
 quote$ -- 0
-skip$ -- 9
+skip$ -- 76
 stack$ -- 0
-substring$ -- 7
-swap$ -- 1
-text.length$ -- 1
-text.prefix$ -- 1
+substring$ -- 71
+swap$ -- 15
+text.length$ -- 5
+text.prefix$ -- 4
 top$ -- 0
-type$ -- 9
-warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 13
+type$ -- 54
+warning$ -- 1
+while$ -- 13
+width$ -- 7
+write$ -- 72
+(There were 3 warnings)
