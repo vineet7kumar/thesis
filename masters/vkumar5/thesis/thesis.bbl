@@ -11,6 +11,11 @@ Jesse Doherty.
   Language}.
 \newblock Master's thesis, McGill University, December 2011.
 
+\bibitem[IBM12]{x10}
+IBM.
+\newblock X10 programming language.
+\newblock \url{http://x10-lang.org}, February 2012.
+
 \bibitem[Mat13]{pct}
 MathWorks.
 \newblock Parallel computing toolbox, 2013.
@@ -20,8 +25,7 @@ MathWorks.
 Cleve Moler.
 \newblock {{The Growth of MATLAB and The MathWorks over Two Decades}}.
 \newblock
-  \url{http://www.mathworks.com/company/newsletters/news_notes/clevescorner/ja%
-n06.pdf}.
+  \url{http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf}.
 
 \bibitem[Oct]{Octave}
 {GNU Octave}.
@@ -31,7 +35,6 @@ n06.pdf}.
 {The Mathworks}.
 \newblock {Technology Backgrounder: Accelerating MATLAB}, September 2002.
 \newblock
-  \url{http://www.mathworks.com/company/newsletters/digest/sept02/accel_matlab%
-.pdf}.
+  \url{http://www.mathworks.com/company/newsletters/digest/sept02/accel_matlab.pdf}.
 
 \end{thebibliography}

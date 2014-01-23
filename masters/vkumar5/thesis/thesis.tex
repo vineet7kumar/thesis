@@ -373,7 +373,7 @@
 \chapter{Introduction} \label{chap:Introduction}
 \input{text/intro}
 
-\chapter{Introduction to \xten and contrast with \matlab} \label{chap:Xten}
+\chapter{Introduction to \xten programming language} \label{chap:Xten}
 \input{text/xten}
 %introduction to x10 and Matlab, highlighting the contrasts between two
 %-intro to x10
@@ -392,26 +392,34 @@
 %-High level design of x10 generator
 %-mix10 ir
 
-\chapter{Compiling for high performance of sequential code} \label{chap:Performance}
-\input{text/performance}
-%-Arrays
-%-IntOk Analysis
-
-\chapter{Concurrency constructs in MiX10} \label{chap:Concurrency}
-\input{text/concurrency}
-%-handling builting concurrency
-%-adding new constructs
-
-%\chapter{Framework for handling builtin functions} \label{chap:Builtin}
-%\input{text/builtin}
+\chapter{Static analyses for performance and extended feature support} 
+\label{chap:Analyses}
+\input{text/analyses}
+%IntegerOkay
+%variable renaming
+%isComplex
 
 \chapter{Code generation} \label{chap:Codegen}
 \input{text/codegen}
 %-Builtin handling  framework
 %-Handling various matlab constructs
 
-\chapter{isComplex value analysis} \label{chap:Analysis}
-\input{text/analysis}
+\chapter{Techniques for efficient compilation of \matlab arrays} 
+\label{chap:Arrays}
+\input{text/arrays}
+%-Arrays
+
+%\chapter{Concurrency constructs in MiX10} \label{chap:Concurrency}
+%\input{text/concurrency}
+%-handling builting concurrency
+%-adding new constructs
+
+%\chapter{Framework for handling builtin functions} \label{chap:Builtin}
+%\input{text/builtin}
+
+
+%\chapter{isComplex value analysis} \label{chap:Analysis}
+%\input{text/analysis}
 %//Add variable rename analysis ?
 
 \chapter{Evaluation} \label{chap:Evaluation}
@@ -454,7 +462,7 @@
 
 \bibliographystyle{web-alpha} %- originally in jesse thesis
 %\bibliography{strings, thesis}
-\bibliography{progtools,matlab,jun}
+\bibliography{progtools,matlab,jun,refs,refs_short}
 
 % -- Glossary & Index ---------------------------------------------------------
 

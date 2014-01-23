@@ -1,12 +1,61 @@
-%basic bad features, semantics. classes. lookup. overloading.
-%- outline section 2 (matlab language)
+%\lstset{
+%basicstyle=\footnotesize\ttfamily, 
+%otherkeywords={>>},
+%keywordstyle=\ttfamily\bfseries,
+%numbers=none,
+%commentstyle=\color{blue}\sffamily\itshape,
+%stringstyle=\color{black}\ttfamily 
+%} 
 
-\lstset{
-basicstyle=\footnotesize\ttfamily, 
-otherkeywords={>>},
-keywordstyle=\ttfamily\bfseries,
-numbers=none,
-commentstyle=\color{blue}\sffamily\itshape,
-stringstyle=\color{black}\ttfamily 
-} 
-TBD
+In this chapter, we describe key \xten semantics and features and contrast 
+them with \matlab to help readers unfamiliar with \xten and \matlab to
+have a better understanding of the \mixten compiler.   
+
+\xten is an award winning open-source programming language being developed by
+IBM Research. The goal of the \xten project is to provide a productive and
+scalable programming model for the new-age high performance computing
+architectures ranging from multi-core processors to clusters and
+supercomputers~\cite{}. 
+
+\xten, like Java, is a class-based, strongly-typed, garbage-collected and
+object-oriented language. It uses Asynchronous Partitioned Global Space (APGAS)
+model to support concurrency and distribution~\cite{}. The \xten compiler has a
+native backend that compiles \xten programs to C++ and a managed backend that
+compiles \xten programs to Java. 
+
+In contrast to \xten, \matlab is a commercially-successful, proprietary
+programming language that focuses on simplicity of implementing numerical
+computation application~\cite{}. \matlab is a weakly-typed, dynamic language
+with unconventional semantics and uses a JIT compiler backend.
+It provides restricted support for high performance
+computing via Mathworks' parallel computing toolbox~\cite{}. 
+
+\section{Overview of \xten's key sequential features}
+
+\xten's sequential core is a container-based object-oriented language that is 
+very similar to that of Java or C++~\cite{}. A \xten program consists of a
+collection of classes, structs or interfaces, which are the top-level compilation
+units. Inheritance and subtyping are fairly conventional. \xten also provides very flexible
+arrays based on ideas in ZPL~\cite{}.  
+\subsection{Object-oriented features}
+
+\subsection{Statements}
+
+\subsection{Types}
+
+\section{Overview of \xten's concurrency features}
+
+\subsection{The APGAS Model}
+
+\subsection{Async Construct}
+
+\subsection{Finish Construct}
+
+\subsection{Atomic and When Constructs}
+
+\subsection{Places and At Construct}
+
+\section{Overview of \xten's implementation and runtime}
+ 
+
+

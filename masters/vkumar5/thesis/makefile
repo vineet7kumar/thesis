@@ -5,8 +5,9 @@
 #OUT_PDF=$(FIGS:fig=pdf)
 #OUT_EPS=$(FIGS:fig=eps)
 
-all: pdf
+all: clean pdf
 
+again: pdf
 pdfa: thesis_pdfa.pdf
 pdf: thesis.pdf
 ps: thesis.ps

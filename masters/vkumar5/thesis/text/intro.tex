@@ -58,7 +58,7 @@ compilation, and to expose scalable concurrency.
 %framework\cite{JesseThesis, TamerPaper} by adding a set of reusable static
 %analyses for performance optimization and extended support for \matlab features.
 
-section{Contributions}
+\section{Contributions}
 
 The major contributions  of this thesis are as follows:
 
@@ -77,17 +77,18 @@ performance optimization and extended support for \matlab features. These
 analyses include: (1) \emph{IntegerOkay analysis} - We provide an analysis to
 automatically identify
 variables that can be safely declared to be of type \texttt{Int} (or
-\texttt{Long} without
+\texttt{Long}) without
 affecting the correctness of the generated \xten code. This helps to eliminate
 most of, otherwise necessary, typecast operations which our experiments
 showed to be a major performance bottleneck in the generated code; (2)
 \emph{Variable renaming for type collision} - \matlab allows a variable to 
 hold values of different
-types at different points in the program. However, in statically typed
+types at different points in a program. However, in statically typed
 languages like \xten this behaviour cannot be supported since a 
-variable's type needs to be declared statically and cannot be changed at any
+variable's type needs to be declared statically by the programmer and cannot be 
+changed at any
 point in the program. We provide an analysis to identify and rename such
-variables if their different types belong to different UD-DU webs; and (3)
+variables if their different types belong to mutually exclusive UD-DU webs; and (3)
 \emph{isComplex value analysis} - We designed an analysis for identification of
 complex numerical values in a \matlab program. This helped us to extend \mixten
 compiler to also generate \xten code for \matlab programs that involve use of
@@ -102,7 +103,7 @@ the appropriate explicit type conversion rules, so as to match the
 \matlab semantics.   Other \matlab features, such as multiple returns
 from functions, a non-standard semantics for \texttt{for} loops, and a
 very general range operator, must also be handled correctly.
-\mixten not only supports all these sequential constructs but also supports
+\mixten not only supports all the key sequential constructs but also supports
 concurrency constructs like \parfor and can handle vectorized instructions in a
 concurrent fashion.
 We have also designed and implemented a template-based system that allows us to
@@ -135,49 +136,28 @@ including Mathworks' \matlab implementation and Octave.
 
 This thesis is divided into \ref{chap:Conclusions} chapters, including this one
 and is structured as follows.
-%%%%%%%%EDIT BELOW%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapref{chap:Xten} provides an introduction to the \xten language and describes
 how it compares to \matlab from the point of view of language design.
 \chapref{chap:Design} gives a description of various existing \matlab
 compiler tools upon which \mixten is implemented, presents a high-level
 design of \mixten, and explains the design and need of \mixten IR.
-In \chapref{chap:Performance} we introduce different types of arrays provided by
-\xten,  we identify pros and cons of both kinds of arrays in the context of
-\xten as a target language and describe code generation strategies for them. We
-also present a detailed description of the IntOk analysis.
-In \chapref{chap:Concurrency} we describe our code-generation strategies for
-existing \matlab concurrency constructs and addition of new fine-grained
-concurrency controls.
+In \chapref{chap:Analyses} we provide a description of the \emph{IntegerOkay}
+analysis to identify variables that are safe to be declared as \texttt{Long}
+type, \emph{variable renaming for type conflict} to rename variables with
+conflicting types in isolated UD-DU webs and \emph{isComplex}
+analysis to identify complex numerical values. 
 \chapref{chap:Codegen} gives details of code generation strategies for
 important \matlab constructs.
-In \chapref{chap:Analysis} we provide a detailed description of our analysis to
-identify complex numerical values in \matlab programs.
+In \chapref{chap:Arrays} we introduce different types of arrays provided by
+\xten,  we identify pros and cons of both kinds of arrays in the context of
+\xten as a target language and describe code generation strategies for them.
+%In \chapref{chap:Concurrency} we describe our code-generation strategies for
+%existing \matlab concurrency constructs and addition of new fine-grained
+%concurrency controls.
+%In \chapref{chap:Analysis} we provide a detailed description of our analysis to
+%identify complex numerical values in \matlab programs.
 \chapref{chap:Evaluation} provides performance results for code generated using
 \mixten for a suite of benchmarks.
 \chapref{chap:Related} provides an overview of related work and
 \chapref{chap:Conclusions} concludes and outlines possible future work.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%------------------------------------------------------------------------------
