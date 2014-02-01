@@ -35,9 +35,114 @@ computing via Mathworks' parallel computing toolbox~\cite{}.
 \xten's sequential core is a container-based object-oriented language that is 
 very similar to that of Java or C++~\cite{}. A \xten program consists of a
 collection of classes, structs or interfaces, which are the top-level compilation
-units. Inheritance and subtyping are fairly conventional. \xten also provides very flexible
-arrays based on ideas in ZPL~\cite{}.  
+units. Inheritance and subtyping are fairly conventional. \xten's sequential
+constructs like \texttt{if}-\texttt{else} statements, \texttt{for} loops,
+\texttt{while} loops, \texttt{switch} statements and exception handling
+constructs \texttt{throw}, and \texttt{try}\ldots\texttt{catch} are  also same 
+as those in Java. 
+\xten provides both, implicit coercions and explicit conversions on types, and 
+both can
+be defined on user-defined types. The \texttt{as} operator is used to perform
+explicit type conversions; for example, \texttt{x as Long\{self != 0\}} converts
+\texttt{x} to type \texttt{Long} and throws a runtime exception if its value is
+zero. Multi-dimensional arrays in \xten are provided as user-defined abstractions on top of
+\texttt{x10.lang.Rail}, an intrinsic one-dimensional array analogous to
+one-dimensional arrays in languages like C or Java. Two families of
+multi-dimensional array abstractions are provided: \emph{simple arrays}, which
+provide
+a restricted but efficient implementation, and \emph{region arrays} which
+provide
+a flexible and dynamic implementation but not as efficient as \emph{simple
+arrays}.
+\ref{lst:x10simple} shows a \xten program that calculates the value of $\pi$
+using the monte-carlo method. It highlights important sequential and
+object-oriented features of \xten detailed in the following subsections.
+
+\begin{lstlisting}[caption={},label={lst:x10simple},language=x10,numbers=none]
+
+//CHANGE THIS PROGRAM TO MONTE CARLO PI
+static def crazyArray (a: Double){
+    val y: Array_3[Double] = new Array_3[Double](Mix10.ones(3, 4, 5));
+    val mc_t0: Array_1[Double] = new Array_1[Double](Mix10.colon(2, 3));
+    var x: Array_3[Double];
+    x = new Array_3[Double](Helper.getSubArray(1, 1, mc_t0(0), mc_t0(1), 1, 5,
+y)) ;
+    return x;
+}
+\end{lstlisting}
+
+%\xten also provides very flexible
+%arrays based on ideas in ZPL~\cite{}.  
 \subsection{Object-oriented features}
+
+A program consists of a collection of \emph{top-level units}, where a unit is
+either a \emph{class}, a \emph{struct} or an \emph{interface}. A program can
+contain multiple units, however only one unit can be made \texttt{public} and
+its name must be same as that of the program file. Similar to Java, access to
+these \emph{top-level units} is controlled by \emph{packages}. Below is a
+description of the core object-oriented constructs in \xten: 
+
+\begin{description}
+
+\item[Class] A class is a basic bundle of data and code. It consists of zero or
+more \emph{members} namely \emph{fields}, \emph{methods}, \emph{constructors},
+and member classes and interfaces~\cite{}. It also specifies the name of its
+\emph{superclass} if any and of the interfaces it \emph{implements}.  
+
+\item[Fields] A field is a data item that belongs to a class. It can be mutable
+(specified by keyword  \texttt{var}) or immutable (specified by keyword
+\texttt{val}). The type of a mutable field must be always be specified, however
+the type of an immutable field may be omitted if it's declaration specifies an
+\emph{initializer}. Fields are by default instance fields unless marked with the
+\texttt{static} keyword. Instance fields are inherited by subclasses, however
+subclasses can shadow inherited fields, in which case the value of the shadowed
+field can be accessed by using the qualifier \texttt{super.}.
+
+%\item[Properties]
+
+\item[Methods] A method is a named piece of code that takes zero or more
+\emph{parameters} and returns zero or one value. The type of a method is
+the type of the return value or \texttt{void} if it does not return a value.
+If the return type of a method is not provided by the programmer, \xten infers
+it as the least upper bound of the types of all expressions \texttt{e} in the
+method where the body of the method contains the statement \texttt{return e}.
+A method may have a type parameter that makes it \emph{type generic}. An
+optional \emph{method guard} can be used to specify constraints. All methods in
+a class must have a unique signature which consists of its name and types of its
+arguments.     
+
+Methods may be inherited. Methods defined in the superclass are available in the
+subclasses, unless overridden by another method with same signature. Method
+overloading allows programmer to define multiple methods with same name as long
+as they have different signatures. Methods can be access controlled to be
+\texttt{private}, \texttt{protected} or \texttt{public}. \texttt{private}
+methods can only be accessed by other methods in the same class.
+\texttt{protected} methods can be accessed in the same class or its subclasses.
+\texttt{public} methods can be accessed from any code. By default, all methods
+are \emph{package protected} which means they can be accessed from any code in
+the same package.
+
+Methods with the same name as that of the containing class are called
+constructors. They are used to instantiate a class. 
+
+\item[Structs] A struct is just like a class, except that it does not support
+inheritance and may not be recursive. This allows structs to be implemented as
+\emph{header-less} objects, which means that a unlike a class, a struct can be
+represented by only as much memory as is necessary to represent its fields and
+with its methods compiled to static methods. It does not contain a \emph{header}
+containing data to represent meta-information about the object. Current version
+of \xten (version 2.4) does not support mutability and references to structs,
+which means that there is no syntax to update the fields of a struct and structs
+are always passed by value. 
+
+
+\item[Function literals] \xten allows definition of functions via literals. A
+function consists of a parameter list, followed optionally by a return type,
+followed by \texttt{=>}, followed by the body (an expression).
+ 
+
+ 
+\end{description}
 
 \subsection{Statements}
 
