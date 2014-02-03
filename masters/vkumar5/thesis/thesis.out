@@ -21,21 +21,22 @@
 \BOOKMARK [1][-]{section.2.3}{Overview of X10's implementation and runtime}{chapter.2}% 21
 \BOOKMARK [2][-]{subsection.2.3.1}{X10 implementation}{section.2.3}% 22
 \BOOKMARK [2][-]{subsection.2.3.2}{X10 runtime}{section.2.3}% 23
-\BOOKMARK [0][-]{chapter.3}{Background and High level design}{}% 24
-\BOOKMARK [0][-]{chapter.4}{Static analyses for performance and extended feature support}{}% 25
-\BOOKMARK [0][-]{chapter.5}{Code generation}{}% 26
-\BOOKMARK [0][-]{chapter.6}{Techniques for efficient compilation of Matlab arrays}{}% 27
-\BOOKMARK [1][-]{section.6.1}{The Function Collection Object}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{The Interprocedural Analysis Framework}{chapter.6}% 29
-\BOOKMARK [2][-]{subsection.6.2.1}{Contexts}{section.6.2}% 30
-\BOOKMARK [2][-]{subsection.6.2.2}{Call Strings}{section.6.2}% 31
-\BOOKMARK [2][-]{subsection.6.2.3}{Callsite}{section.6.2}% 32
-\BOOKMARK [2][-]{subsection.6.2.4}{Recursion}{section.6.2}% 33
-\BOOKMARK [1][-]{section.6.3}{Summary}{chapter.6}% 34
-\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 35
-\BOOKMARK [0][-]{chapter.8}{Related work}{}% 36
-\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 37
-\BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}% 38
-\BOOKMARK [0][-]{appendix.B}{isComplex analysis Propagation Language}{}% 39
-\BOOKMARK [0][-]{appendix.C}{MiX10 IR Grammar}{}% 40
-\BOOKMARK [0][-]{appendix.D}{Bibliography}{}% 41
+\BOOKMARK [1][-]{section.2.4}{Summary}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Background and High level design}{}% 25
+\BOOKMARK [0][-]{chapter.4}{Static analyses for performance and extended feature support}{}% 26
+\BOOKMARK [0][-]{chapter.5}{Code generation}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Techniques for efficient compilation of Matlab arrays}{}% 28
+\BOOKMARK [1][-]{section.6.1}{The Function Collection Object}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{The Interprocedural Analysis Framework}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.2.1}{Contexts}{section.6.2}% 31
+\BOOKMARK [2][-]{subsection.6.2.2}{Call Strings}{section.6.2}% 32
+\BOOKMARK [2][-]{subsection.6.2.3}{Callsite}{section.6.2}% 33
+\BOOKMARK [2][-]{subsection.6.2.4}{Recursion}{section.6.2}% 34
+\BOOKMARK [1][-]{section.6.3}{Summary}{chapter.6}% 35
+\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 36
+\BOOKMARK [0][-]{chapter.8}{Related work}{}% 37
+\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 38
+\BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}% 39
+\BOOKMARK [0][-]{appendix.B}{isComplex analysis Propagation Language}{}% 40
+\BOOKMARK [0][-]{appendix.C}{MiX10 IR Grammar}{}% 41
+\BOOKMARK [0][-]{appendix.D}{Bibliography}{}% 42

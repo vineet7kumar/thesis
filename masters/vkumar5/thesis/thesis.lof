@@ -7,17 +7,17 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture of the {\sc X10}\xspace compiler\relax }}{19}{figure.caption.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the {\sc X10}\xspace runtime\relax }}{20}{figure.caption.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture of the {\sc X10}\xspace compiler\relax }}{20}{figure.caption.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Architecture of the {\sc X10}\xspace runtime\relax }}{21}{figure.caption.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{31}{figure.caption.5}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces A small program showing two calls to a function}}{32}{figure.caption.6}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Multiple possible callsites from one statement}}{33}{figure.caption.7}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces A recursive example}}{34}{figure.caption.8}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Example program showing an infinite chain of calls.}}{35}{figure.caption.9}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{33}{figure.caption.5}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces A small program showing two calls to a function}}{34}{figure.caption.6}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Multiple possible callsites from one statement}}{35}{figure.caption.7}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces A recursive example}}{36}{figure.caption.8}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Example program showing an infinite chain of calls.}}{37}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

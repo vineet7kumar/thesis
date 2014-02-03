@@ -12,6 +12,11 @@ Jesse Doherty.
   Language}.
 \newblock Master's thesis, McGill University, December 2011.
 
+\bibitem[Dub12]{AntonThesis}
+Anton Dubrau.
+\newblock {Taming MATLAB}.
+\newblock Master's thesis, McGill University, April 2012.
+
 \bibitem[IBM12]{x10}
 IBM.
 \newblock X10 programming language.

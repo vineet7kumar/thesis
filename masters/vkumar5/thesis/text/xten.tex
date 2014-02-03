@@ -7,8 +7,8 @@
 %stringstyle=\color{black}\ttfamily 
 %} 
 
-In this chapter, we describe key \xten semantics and features and contrast 
-them with \matlab to help readers unfamiliar with \xten and \matlab to
+In this chapter, we describe key \xten semantics and features to help readers 
+unfamiliar with \xten to
 have a better understanding of the \mixten compiler.   
 
 \xten is an award winning open-source programming language being developed by
@@ -67,6 +67,7 @@ object-oriented features of \xten detailed in the following subsections.
 using Monte Carlo method},label={lst:x10simple},language=x10,numbers=none]
 package examples;
 import x10.util.Random;
+
 public class SeqPi {
   public static def main(args:Rail[String]) {
     val N = Int.parse(args(0));
@@ -355,7 +356,7 @@ They must proceed to completion, either finishing correctly or by throwing an
 exception. An activity created by \texttt{async S} is said to be \emph{locally
 terminated} if \texttt{S} has terminated. It is said to be \emph{globally
 terminated} if it has terminated locally and all activities spawned by it
-recursively have themselves globally terminated.
+recursively, have themselves globally terminated.
    
 \subsection{Finish} Global termination of an activity can be converted to local
 termination by using the \texttt{finish} construct. This is necessary when the
@@ -463,7 +464,7 @@ optimizations; and (3) It allows programmers to take advantage of the existing
 C++ and Java libraries.
 
 Figure \ref{fig:x10compiler} shows the overall architecture of the \xten
-compiler~\cite{}.  
+compiler~\cite{x10intro}.  
  
 \begin{figure}[p]
     \centering
@@ -474,7 +475,7 @@ compiler~\cite{}.
 
 \subsection{\xten runtime}
 Figure \ref{fig:x10runtime} shows the major components of the \xten runtime and
-their relative hierarchy~\cite{}. 
+their relative hierarchy~\cite{x10intro}. 
 
 The runtime bridges the gap between 
 application program and
@@ -504,3 +505,16 @@ APIs for concurrency and distribution.
     \label{fig:x10runtime}
 \end{figure}
 
+\section{Summary}
+
+In this chapter we have provided an overview of the key features of the \xten
+programming language. In the following chapters, specially chapters
+\chapref{chap:Codegen} and \chapref{chap:Arrays}, we will discuss some of the
+features and constructs introduced here, in more depth. 
+
+We will also discuss key constructs and features of the \matlab
+programming language and contrast them with \xten, as we discuss \mixten's
+compilation strategies in the following chapters. For readers who are completely
+unfamiliar with \matlab or are interested in a quick overview, we suggest
+reading chapter 2 of \cite{AntonThesis}.
+   

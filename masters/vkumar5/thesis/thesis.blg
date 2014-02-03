@@ -5,55 +5,55 @@ The style file: web-alpha.bst
 Database file #1: progtools.bib
 Database file #2: matlab.bib
 Warning--entry type for "apgaspaper" isn't style-file defined
---line 113 of file matlab.bib
+--line 121 of file matlab.bib
 Warning--entry type for "x10intro" isn't style-file defined
---line 120 of file matlab.bib
+--line 128 of file matlab.bib
 Warning--entry type for "pct" isn't style-file defined
---line 135 of file matlab.bib
+--line 143 of file matlab.bib
 Database file #3: jun.bib
 Database file #4: refs.bib
 Database file #5: refs_short.bib
 Warning--to sort, need author or key in Octave
 Warning--empty publisher in specs
-You've used 10 entries,
+You've used 11 entries,
             2703 wiz_defined-function locations,
-            620 strings with 5149 characters,
-and the built_in function-call counts, 3169 in all, are:
-= -- 300
-> -- 111
-< -- 8
-+ -- 35
-- -- 33
-* -- 163
-:= -- 485
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 53
-chr.to.int$ -- 9
-cite$ -- 13
-duplicate$ -- 137
-empty$ -- 298
-format.name$ -- 48
-if$ -- 687
+            624 strings with 5198 characters,
+and the built_in function-call counts, 3431 in all, are:
+= -- 328
+> -- 119
+< -- 9
++ -- 37
+- -- 35
+* -- 177
+:= -- 532
+add.period$ -- 32
+call.type$ -- 11
+change.case$ -- 58
+chr.to.int$ -- 10
+cite$ -- 14
+duplicate$ -- 149
+empty$ -- 317
+format.name$ -- 52
+if$ -- 739
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 3
-newline$ -- 53
-num.names$ -- 27
-pop$ -- 109
+newline$ -- 58
+num.names$ -- 30
+pop$ -- 113
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 70
 quote$ -- 0
-skip$ -- 116
+skip$ -- 126
 stack$ -- 0
-substring$ -- 100
+substring$ -- 107
 swap$ -- 19
-text.length$ -- 8
-text.prefix$ -- 7
+text.length$ -- 9
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 85
+type$ -- 94
 warning$ -- 2
-while$ -- 22
-width$ -- 12
-write$ -- 120
+while$ -- 24
+width$ -- 13
+write$ -- 133
 (There were 5 warnings)
