@@ -1,4 +1,5 @@
-\begin{thebibliography}{{The}02}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{SBP{\etalchar{+}}13}
 
 \bibitem[DH12]{TamerPaper}
 Anton Dubrau and Laurie Hendren.
@@ -16,6 +17,18 @@ IBM.
 \newblock X10 programming language.
 \newblock \url{http://x10-lang.org}, February 2012.
 
+\bibitem[IBM13a]{apgaspaper}
+IBM.
+\newblock Apgas programming in x10 2.4, 2013.
+\newblock
+  \url{http://x10-lang.org/documentation/tutorials/apgas-programming-in-x10-24.html}.
+
+\bibitem[IBM13b]{x10intro}
+IBM.
+\newblock An introduction to x10, 2013.
+\newblock
+  \url{http://x10.sourceforge.net/documentation/intro/latest/html/intro-web.html}.
+
 \bibitem[Mat13]{pct}
 MathWorks.
 \newblock Parallel computing toolbox, 2013.
@@ -30,6 +43,11 @@ Cleve Moler.
 \bibitem[Oct]{Octave}
 {GNU Octave}.
 \newblock \url{http://www.gnu.org/software/octave/index.html}.
+
+\bibitem[SBP{\etalchar{+}}13]{specs}
+Vijay Saraswat, Bard Bloom, Igor Peshansky, Olivier Tardieu, and David Grove.
+\newblock {\em X10 Language Specification, Version 2.4}.
+\newblock December 2013.
 
 \bibitem[{The}02]{matlabjit}
 {The Mathworks}.

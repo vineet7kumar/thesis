@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=latex 2014.1.20)  22 JAN 2014 13:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=latex 2014.1.27)  3 FEB 2014 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,7 +558,7 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-))
+)) (./x10.sty)
 (/opt/local/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -1037,6 +1037,9 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )) (./hyphenation.tex)
 (./thesis.aux
 
+LaTeX Warning: Label `lst:x10GenType' multiply defined.
+
+
 LaTeX Warning: Label `Fig:callstring' multiply defined.
 
 
@@ -1045,35 +1048,35 @@ LaTeX Warning: Label `Fig:callstring' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 298.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 298.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 306.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 306.
 
  (/opt/local/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 298.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 306.
 
 (/opt/local/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Info: Redefining \degres on input line 298.
-LaTeX Info: Redefining \dots on input line 298.
-LaTeX Info: Redefining \up on input line 298.
+LaTeX Info: Redefining \degres on input line 306.
+LaTeX Info: Redefining \dots on input line 306.
+LaTeX Info: Redefining \up on input line 306.
 \c@lstlisting=\count184
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -1085,7 +1088,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring ON on input line 298.
+Package hyperref Info: Link coloring ON on input line 306.
 
 (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1095,15 +1098,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 298.
-LaTeX Info: Redefining \pageref on input line 298.
-LaTeX Info: Redefining \nameref on input line 298.
+LaTeX Info: Redefining \ref on input line 306.
+LaTeX Info: Redefining \pageref on input line 306.
+LaTeX Info: Redefining \nameref on input line 306.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 311.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 319.
 
 
 (/opt/local/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
@@ -1114,16 +1117,16 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 ]
 Abstract
-LaTeX Font Info:    Try loading font information for T1+phv on input line 318.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 326.
 (/opt/local/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 318.
+(Font)              scaled to size 19.70294pt on input line 326.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 318.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 326.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 19.70294pt on input line 318.
+(Font)              scaled to size 19.70294pt on input line 326.
  (./text/abstract.tex) [1
 
 ] [2
@@ -1177,20 +1180,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  [7]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
-)
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+ [8])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [8]
+ [9]
+[10
+
+]
 List of Figures
 (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [9
-
-] [10
+ [11] [12
 
 ]
 List of Tables
@@ -1198,7 +1202,7 @@ List of Tables
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [11] [12
+ [13] [14
 
 ]
 Chapter 1.
@@ -1233,130 +1237,200 @@ Overfull \hbox (4.02284pt too wide) in paragraph at lines 97--112
 
 ]
 Chapter 2.
-(./text/xten.tex [7]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 40.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 40.
-) [8]
-Chapter 3.
-(./text/design.tex) [9
+(./text/xten.tex
+Overfull \hbox (15.475pt too wide) in paragraph at lines 28--34
+\T1/ptm/m/n/12 lan-guage that fo-cuses on sim-plic-ity of im-ple-ment-ing nu-me
+r-i-cal com-pu-ta-tion ap-pli-ca-tion [[]].
+ []
 
-] [10
-
-]
-Chapter 4.
-(./text/analyses.tex) [11] [12
-
-]
-Chapter 5.
-(./text/codegen.tex) [13] [14
-
-]
-Chapter 6.
-(./text/arrays.tex [15]
+[7]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 68.
+ [8]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.40245pt on input line 85.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.40245pt on input line 85.
- [16] [17]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 13.67995pt on input line 89.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 89.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 89.
+ [9] [10]
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 172.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 172.
+ [11] [12] [13]
+Overfull \hbox (8.48705pt too wide) in paragraph at lines 306--318
+[]\T1/ptm/m/sc/12 X10 \T1/ptm/m/n/12 al-lows the pro-gram-mer to de-fine \T1/pc
+r/m/n/12 Boolean \T1/ptm/m/n/12 ex-pres-sions (re-stricted)
+ []
+
+[14]
+Overfull \hbox (1.82031pt too wide) in paragraph at lines 360--368
+\T1/ptm/m/n/12 Global ter-mi-na-tion of an ac-tiv-ity can be con-verted to lo-c
+al ter-mi-na-tion by us-ing the \T1/pcr/m/n/12 finish
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 371.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [15] [16] [17]
+File: Figures/x10compiler.eps Graphic file (type eps)
+
+<Figures/x10compiler.eps>
+File: Figures/x10runtime.eps Graphic file (type eps)
+ <Figures/x10runtime.eps>) [18] [19] [20]
+Chapter 3.
+(./text/design.tex) [21
+
+] [22
+
+]
+Chapter 4.
+(./text/analyses.tex) [23] [24
+
+]
+Chapter 5.
+(./text/codegen.tex) [25] [26
+
+]
+Chapter 6.
+(./text/arrays.tex [27] [28] [29]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 120.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 120.
- [18]
+ [30]
 
-LaTeX Warning: Reference `chap:ValueAnalysis' on page 19 undefined on input lin
+LaTeX Warning: Reference `chap:ValueAnalysis' on page 31 undefined on input lin
 e 164.
 
 File: Figures/callstring.eps Graphic file (type eps)
-<Figures/callstring.eps>
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
- [19]
+<Figures/callstring.eps> [31]
 File: Figures/branch.eps Graphic file (type eps)
  <Figures/branch.eps>
 
-LaTeX Warning: Reference `chap:ValueAnalysis' on page 20 undefined on input lin
+LaTeX Warning: Reference `chap:ValueAnalysis' on page 32 undefined on input lin
 e 235.
 
 File: Figures/callsites.eps Graphic file (type eps)
-<Figures/callsites.eps> [20]
+<Figures/callsites.eps> [32]
 File: Figures/recursive.eps Graphic file (type eps)
- <Figures/recursive.eps> [21]
+ <Figures/recursive.eps> [33]
 File: Figures/chain.eps Graphic file (type eps)
  <Figures/chain.eps>
-[22]) [23] [24
+[34]) [35] [36
 
 ]
 Chapter 7.
-(./text/evaluation.tex) [25] [26
+(./text/evaluation.tex) [37] [38
 
 ]
 Chapter 8.
-(./text/related.tex) [27] [28
+(./text/related.tex) [39] [40
 
 ]
 Chapter 9.
-(./text/concl.tex) [29] [30
+(./text/concl.tex) [41] [42
 
 ]
 Appendix A.
-(./text/builtinxml.tex) [31] [32
+(./text/builtinxml.tex) [43] [44
 
 ]
 Appendix B.
-(./text/iscomplexprop.tex) [33] [34
+(./text/iscomplexprop.tex) [45] [46
 
 ]
 Appendix C.
-(./text/irgrammar.tex) (./thesis.bbl [35] [36
+(./text/irgrammar.tex) (./thesis.bbl [47] [48
 
 ]
 Bibliography
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+[]\T1/ptm/m/n/12 IBM.  Ap-gas pro-gram-ming in x10 2.4, 2013.
+ []
+
+
+Overfull \hbox (173.78728pt too wide) in paragraph at lines 21--25
+[][][]$\T1/pcr/m/n/12 http : / / x10-[]lang . org / documentation / tutorials /
+ apgas-[]programming-[]in-[]x10-[]24 . html$[][][][]\T1/ptm/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
+[]\T1/ptm/m/n/12 IBM.  An in-tro-duc-tion to x10, 2013.
+ []
+
+
+Overfull \hbox (150.18729pt too wide) in paragraph at lines 27--31
+[][][]$\T1/pcr/m/n/12 http : / / x10 . sourceforge . net / documentation / intr
+o / latest / html / intro-[]web . html$[][][][]\T1/ptm/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
 []\T1/ptm/m/n/12 MathWorks.  Par-al-lel com-put-ing tool-box, 2013.
  []
 
 
-Overfull \hbox (175.50653pt too wide) in paragraph at lines 25--29
+Overfull \hbox (6.18735pt too wide) in paragraph at lines 33--36
+[][][]$\T1/pcr/m/n/12 http : / / www . mathworks . com / products / parallel-[]
+computing/$[][][][]\T1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (185.68727pt too wide) in paragraph at lines 38--42
 [][][]$\T1/pcr/m/n/12 http : / / www . mathworks . com / company / newsletters 
 / news _ notes / clevescorner / jan06 . pdf$[][][][]\T1/ptm/m/n/12 . 
  []
 
 
-Overfull \hbox (5.50154pt too wide) in paragraph at lines 31--33
+Overfull \hbox (15.68228pt too wide) in paragraph at lines 44--46
 []\T1/ptm/m/n/12 GNU Oc-tave.  [][][]$\T1/pcr/m/n/12 http : / / www . gnu . org
  / software / octave / index . html$[][][][]\T1/ptm/m/n/12 . 
  []
 
 
-Overfull \hbox (183.66649pt too wide) in paragraph at lines 35--39
-\T1/ptm/m/n/12 2002.  [][][]$\T1/pcr/m/n/12 http : / / www . mathworks . com / 
-company / newsletters / digest / sept02 / accel _ matlab . pdf$[][][][]\T1/ptm/
-m/n/12 . 
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+[]\T1/ptm/m/n/12 The Math-works.  Tech-nol-ogy Back-grounder:
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
- [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+\T1/ptm/m/n/12 Ac-cel-er-at-ing MAT-LAB, Septem-ber 2002.
+ []
+
+
+Overfull \hbox (164.08728pt too wide) in paragraph at lines 53--57
+[][][]$\T1/pcr/m/n/12 http : / / www . mathworks . com / company / newsletters 
+/ digest / sept02 / accel _ matlab . pdf$[][][][]\T1/ptm/m/n/12 . 
+ []
+
+[49])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
+ [50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
  (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 473.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 481.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 173E1868F8E2382F5EDCD7B062E5D4B3;2549.
+(rerunfilecheck)             Checksum: D29A213238016B6F54D037A3B083E958;2616.
 
 
 LaTeX Warning: There were undefined references.
@@ -1364,15 +1438,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 473.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
  ) 
 Here is how much of TeX's memory you used:
- 13185 strings out of 493316
- 186970 string characters out of 6139696
- 346092 words of memory out of 5000000
- 16325 multiletter control sequences out of 15000+600000
- 77312 words of font info for 92 fonts, out of 8000000 for 9000
+ 13647 strings out of 493316
+ 191111 string characters out of 6139696
+ 378515 words of memory out of 5000000
+ 16776 multiletter control sequences out of 15000+600000
+ 86347 words of font info for 100 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 36i,12n,45p,328b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,45p,336b,2051s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (51 pages, 113156 bytes).
+Output written on thesis.dvi (66 pages, 202324 bytes).
