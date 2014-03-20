@@ -204,6 +204,7 @@
 \newcommand{\fortran}{\textsc{Fortran}\xspace}
 \newcommand{\mcbench}{{\sc McBench}\xspace}
 \newcommand{\mcfor}{{\sc McFor}\xspace}
+\newcommand{\mctwofor}{{\sc Mc2For}\xspace}
 \newcommand{\mcsaf}{{\sc McSaf}\xspace}
 \newcommand{\kw}[1]{\texttt{#1}}
 \newcommand{\xten}{{\sc X10}\xspace}
@@ -400,13 +401,6 @@
 %-High level design of x10 generator
 %-mix10 ir
 
-\chapter{Static analyses for performance and extended feature support} 
-\label{chap:Analyses}
-\input{text/analyses}
-%IntegerOkay
-%variable renaming
-%isComplex
-
 \chapter{Code generation} \label{chap:Codegen}
 \input{text/codegen}
 %-Builtin handling  framework
@@ -416,6 +410,13 @@
 \label{chap:Arrays}
 \input{text/arrays}
 %-Arrays
+
+\chapter{Static analyses for performance and extended feature support} 
+\label{chap:Analyses}
+\input{text/analyses}
+%IntegerOkay
+%variable renaming
+%isComplex
 
 %\chapter{Concurrency constructs in MiX10} \label{chap:Concurrency}
 %\input{text/concurrency}

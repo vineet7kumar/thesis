@@ -18,13 +18,12 @@
 \fi}
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
-\providecommand*\HyPL@Entry[1]{}
-\HyPL@Entry{0<</S/D>>}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\HyPL@Entry{2<</S/r>>}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
@@ -57,7 +56,6 @@
 \@writefile{toc}{\contentsline {chapter}{\listtablename }{xiii}{chapter.VI}}
 \citation{MatlabGrowth}
 \citation{x10}
-\HyPL@Entry{16<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -120,68 +118,73 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Design}{{3}{23}{Summary}{chapter.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Static analyses for performance and extended feature support}{25}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Code generation}{25}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Analyses}{{4}{25}{Summary}{chapter.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Code generation}{27}{chapter.5}}
+\newlabel{chap:Codegen}{{4}{25}{Summary}{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Techniques for efficient compilation of {\sc  Matlab}\xspace  arrays}{27}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Codegen}{{5}{27}{Summary}{chapter.5}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Techniques for efficient compilation of {\sc  Matlab}\xspace  arrays}{29}{chapter.6}}
+\newlabel{chap:Arrays}{{5}{27}{Summary}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}The Function Collection Object}{28}{section.5.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The different kinds of Function Collection objects.\relax }}{29}{table.caption.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}The Interprocedural Analysis Framework}{29}{section.5.2}}
+\newlabel{sec:interprocedural}{{5.2}{29}{The Interprocedural Analysis Framework}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Algorithm}{30}{subsubsection*.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Contexts}{30}{subsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Call Strings}{31}{subsection.5.2.2}}
+\newlabel{sec:callstrings}{{5.2.2}{31}{Call Strings}{subsection.5.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{31}{figure.caption.5}}
+\newlabel{Fig:callstring}{{5.1}{31}{A small program where $main$ calls $f$ calls $g$}{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces A small program showing two calls to a function}}{32}{figure.caption.6}}
+\newlabel{Fig:callstring}{{5.2}{32}{A small program showing two calls to a function}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Callsite}{32}{subsection.5.2.3}}
+\newlabel{sec:callsites}{{5.2.3}{32}{Callsite}{subsection.5.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Multiple possible callsites from one statement}}{33}{figure.caption.7}}
+\newlabel{Fig:callstring}{{5.3}{33}{Multiple possible callsites from one statement}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Recursion}{33}{subsection.5.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces A recursive example}}{34}{figure.caption.8}}
+\newlabel{Fig:recursive}{{5.4}{34}{A recursive example}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Example program showing an infinite chain of calls.}}{35}{figure.caption.9}}
+\newlabel{Fig:chain}{{5.5}{35}{Example program showing an infinite chain of calls}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Summary}{35}{section.5.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Static analyses for performance and extended feature support}{37}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Arrays}{{6}{29}{Summary}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}The Function Collection Object}{30}{section.6.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces The different kinds of Function Collection objects.\relax }}{31}{table.caption.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Interprocedural Analysis Framework}{31}{section.6.2}}
-\newlabel{sec:interprocedural}{{6.2}{31}{The Interprocedural Analysis Framework}{section.6.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Algorithm}{32}{subsubsection*.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Contexts}{32}{subsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Call Strings}{33}{subsection.6.2.2}}
-\newlabel{sec:callstrings}{{6.2.2}{33}{Call Strings}{subsection.6.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces A small program where $main$ calls $f$ calls $g$.}}{33}{figure.caption.5}}
-\newlabel{Fig:callstring}{{6.1}{33}{A small program where $main$ calls $f$ calls $g$}{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces A small program showing two calls to a function}}{34}{figure.caption.6}}
-\newlabel{Fig:callstring}{{6.2}{34}{A small program showing two calls to a function}{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Callsite}{34}{subsection.6.2.3}}
-\newlabel{sec:callsites}{{6.2.3}{34}{Callsite}{subsection.6.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Multiple possible callsites from one statement}}{35}{figure.caption.7}}
-\newlabel{Fig:callstring}{{6.3}{35}{Multiple possible callsites from one statement}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Recursion}{35}{subsection.6.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces A recursive example}}{36}{figure.caption.8}}
-\newlabel{Fig:recursive}{{6.4}{36}{A recursive example}{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Example program showing an infinite chain of calls.}}{37}{figure.caption.9}}
-\newlabel{Fig:chain}{{6.5}{37}{Example program showing an infinite chain of calls}{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Summary}{37}{section.6.3}}
+\newlabel{chap:Analyses}{{6}{37}{Summary}{chapter.6}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {7}Evaluation}{39}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Evaluation}{{7}{39}{Summary}{chapter.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Related work}{41}{chapter.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}{\sc  MiX10}\xspace  performance comparison with {\sc  Matlab}\xspace  , {\sc  Matlab}\xspace  coder, {\sc  Mc2For}\xspace  , and Octave}{41}{section.7.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces MiX10 performance comparison (part1) \relax }}{42}{figure.caption.10}}
+\newlabel{Fig:graph1_1_1}{{7.1}{42}{MiX10 performance comparison (part1) \relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces MiX10 performance comparison (part2) \relax }}{43}{figure.caption.11}}
+\newlabel{Fig:graph1_1_2}{{7.2}{43}{MiX10 performance comparison (part2) \relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Related work}{47}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Related}{{8}{41}{Summary}{chapter.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{43}{chapter.9}}
+\newlabel{chap:Related}{{8}{47}{\mixten performance comparison with \matlab , \matlab coder, \mctwofor , and Octave}{chapter.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{49}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Conclusions}{{9}{43}{Summary}{chapter.9}{}}
+\newlabel{chap:Conclusions}{{9}{49}{\mixten performance comparison with \matlab , \matlab coder, \mctwofor , and Octave}{chapter.9}{}}
 \@writefile{toc}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {part}{Appendices}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{45}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{51}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Builtinxml}{{A}{45}{Summary}{appendix.A}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{47}{appendix.B}}
+\newlabel{chap:Builtinxml}{{A}{51}{\mixten performance comparison with \matlab , \matlab coder, \mctwofor , and Octave}{appendix.A}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{53}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Iscomplexprop}{{B}{47}{Summary}{appendix.B}{}}
+\newlabel{chap:Iscomplexprop}{{B}{53}{\mixten performance comparison with \matlab , \matlab coder, \mctwofor , and Octave}{appendix.B}{}}
 \bibstyle{web-alpha}
 \bibdata{progtools,matlab,jun,refs,refs_short}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{49}{appendix.C}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{55}{appendix.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:irgrammar}{{C}{49}{Summary}{appendix.C}{}}
+\newlabel{chap:irgrammar}{{C}{55}{\mixten performance comparison with \matlab , \matlab coder, \mctwofor , and Octave}{appendix.C}{}}
 \bibcite{TamerPaper}{DH12}
 \bibcite{JesseThesis}{Doh11}
 \bibcite{AntonThesis}{Dub12}
@@ -191,8 +194,8 @@
 \bibcite{pct}{Mat13}
 \bibcite{MatlabGrowth}{Mol}
 \bibcite{Octave}{Oct}
-\bibcite{specs}{SBP{$^{+}$}13}
-\@writefile{toc}{\contentsline {chapter}{\bibname }{51}{appendix.D}}
+\@writefile{toc}{\contentsline {chapter}{\bibname }{57}{appendix.D}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\bibcite{specs}{SBP{$^{+}$}13}
 \bibcite{matlabjit}{{The}02}

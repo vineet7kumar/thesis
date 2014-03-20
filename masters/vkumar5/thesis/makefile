@@ -24,10 +24,10 @@ thesis.ps: thesis.dvi
 
 #thesis.dvi: figs *.tex text/*.tex
 thesis.dvi:  *.tex text/*.tex
-	latex thesis.tex < /dev/null
+	pdflatex thesis.tex < /dev/null
 	bibtex thesis
-	latex thesis < /dev/null
-	latex thesis < /dev/null
+	pdflatex thesis < /dev/null
+	pdflatex thesis < /dev/null
 
 #figs: $(OUT_PDF) $(OUT_EPS) copyfigs
 
