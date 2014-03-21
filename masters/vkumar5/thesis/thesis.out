@@ -25,19 +25,17 @@
 \BOOKMARK [0][-]{chapter.3}{Background and High level design}{}% 25
 \BOOKMARK [0][-]{chapter.4}{Code generation}{}% 26
 \BOOKMARK [0][-]{chapter.5}{Techniques for efficient compilation of Matlab arrays}{}% 27
-\BOOKMARK [1][-]{section.5.1}{The Function Collection Object}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{The Interprocedural Analysis Framework}{chapter.5}% 29
-\BOOKMARK [2][-]{subsection.5.2.1}{Contexts}{section.5.2}% 30
-\BOOKMARK [2][-]{subsection.5.2.2}{Call Strings}{section.5.2}% 31
-\BOOKMARK [2][-]{subsection.5.2.3}{Callsite}{section.5.2}% 32
-\BOOKMARK [2][-]{subsection.5.2.4}{Recursion}{section.5.2}% 33
-\BOOKMARK [1][-]{section.5.3}{Summary}{chapter.5}% 34
-\BOOKMARK [0][-]{chapter.6}{Static analyses for performance and extended feature support}{}% 35
-\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 36
-\BOOKMARK [1][-]{section.7.1}{MiX10 performance comparison with Matlab, Matlab coder, Mc2For, and Octave}{chapter.7}% 37
-\BOOKMARK [0][-]{chapter.8}{Related work}{}% 38
-\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 39
-\BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}% 40
-\BOOKMARK [0][-]{appendix.B}{isComplex analysis Propagation Language}{}% 41
-\BOOKMARK [0][-]{appendix.C}{MiX10 IR Grammar}{}% 42
-\BOOKMARK [0][-]{appendix.D}{Bibliography}{}% 43
+\BOOKMARK [0][-]{chapter.6}{Static analyses for performance and extended feature support}{}% 28
+\BOOKMARK [0][-]{chapter.7}{Evaluation}{}% 29
+\BOOKMARK [1][-]{section.7.1}{MiX10 performance comparison with Matlab, Matlab coder, Mc2For, and Octave}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.2}{Comparison of X10 C++ backend and X10 Java backend}{chapter.7}% 31
+\BOOKMARK [1][-]{section.7.3}{Comparison of Simple arrays, Region Arrays and specialized Region arrays}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.4}{Performance improvements due to the IntegerOkay analysis}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.5}{performance comparison for Matlab parfor with the MiX10 generated parallel code}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 35
+\BOOKMARK [0][-]{chapter.8}{Related work}{}% 36
+\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 37
+\BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}% 38
+\BOOKMARK [0][-]{appendix.B}{isComplex analysis Propagation Language}{}% 39
+\BOOKMARK [0][-]{appendix.C}{MiX10 IR Grammar}{}% 40
+\BOOKMARK [0][-]{appendix.D}{Bibliography}{}% 41

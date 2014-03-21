@@ -32,22 +32,19 @@
 \contentsline {chapter}{\numberline {3}Background and High level design}{23}{chapter.3}
 \contentsline {chapter}{\numberline {4}Code generation}{25}{chapter.4}
 \contentsline {chapter}{\numberline {5}Techniques for efficient compilation of {\sc Matlab}\xspace arrays}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}The Function Collection Object}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Interprocedural Analysis Framework}{29}{section.5.2}
-\contentsline {subsubsection}{Algorithm}{30}{subsubsection*.4}
-\contentsline {subsection}{\numberline {5.2.1}Contexts}{30}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Call Strings}{31}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Callsite}{32}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Recursion}{33}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Summary}{35}{section.5.3}
-\contentsline {chapter}{\numberline {6}Static analyses for performance and extended feature support}{37}{chapter.6}
-\contentsline {chapter}{\numberline {7}Evaluation}{39}{chapter.7}
-\contentsline {section}{\numberline {7.1}{\sc MiX10}\xspace performance comparison with {\sc Matlab}\xspace , {\sc Matlab}\xspace coder, {\sc Mc2For}\xspace , and Octave}{41}{section.7.1}
-\contentsline {chapter}{\numberline {8}Related work}{47}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{49}{chapter.9}
+\contentsline {chapter}{\numberline {6}Static analyses for performance and extended feature support}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7}Evaluation}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}{\sc MiX10}\xspace performance comparison with {\sc Matlab}\xspace , {\sc Matlab}\xspace coder, {\sc Mc2For}\xspace , and Octave}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison of {\sc X10}\xspace C++ backend and {\sc X10}\xspace Java backend}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}Comparison of Simple arrays, Region Arrays and specialized Region arrays}{40}{section.7.3}
+\contentsline {section}{\numberline {7.4}Performance improvements due to the IntegerOkay analysis}{43}{section.7.4}
+\contentsline {section}{\numberline {7.5}performance comparison for {\sc Matlab}\xspace parfor with the {\sc MiX10}\xspace generated parallel code}{46}{section.7.5}
+\contentsline {section}{\numberline {7.6}Conclusion}{49}{section.7.6}
+\contentsline {chapter}{\numberline {8}Related work}{51}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{53}{chapter.9}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}
-\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{51}{appendix.A}
-\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{53}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{55}{appendix.C}
-\contentsline {chapter}{\bibname }{57}{appendix.D}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{55}{appendix.A}
+\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{57}{appendix.B}
+\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{59}{appendix.C}
+\contentsline {chapter}{\bibname }{61}{appendix.D}

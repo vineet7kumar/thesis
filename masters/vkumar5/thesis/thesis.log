@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  20 MAR 2014 07:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  21 MAR 2014 06:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1034,12 +1034,6 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 
 LaTeX Warning: Label `lst:x10GenType' multiply defined.
 
-
-LaTeX Warning: Label `Fig:callstring' multiply defined.
-
-
-LaTeX Warning: Label `Fig:callstring' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -1204,14 +1198,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  [7]
-Overfull \hbox (6.45284pt too wide) in paragraph at lines 45--45
+Overfull \hbox (6.45284pt too wide) in paragraph at lines 37--37
  [][] [][][]\T1/ptm/m/sc/12 MiX10 \T1/ptm/m/n/12 per-for-mance com-par-i-son wi
 th \T1/ptm/m/sc/12 Mat-lab\T1/ptm/m/n/12 , \T1/ptm/m/sc/12 Mat-lab \T1/ptm/m/n/
 12 coder, \T1/ptm/m/sc/12 Mc2For\T1/ptm/m/n/12 , 
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
 [8])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
@@ -1220,11 +1214,16 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 
 ]
 List of Figures
-(./thesis.lof)
+(./thesis.lof
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 22.
+ (/opt/local/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [11] [12
+
+[11] [12
 
 ]
 List of Tables
@@ -1266,10 +1265,6 @@ been already used, duplicate ignored
 l.75 \item[Static analyses:]
                              We provide a set of reusable static analyses for
 [2]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
- (/opt/local/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Overfull \hbox (4.02284pt too wide) in paragraph at lines 97--112
 []\T1/ptm/m/n/12 There are some very sig-nif-i-cant
  []
@@ -1339,7 +1334,7 @@ nverted-to.pdf Figures/x10compiler.eps>
 (epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/x10compiler-eps-converted-to.pdf, id=508, 1505.625pt x 1129.21875pt>
+<Figures/x10compiler-eps-converted-to.pdf, id=507, 1505.625pt x 1129.21875pt>
 File: Figures/x10compiler-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/x10compiler-eps-converted-to.pdf>
@@ -1357,7 +1352,7 @@ verted-to.pdf Figures/x10runtime.eps>
 (epstopdf)             \includegraphics on input line 503.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/x10runtime-eps-converted-to.pdf, id=511, 675.52374pt x 707.64375pt>
+<Figures/x10runtime-eps-converted-to.pdf, id=510, 675.52374pt x 707.64375pt>
 File: Figures/x10runtime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/x10runtime-eps-converted-to.pdf>
@@ -1378,130 +1373,21 @@ Chapter 4.
 
 ]
 Chapter 5.
-(./text/arrays.tex [27] [28] [29]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 120.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 120.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 120.
- [30]
-
-LaTeX Warning: Reference `chap:ValueAnalysis' on page 31 undefined on input lin
-e 164.
-
-Package epstopdf Info: Source file: <Figures/callstring.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 5222 bytes
-(epstopdf)             Output file: <Figures/callstring-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:51:56
-(epstopdf)                    size: 4964 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/callstring-eps-con
-verted-to.pdf Figures/callstring.eps>
-(epstopdf)             \includegraphics on input line 182.
-Package epstopdf Info: Output file is already uptodate.
-<Figures/callstring-eps-converted-to.pdf, id=579, 150.5625pt x 194.7275pt>
-File: Figures/callstring-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/callstring-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/callstring-eps-converted-to.pdf used on input 
-line 182.
-(pdftex.def)             Requested size: 90.33818pt x 116.83739pt.
- [31 <./Figures/callstring-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Figures/branch.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 5694 bytes
-(epstopdf)             Output file: <Figures/branch-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:51:57
-(epstopdf)                    size: 5101 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/branch-eps-convert
-ed-to.pdf Figures/branch.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/branch-eps-converted-to.pdf, id=590, 150.5625pt x 194.7275pt>
-File: Figures/branch-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/branch-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/branch-eps-converted-to.pdf used on input line
- 207.
-(pdftex.def)             Requested size: 90.33818pt x 116.83739pt.
-
-
-LaTeX Warning: Reference `chap:ValueAnalysis' on page 32 undefined on input lin
-e 235.
-
-Package epstopdf Info: Source file: <Figures/callsites.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 8239 bytes
-(epstopdf)             Output file: <Figures/callsites-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:51:58
-(epstopdf)                    size: 6269 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/callsites-eps-conv
-erted-to.pdf Figures/callsites.eps>
-(epstopdf)             \includegraphics on input line 247.
-Package epstopdf Info: Output file is already uptodate.
-<Figures/callsites-eps-converted-to.pdf, id=591, 726.715pt x 120.45pt>
-File: Figures/callsites-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/callsites-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/callsites-eps-converted-to.pdf used on input l
-ine 247.
-(pdftex.def)             Requested size: 363.3566pt x 60.22484pt.
- [32 <./Figures/branch-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Figures/recursive.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 6200 bytes
-(epstopdf)             Output file: <Figures/recursive-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:51:59
-(epstopdf)                    size: 5368 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/recursive-eps-conv
-erted-to.pdf Figures/recursive.eps>
-(epstopdf)             \includegraphics on input line 282.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/recursive-eps-converted-to.pdf, id=602, 150.5625pt x 269.005pt>
-File: Figures/recursive-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/recursive-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/recursive-eps-converted-to.pdf used on input l
-ine 282.
-(pdftex.def)             Requested size: 90.33818pt x 161.40424pt.
- [33 <./Figures/callsites-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Figures/chain.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 8860 bytes
-(epstopdf)             Output file: <Figures/chain-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:52:00
-(epstopdf)                    size: 6107 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/chain-eps-converte
-d-to.pdf Figures/chain.eps>
-(epstopdf)             \includegraphics on input line 320.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/chain-eps-converted-to.pdf, id=615, 383.4325pt x 415.5525pt>
-File: Figures/chain-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/chain-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/chain-eps-converted-to.pdf used on input line 
-320.
-(pdftex.def)             Requested size: 230.06126pt x 249.33342pt.
- [34 <./Figures/recursive-eps-converted-to.pdf>]) [35 <./Figures/chain-eps-conv
-erted-to.pdf>] [36
+(./text/arrays.tex) [27] [28
 
 ]
 Chapter 6.
-(./text/analyses.tex) [37] [38
+(./text/analyses.tex) [29] [30
 
 ]
 Chapter 7.
-(./text/evaluation.tex [39] [40]
+(./text/evaluation.tex [31] [32]
 Overfull \hbox (11.85072pt too wide) in paragraph at lines 73--73
  |[]\T1/ptm/m/sc/17.28 MiX10 \T1/phv/b/n/17.28 per-for-mance com-par-i-son with
  \T1/ptm/m/sc/17.28 Mat-lab\T1/phv/b/n/17.28 , \T1/ptm/m/sc/17.28 Mat-
  []
 
-<Figures/final/graph_1_1_1.pdf, id=658, 614.295pt x 794.97pt>
+<Figures/final/graph_1_1_1.pdf, id=584, 614.295pt x 794.97pt>
 File: Figures/final/graph_1_1_1.pdf Graphic file (type pdf)
 
 <use Figures/final/graph_1_1_1.pdf>
@@ -1511,7 +1397,7 @@ Package pdftex.def Info: Figures/final/graph_1_1_1.pdf used on input line 81.
 
 LaTeX Warning: Float too large for page by 17.75748pt on input line 83.
 
-<Figures/final/graph_1_1_2.pdf, id=659, 614.295pt x 794.97pt>
+<Figures/final/graph_1_1_2.pdf, id=585, 614.295pt x 794.97pt>
 File: Figures/final/graph_1_1_2.pdf Graphic file (type pdf)
 
 <use Figures/final/graph_1_1_2.pdf>
@@ -1521,28 +1407,110 @@ Package pdftex.def Info: Figures/final/graph_1_1_2.pdf used on input line 86.
 
 LaTeX Warning: Float too large for page by 17.75748pt on input line 88.
 
-[41] [42 <./Figures/final/graph_1_1_1.pdf>] [43 <./Figures/final/graph_1_1_2.pd
-f>] [44]) [45] [46
+[33] [34 <./Figures/final/graph_1_1_1.pdf>] [35 <./Figures/final/graph_1_1_2.pd
+f>] [36] <Figures/final/graph_1_2.pdf, id=635, 614.295pt x 794.97pt>
+File: Figures/final/graph_1_2.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_1_2.pdf>
+Package pdftex.def Info: Figures/final/graph_1_2.pdf used on input line 170.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 17.75748pt on input line 172.
+
+[37] [38 <./Figures/final/graph_1_2.pdf>] [39]
+<Figures/final/graph_2_1.pdf, id=668, 614.295pt x 794.97pt>
+File: Figures/final/graph_2_1.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_2_1.pdf>
+Package pdftex.def Info: Figures/final/graph_2_1.pdf used on input line 234.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 236.
+
+<Figures/final/graph_2_2.pdf, id=669, 614.295pt x 794.97pt>
+File: Figures/final/graph_2_2.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_2_2.pdf>
+Package pdftex.def Info: Figures/final/graph_2_2.pdf used on input line 239.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 241.
+
+[40] [41 <./Figures/final/graph_2_1.pdf>] [42 <./Figures/final/graph_2_2.pdf>]
+
+LaTeX Warning: Reference `fig:graph3_1' on page 43 undefined on input line 284.
+
+
+
+LaTeX Warning: Reference `fig:graph3_2' on page 43 undefined on input line 285.
+
+
+<Figures/final/graph_3_1.pdf, id=712, 614.295pt x 794.97pt>
+File: Figures/final/graph_3_1.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_3_1.pdf>
+Package pdftex.def Info: Figures/final/graph_3_1.pdf used on input line 290.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 292.
+
+<Figures/final/graph_3_2.pdf, id=713, 614.295pt x 794.97pt>
+File: Figures/final/graph_3_2.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_3_2.pdf>
+Package pdftex.def Info: Figures/final/graph_3_2.pdf used on input line 295.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 297.
+
+[43] [44 <./Figures/final/graph_3_1.pdf>] [45 <./Figures/final/graph_3_2.pdf>]
+<Figures/final/graph_4_1.pdf, id=757, 614.295pt x 794.97pt>
+File: Figures/final/graph_4_1.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_4_1.pdf>
+Package pdftex.def Info: Figures/final/graph_4_1.pdf used on input line 340.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 343.
+
+<Figures/final/graph_4_2.pdf, id=758, 614.295pt x 794.97pt>
+File: Figures/final/graph_4_2.pdf Graphic file (type pdf)
+
+<use Figures/final/graph_4_2.pdf>
+Package pdftex.def Info: Figures/final/graph_4_2.pdf used on input line 346.
+(pdftex.def)             Requested size: 433.62pt x 561.15749pt.
+
+
+LaTeX Warning: Float too large for page by 31.35748pt on input line 349.
+
+[46] [47 <./Figures/final/graph_4_1.pdf>] [48 <./Figures/final/graph_4_2.pdf>])
+[49] [50
 
 ]
 Chapter 8.
-(./text/related.tex) [47] [48
+(./text/related.tex) [51] [52
 
 ]
 Chapter 9.
-(./text/concl.tex) [49] [50
+(./text/concl.tex) [53] [54
 
 ]
 Appendix A.
-(./text/builtinxml.tex) [51] [52
+(./text/builtinxml.tex) [55] [56
 
 ]
 Appendix B.
-(./text/iscomplexprop.tex) [53] [54
+(./text/iscomplexprop.tex) [57] [58
 
 ]
 Appendix C.
-(./text/irgrammar.tex) (./thesis.bbl [55] [56
+(./text/irgrammar.tex) (./thesis.bbl [59] [60
 
 ]
 Bibliography
@@ -1552,15 +1520,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--30
 .
  []
 
-[57])
+[61])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
- [58]
+ [62]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 80496A4D71F9B27E82379B7E51C5972F;2791.
+(rerunfilecheck)             Checksum: FCEECDECA91A2C8C6AC2F9EE84BC9F81;2824.
 
 
 LaTeX Warning: There were undefined references.
@@ -1571,13 +1539,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 14452 strings out of 493315
- 202864 string characters out of 6139670
+ 14442 strings out of 493315
+ 202680 string characters out of 6139670
  382961 words of memory out of 5000000
- 17293 multiletter control sequences out of 15000+600000
- 123859 words of font info for 153 fonts, out of 8000000 for 9000
+ 17292 multiletter control sequences out of 15000+600000
+ 112605 words of font info for 136 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 39i,12n,45p,399b,2069s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,45p,463b,2069s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texl
@@ -1590,10 +1558,10 @@ texlive/fonts/type1/urw/times/utmbi8a.pfb></opt/local/share/texmf-texlive/fonts
 /type1/urw/times/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/tim
 es/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on thesis.pdf (74 pages, 734793 bytes).
+Output written on thesis.pdf (78 pages, 1861294 bytes).
 PDF statistics:
- 871 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 212 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 962 PDF objects out of 1000 (max. 8388607)
+ 821 compressed objects within 9 object streams
+ 216 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
