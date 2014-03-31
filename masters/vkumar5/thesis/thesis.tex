@@ -290,7 +290,7 @@
 %== Title Information =========================================================
 
 %--------------------- 70 character title limit -----------------------
-\title{MiX10: A MATLAB TO X10 COMPILER}
+\title{MiX10: A MATLAB TO X10 COMPILER FOR HIGH PERFORMANCE}
 
 \author{Vineet Kumar}
 
@@ -382,18 +382,14 @@
 \chapter{Introduction} \label{chap:Introduction}
 \input{text/intro}
 
-\chapter{Introduction to \xten programming language} \label{chap:Xten}
+\chapter{Introduction to \xten programming
+language}\label{chap:Xten}
+
 \input{text/xten}
 %introduction to x10 and Matlab, highlighting the contrasts between two
 %-intro to x10
 %-intro to Matlab
 %-Key differences between X10 and Matlab
-
-%\chapter{Background} \label{chap:Background}
-%\input{text/background}
-%-Introduction to McLab
-%-Introduction to McSAF and Tamer
-%-MiX10 as a static backend
 
 \chapter{Background and High level design} \label{chap:Design}
 \input{text/design}
@@ -401,35 +397,28 @@
 %-High level design of x10 generator
 %-mix10 ir
 
-\chapter{Code generation} \label{chap:Codegen}
-\input{text/codegen}
-%-Builtin handling  framework
-%-Handling various matlab constructs
-
 \chapter{Techniques for efficient compilation of \matlab arrays} 
 \label{chap:Arrays}
 \input{text/arrays}
 %-Arrays
 
+\chapter{Handling \matlab builtins}
+\label{chap:Builtins}
+\input{text/builtins}
+
+\chapter{Code generation for the sequential core} \label{chap:CodegenSeq}
+\input{text/codegenseq}
+%-Handling various matlab constructs
+
+\chapter{Code generation for concurrency in \matlab} \label{chap:CodegenCon}
+\input{text/codegencon}
+
+
 \chapter{Static analyses for performance and extended feature support} 
 \label{chap:Analyses}
 \input{text/analyses}
 %IntegerOkay
-%variable renaming
 %isComplex
-
-%\chapter{Concurrency constructs in MiX10} \label{chap:Concurrency}
-%\input{text/concurrency}
-%-handling builting concurrency
-%-adding new constructs
-
-%\chapter{Framework for handling builtin functions} \label{chap:Builtin}
-%\input{text/builtin}
-
-
-%\chapter{isComplex value analysis} \label{chap:Analysis}
-%\input{text/analysis}
-%//Add variable rename analysis ?
 
 \chapter{Evaluation} \label{chap:Evaluation}
 \input{text/evaluation}

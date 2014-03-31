@@ -9,51 +9,53 @@ Warning--entry type for "apgaspaper" isn't style-file defined
 Warning--entry type for "x10intro" isn't style-file defined
 --line 128 of file matlab.bib
 Warning--entry type for "pct" isn't style-file defined
---line 143 of file matlab.bib
+--line 142 of file matlab.bib
 Database file #3: jun.bib
 Database file #4: refs.bib
 Database file #5: refs_short.bib
+Warning--I didn't find a database entry for "AntonThesis"
 Warning--to sort, need author or key in Octave
+Warning--to sort, need author or key in jastaddurl
 Warning--empty publisher in specs
-You've used 11 entries,
+You've used 18 entries,
             2703 wiz_defined-function locations,
-            624 strings with 5198 characters,
-and the built_in function-call counts, 3431 in all, are:
-= -- 328
-> -- 119
-< -- 9
-+ -- 37
-- -- 35
-* -- 177
-:= -- 532
-add.period$ -- 32
-call.type$ -- 11
-change.case$ -- 58
-chr.to.int$ -- 10
-cite$ -- 14
-duplicate$ -- 149
-empty$ -- 317
-format.name$ -- 52
-if$ -- 739
-int.to.chr$ -- 2
+            672 strings with 6405 characters,
+and the built_in function-call counts, 6708 in all, are:
+= -- 648
+> -- 256
+< -- 13
++ -- 84
+- -- 81
+* -- 379
+:= -- 998
+add.period$ -- 53
+call.type$ -- 18
+change.case$ -- 102
+chr.to.int$ -- 16
+cite$ -- 23
+duplicate$ -- 296
+empty$ -- 613
+format.name$ -- 104
+if$ -- 1478
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 58
-num.names$ -- 30
-pop$ -- 113
+missing$ -- 9
+newline$ -- 93
+num.names$ -- 50
+pop$ -- 187
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 120
 quote$ -- 0
-skip$ -- 126
+skip$ -- 258
 stack$ -- 0
-substring$ -- 107
-swap$ -- 19
-text.length$ -- 9
+substring$ -- 285
+swap$ -- 64
+text.length$ -- 13
 text.prefix$ -- 8
 top$ -- 0
-type$ -- 94
-warning$ -- 2
-while$ -- 24
-width$ -- 13
-write$ -- 133
-(There were 5 warnings)
+type$ -- 157
+warning$ -- 3
+while$ -- 54
+width$ -- 21
+write$ -- 220
+(There were 7 warnings)

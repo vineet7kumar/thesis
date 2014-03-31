@@ -62,10 +62,9 @@
 \newlabel{chap:Introduction}{{1}{1}{}{chapter.1}{}}
 \citation{matlabjit}
 \citation{Octave}
-\citation{pct}
 \citation{JesseThesis}
 \citation{TamerPaper}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}}
 \citation{x10}
 \citation{specs}
@@ -76,12 +75,12 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Xten}{{2}{7}{Thesis Outline}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Overview of {\sc  X10}\xspace  's key sequential features}{7}{section.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Overview of {\sc  X10}\xspace  's key sequential features}{8}{section.2.1}}
 \newlabel{lst:x10simple}{{2.1}{8}{Sequential \xten program to calculate value of $\pi $ using Monte Carlo method}{lstlisting.2.1}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {2.1}Sequential {\sc  X10}\xspace  program to calculate value of $\pi $ using Monte Carlo method}{8}{lstlisting.2.1}}
 \citation{x10intro}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Object-oriented features}{9}{subsection.2.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Statements}{10}{subsection.2.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Statements}{11}{subsection.2.1.2}}
 \newlabel{lst:x10loop1}{{2.2}{11}{Example of enhanced for loop}{lstlisting.2.2}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {2.2}Example of enhanced for loop}{11}{lstlisting.2.2}}
 \newlabel{lst:x10loop2}{{2.3}{11}{Example of for loop over \texttt {LongRange}}{lstlisting.2.3}{}}
@@ -89,6 +88,7 @@
 \newlabel{lst:x10loop3}{{2.4}{12}{Example of for loop over a 2-D \texttt {Region}}{lstlisting.2.4}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {2.4}Example of for loop over a 2-D \texttt  {Region}}{12}{lstlisting.2.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Arrays}{12}{subsection.2.1.3}}
+\newlabel{subsec:ArrayDesc}{{2.1.3}{12}{Arrays}{subsection.2.1.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Types}{13}{subsection.2.1.4}}
 \newlabel{lst:x10GenType}{{2.1.4}{13}{}{lstlisting.2.-1}{}}
 \citation{apgaspaper}
@@ -118,81 +118,161 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:Design}{{3}{23}{Summary}{chapter.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Code generation}{25}{chapter.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Background}{23}{section.3.1}}
+\citation{McSAFecoop12}
+\citation{JesseThesis}
+\citation{KindAnalysis}
+\citation{TamerPaper}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of {\sc  MiX10}\xspace  structure\relax }}{24}{figure.caption.3}}
+\newlabel{Fig:Overview}{{3.1}{24}{Overview of \mixten structure\relax }{figure.caption.3}{}}
+\citation{ekman04}
+\citation{jastaddurl}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}High level design of the {\sc  MiX10}\xspace  compiler}{26}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Structure of the MiX10 code generator\relax }}{26}{figure.caption.4}}
+\newlabel{Fig:x10}{{3.2}{26}{Structure of the MiX10 code generator\relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}the {\sc  MiX10}\xspace  intermediate representation}{27}{subsection.3.2.1}}
+\citation{mc2for}
+\citation{McSAFecoop12}
+\citation{JesseThesis}
+\citation{TamerPaper}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Techniques for efficient compilation of {\sc  Matlab}\xspace  arrays}{29}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Codegen}{{4}{25}{Summary}{chapter.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Techniques for efficient compilation of {\sc  Matlab}\xspace  arrays}{27}{chapter.5}}
+\newlabel{chap:Arrays}{{4}{29}{the \mixten intermediate representation}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Simple Arrays or Region Arrays}{29}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Compilation to Simple arrays}{30}{subsection.4.1.1}}
+\newlabel{sec:compsimple}{{4.1.1}{30}{Compilation to Simple arrays}{subsection.4.1.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{When to use simple rail-backed arrays:}{30}{paragraph*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Column-major indexing:}{30}{paragraph*.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Compilation to Region Arays}{31}{subsection.4.1.2}}
+\@writefile{toc}{\contentsline {paragraph}{Array construction:}{31}{paragraph*.7}}
+\@writefile{toc}{\contentsline {paragraph}{Array access:}{32}{paragraph*.8}}
+\@writefile{toc}{\contentsline {paragraph}{Rank specialization:}{33}{paragraph*.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Handling the colon expression}{33}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Array growth}{34}{section.4.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Handling {\sc  Matlab}\xspace  builtins}{37}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Arrays}{{5}{27}{Summary}{chapter.5}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Static analyses for performance and extended feature support}{29}{chapter.6}}
+\newlabel{chap:Builtins}{{5}{37}{Array growth}{chapter.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.0.1}{\sc  MiX10}\xspace  builtin support framework}{38}{subsection.5.0.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Code generation for the sequential core}{43}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Analyses}{{6}{29}{Summary}{chapter.6}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Evaluation}{31}{chapter.7}}
+\newlabel{chap:CodegenSeq}{{6}{43}{\mixten builtin support framework}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Methods}{43}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Types, Assignments and Declarations}{45}{section.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Loops}{46}{section.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Conditionals}{47}{section.6.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Array access and Colon operator}{48}{section.6.5}}
+\@writefile{toc}{\contentsline {paragraph}{Accessing individual elements:}{48}{paragraph*.10}}
+\@writefile{toc}{\contentsline {paragraph}{Accessing a set of elements:}{48}{paragraph*.11}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Function calls}{50}{section.6.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.7}Cell Arrays}{51}{section.6.7}}
+\citation{pct}
+\citation{pct}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Code generation for concurrency in {\sc  Matlab}\xspace  }{53}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Evaluation}{{7}{31}{Summary}{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}{\sc  MiX10}\xspace  performance comparison with {\sc  Matlab}\xspace  , {\sc  Matlab}\xspace  coder, {\sc  Mc2For}\xspace  , and Octave}{33}{section.7.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces MiX10 performance comparison (part1) \relax }}{34}{figure.caption.3}}
-\newlabel{Fig:graph1_1_1}{{7.1}{34}{MiX10 performance comparison (part1) \relax }{figure.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces MiX10 performance comparison (part2) \relax }}{35}{figure.caption.4}}
-\newlabel{Fig:graph1_1_2}{{7.2}{35}{MiX10 performance comparison (part2) \relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Comparison of {\sc  X10}\xspace  C++ backend and {\sc  X10}\xspace  Java backend}{37}{section.7.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces MiX10 performance comparison : {\sc  X10}\xspace  C++ backend vs {\sc  X10}\xspace  Java backend\relax }}{38}{figure.caption.5}}
-\newlabel{Fig:graph1_2}{{7.3}{38}{MiX10 performance comparison : \xten C++ backend vs \xten Java backend\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Comparison of Simple arrays, Region Arrays and specialized Region arrays}{40}{section.7.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces MiX10 performance comparison : Simple arrays vs. Region arrays vs. specialized Region Arrays with {\sc  X10}\xspace  C++ backend\relax }}{41}{figure.caption.6}}
-\newlabel{Fig:graph2_1}{{7.4}{41}{MiX10 performance comparison : Simple arrays vs. Region arrays vs. specialized Region Arrays with \xten C++ backend\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces MiX10 performance comparison : Simple arrays vs. Region arrays vs. specialized Region Arrays with {\sc  X10}\xspace  Java backend\relax }}{42}{figure.caption.7}}
-\newlabel{Fig:graph2_2}{{7.5}{42}{MiX10 performance comparison : Simple arrays vs. Region arrays vs. specialized Region Arrays with \xten Java backend\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Performance improvements due to the IntegerOkay analysis}{43}{section.7.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces MiX10 performance comparison : IntegerOkay analysis vs. all \texttt  {Double}s with the {\sc  X10}\xspace  C++ backend\relax }}{44}{figure.caption.8}}
-\newlabel{Fig:graph3_1}{{7.6}{44}{MiX10 performance comparison : IntegerOkay analysis vs. all \texttt {Double}s with the \xten C++ backend\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces MiX10 performance comparison : IntegerOkay analysis vs. all \texttt  {Double}s with the {\sc  X10}\xspace  Java backend\relax }}{45}{figure.caption.9}}
-\newlabel{Fig:graph3_2}{{7.7}{45}{MiX10 performance comparison : IntegerOkay analysis vs. all \texttt {Double}s with the \xten Java backend\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}performance comparison for {\sc  Matlab}\xspace  parfor with the {\sc  MiX10}\xspace  generated parallel code}{46}{section.7.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces MiX10 performance comparison : {\sc  Matlab}\xspace  \texttt  {parfor} vs. {\sc  MiX10}\xspace  generated parallel {\sc  X10}\xspace  code with {\sc  X10}\xspace  C++ backend\relax }}{47}{figure.caption.10}}
-\newlabel{Fig:graph4_1}{{7.8}{47}{MiX10 performance comparison : \matlab \texttt {parfor} vs. \mixten generated parallel \xten code with \xten C++ backend\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces MiX10 performance comparison : {\sc  Matlab}\xspace  \texttt  {parfor} vs. {\sc  MiX10}\xspace  generated parallel {\sc  X10}\xspace  code with {\sc  X10}\xspace  Java backend\relax }}{48}{figure.caption.11}}
-\newlabel{Fig:graph4_2}{{7.9}{48}{MiX10 performance comparison : \matlab \texttt {parfor} vs. \mixten generated parallel \xten code with \xten Java backend\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{49}{section.7.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Related work}{51}{chapter.8}}
+\newlabel{chap:CodegenCon}{{7}{53}{Cell Arrays}{chapter.7}{}}
+\citation{reducassg}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Code generation for the {\sc  Matlab}\xspace  \texttt  {parfor} loop construct}{54}{section.7.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Example of \texttt  {parfor}, {\sc  Matlab}\xspace  with \texttt  {parfor} on the left, generated {\sc  X10}\xspace  on the right.\relax }}{55}{figure.caption.12}}
+\newlabel{fig:parforex}{{7.1}{55}{Example of \texttt {parfor}, \matlab with \texttt {parfor} on the left, generated \xten on the right.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Introducing concurrency controls in {\sc  Matlab}\xspace  }{56}{section.7.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Example of introduced concurrency controls, {\sc  Matlab}\xspace  with introduced concurrency on the left, generated {\sc  X10}\xspace  on the right.\relax }}{57}{figure.caption.13}}
+\newlabel{fig:concex}{{7.2}{57}{Example of introduced concurrency controls, \matlab with introduced concurrency on the left, generated \xten on the right.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}parallelizing vectorized instructions:}{57}{section.7.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Static analyses for performance and extended feature support}{59}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Related}{{8}{51}{Conclusion}{chapter.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{53}{chapter.9}}
+\newlabel{chap:Analyses}{{8}{59}{parallelizing vectorized instructions:}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Safely using integer variables: \emph  {IntegerOkay} Analysis}{59}{section.8.1}}
+\newlabel{sec:intok}{{8.1}{59}{Safely using integer variables: \emph {IntegerOkay} Analysis}{section.8.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}Need for declaring variables to be of integer type}{60}{subsection.8.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Effect on performance}{60}{subsection.8.1.2}}
+\newlabel{lst:dbl_lng_tc}{{8.1}{61}{Example for using \texttt {Double} variables for array indexing}{lstlisting.8.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {8.1}Example for using \texttt  {Double} variables for array indexing}{61}{lstlisting.8.1}}
+\newlabel{lst:dbl_lng_notc}{{8.2}{61}{Example for using \texttt {Long} variables for indexing}{lstlisting.8.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {8.2}Example for using \texttt  {Long} variables for indexing}{61}{lstlisting.8.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces Running times (in seconds) for listings \ref  {lst:dbl_lng_tc} and \ref  {lst:dbl_lng_notc}, smaller is better\relax }}{61}{table.caption.14}}
+\newlabel{tab:intoktable}{{8.1}{61}{Running times (in seconds) for listings \ref {lst:dbl_lng_tc} and \ref {lst:dbl_lng_notc}, smaller is better\relax }{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}Overview of the \emph  {IntegerOkay} Analysis}{62}{subsection.8.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}The analysis}{63}{subsection.8.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.5}An example}{63}{subsection.8.1.5}}
+\citation{falcon}
+\citation{QMSZ98}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Evaluation}{65}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Conclusions}{{9}{53}{Conclusion}{chapter.9}{}}
+\newlabel{chap:Evaluation}{{9}{65}{An example}{chapter.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.6}Benchmarks}{65}{subsection.9.0.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.7}Experimental setup}{66}{subsection.9.0.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.8}{\sc  X10}\xspace  Compiler variations}{66}{subsection.9.0.8}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.1}{\ignorespaces Benchmarks\relax }}{67}{table.caption.15}}
+\newlabel{Tab:benchmark}{{9.1}{67}{Benchmarks\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.9}Overall {\sc  MiX10}\xspace  performance}{68}{subsection.9.0.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces Performance of {\sc  MiX10}\xspace  vs other state-of-the-art static compilers, reported as speedups relative to Mathworks' {\sc  Matlab}\xspace  , higher is better.\relax }}{69}{figure.caption.16}}
+\newlabel{Fig:overall_perf}{{9.1}{69}{Performance of \mixten vs other state-of-the-art static compilers, reported as speedups relative to Mathworks' \matlab , higher is better.\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.10}{\sc  X10}\xspace  C++ backend vs. {\sc  X10}\xspace  Java backend}{71}{subsection.9.0.10}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.2}{\ignorespaces {\sc  MiX10}\xspace  performance comparison : {\sc  X10}\xspace  C++ backend vs. {\sc  X10}\xspace  Java backend, speedups relative to Mathworks' {\sc  Matlab}\xspace  , higher is better\relax }}{72}{table.caption.17}}
+\newlabel{tab:cpp_vs_java}{{9.2}{72}{\mixten performance comparison : \xten C++ backend vs. \xten Java backend, speedups relative to Mathworks' \matlab , higher is better\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{When not to use the {\sc  X10}\xspace  \texttt  {-O}}{73}{subsubsection*.18}}
+\newlabel{subsec:BOOM}{{9.0.10}{73}{When not to use the \xten \texttt {-O}}{subsubsection*.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.11}Simple vs. Region arrays}{73}{subsection.9.0.11}}
+\newlabel{subsec:EvalArrays}{{9.0.11}{73}{Simple vs. Region arrays}{subsection.9.0.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.3}{\ignorespaces {\sc  MiX10}\xspace  performance comparison : Simple arrays vs. Region arrays vs. Specialized region arrays, speedup relative to Mathworks' {\sc  Matlab}\xspace  , higher is better\relax }}{74}{table.caption.19}}
+\newlabel{tab:simple_vs_region}{{9.3}{74}{\mixten performance comparison : Simple arrays vs. Region arrays vs. Specialized region arrays, speedup relative to Mathworks' \matlab , higher is better\relax }{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.12}Effect of IntegerOkay analysis}{75}{subsection.9.0.12}}
+\newlabel{subsec:intok_perf}{{9.0.12}{75}{Effect of IntegerOkay analysis}{subsection.9.0.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.4}{\ignorespaces Performance evaluation for the IntegerOkay analysis, speedups relative to Mathworks' {\sc  Matlab}\xspace  , higher is better\relax }}{76}{table.caption.20}}
+\newlabel{tab:int_vs_double}{{9.4}{76}{Performance evaluation for the IntegerOkay analysis, speedups relative to Mathworks' \matlab , higher is better\relax }{table.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.13}{\sc  Matlab}\xspace  parfor vs. {\sc  MiX10}\xspace  parallel code}{76}{subsection.9.0.13}}
+\newlabel{subsec:parfor_results}{{9.0.13}{76}{\matlab parfor vs. \mixten parallel code}{subsection.9.0.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.5}{\ignorespaces Performance evaluation for {\sc  MiX10}\xspace  generated parallel {\sc  X10}\xspace  code for the {\sc  Matlab}\xspace  \texttt  {parfor} construct, speedups relative to Mathworks' {\sc  Matlab}\xspace  , higher is better\relax }}{77}{table.caption.21}}
+\newlabel{tab:parfor_vs_x10}{{9.5}{77}{Performance evaluation for \mixten generated parallel \xten code for the \matlab \texttt {parfor} construct, speedups relative to Mathworks' \matlab , higher is better\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.0.14}Conclusion}{78}{subsection.9.0.14}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Related work}{79}{chapter.10}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:Related}{{10}{79}{Conclusion}{chapter.10}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{81}{chapter.11}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:Conclusions}{{11}{81}{Conclusion}{chapter.11}{}}
 \@writefile{toc}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {part}{Appendices}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{55}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{83}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Builtinxml}{{A}{55}{Conclusion}{appendix.A}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{57}{appendix.B}}
+\newlabel{chap:Builtinxml}{{A}{83}{Conclusion}{appendix.A}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{93}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:Iscomplexprop}{{B}{57}{Conclusion}{appendix.B}{}}
+\newlabel{chap:Iscomplexprop}{{B}{93}{Conclusion}{appendix.B}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{95}{appendix.C}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:irgrammar}{{C}{95}{Conclusion}{appendix.C}{}}
 \bibstyle{web-alpha}
 \bibdata{progtools,matlab,jun,refs,refs_short}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}{\sc  MiX10}\xspace  IR Grammar}{59}{appendix.C}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:irgrammar}{{C}{59}{Conclusion}{appendix.C}{}}
-\bibcite{TamerPaper}{DH12}
+\bibcite{McSAFecoop12}{DH12a}
+\bibcite{TamerPaper}{DH12b}
+\bibcite{KindAnalysis}{DHR11}
 \bibcite{JesseThesis}{Doh11}
-\bibcite{AntonThesis}{Dub12}
+\bibcite{ekman04}{EH04}
 \bibcite{x10}{IBM12}
 \bibcite{apgaspaper}{IBM13a}
 \bibcite{x10intro}{IBM13b}
+\@writefile{toc}{\contentsline {chapter}{\bibname }{99}{appendix.D}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\bibcite{jastaddurl}{jas}
+\bibcite{mc2for}{LH14}
+\bibcite{reducassg}{Mat}
 \bibcite{pct}{Mat13}
 \bibcite{MatlabGrowth}{Mol}
 \bibcite{Octave}{Oct}
-\@writefile{toc}{\contentsline {chapter}{\bibname }{61}{appendix.D}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\bibcite{specs}{SBP{$^{+}$}13}
+\bibcite{QMSZ98}{QMSZ98}
+\bibcite{falcon}{RP99}
+\bibcite{specs}{SBP{$^{+}$}12}
 \bibcite{matlabjit}{{The}02}

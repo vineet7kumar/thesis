@@ -1,10 +1,20 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{SBP{\etalchar{+}}13}
+\begin{thebibliography}{QMSZ98}
 
-\bibitem[DH12]{TamerPaper}
+\bibitem[DH12a]{McSAFecoop12}
+Jesse Doherty and Laurie Hendren.
+\newblock {McSAF}: A static analysis framework for {MATLAB}.
+\newblock In {\em Proceedings of ECOOP 2012}, 2012, pages 132--155.
+
+\bibitem[DH12b]{TamerPaper}
 Anton Dubrau and Laurie Hendren.
 \newblock Taming {MATLAB}.
 \newblock In {\em Proceedings of OOPSLA 2012}, 2012, pages 503--522.
+
+\bibitem[DHR11]{KindAnalysis}
+Jesse Doherty, Laurie Hendren, and Soroush Radpour.
+\newblock Kind analysis for {MATLAB}.
+\newblock In {\em In Proceedings of OOPSLA 2011}, 2011, pages 99--118.
 
 \bibitem[Doh11]{JesseThesis}
 Jesse Doherty.
@@ -12,10 +22,12 @@ Jesse Doherty.
   Language}.
 \newblock Master's thesis, McGill University, December 2011.
 
-\bibitem[Dub12]{AntonThesis}
-Anton Dubrau.
-\newblock {Taming MATLAB}.
-\newblock Master's thesis, McGill University, April 2012.
+\bibitem[EH04]{ekman04}
+{Torbj\"{o}rn} Ekman and {G\"{o}rel} Hedin.
+\newblock Reusable language specifications in {JastAdd II}.
+\newblock In Thomas Cleenewerck, editor, {\em Evolution and Reuse of Language
+  Specifications for {DSLs} {(ERLS)}}, 2004.
+\newblock Available from: \url{http://prog.vub.ac.be/~thomas/ERLS/Ekman.pdf}.
 
 \bibitem[IBM12]{x10}
 IBM.
@@ -24,15 +36,30 @@ IBM.
 
 \bibitem[IBM13a]{apgaspaper}
 IBM.
-\newblock Apgas programming in x10 2.4, 2013.
+\newblock {APGAS} programming in {X10} 2.4, 2013.
 \newblock
   \url{http://x10-lang.org/documentation/tutorials/apgas-programming-in-x10-24.html}.
 
 \bibitem[IBM13b]{x10intro}
 IBM.
-\newblock An introduction to x10, 2013.
+\newblock An introduction to {X10}, 2013.
 \newblock
-  \url{http://x10.sourceforge.net/documentation/intro/latest/html/intro-web.html}.
+  \url{http://x10.sourceforge.net/documentation/intro/latest/html/node4.html}.
+
+\bibitem[jas]{jastaddurl}
+{JastAdd}.
+\newblock \url{http://jastadd.org/}.
+
+\bibitem[LH14]{mc2for}
+Xu~Li and Laurie Hendren.
+\newblock Mc2for: A tool for automatically translating matlab to fortran 95.
+\newblock In {\em In Proceedings of CSMR-WCRE 2014}, 2014, pages 234--243.
+
+\bibitem[Mat]{reducassg}
+Mathworks.
+\newblock {Reduction variables}.
+\newblock
+  \url{http://www.mathworks.com/help/distcomp/advanced-topics.html#bq_of7_-3}.
 
 \bibitem[Mat13]{pct}
 MathWorks.
@@ -49,10 +76,22 @@ Cleve Moler.
 {GNU Octave}.
 \newblock \url{http://www.gnu.org/software/octave/index.html}.
 
-\bibitem[SBP{\etalchar{+}}13]{specs}
+\bibitem[QMSZ98]{QMSZ98}
+Michael~J. Quinn, Alexey Malishevsky, Nagajagadeswar Seelam, and Yan Zhao.
+\newblock {Preliminary Results from a Parallel MATLAB Compiler}.
+\newblock In {\em Proceedings of Int. Parallel Processing Symp.}, 1998, IPPS,
+  pages 81--87.
+
+\bibitem[RP99]{falcon}
+Luiz~De Rose and David Padua.
+\newblock \href{http://doi.acm.org/10.1145/316686.316693}{{Techniques for the
+  translation of MATLAB programs into Fortran 90}}.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 21(2):286--323, 1999.
+
+\bibitem[SBP{\etalchar{+}}12]{specs}
 Vijay Saraswat, Bard Bloom, Igor Peshansky, Olivier Tardieu, and David Grove.
-\newblock {\em X10 Language Specification, Version 2.4}.
-\newblock December 2013.
+\newblock {\em X10 Language Specification, Version 2.2}.
+\newblock January 2012.
 
 \bibitem[{The}02]{matlabjit}
 {The Mathworks}.

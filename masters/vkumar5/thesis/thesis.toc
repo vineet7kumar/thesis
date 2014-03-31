@@ -12,12 +12,12 @@
 \contentsline {chapter}{\listfigurename }{xi}{chapter.V}
 \contentsline {chapter}{\listtablename }{xiii}{chapter.VI}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contributions}{2}{section.1.1}
+\contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}
 \contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace programming language}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview of {\sc X10}\xspace 's key sequential features}{7}{section.2.1}
+\contentsline {section}{\numberline {2.1}Overview of {\sc X10}\xspace 's key sequential features}{8}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Object-oriented features}{9}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Statements}{10}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Statements}{11}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Arrays}{12}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Types}{13}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Overview of {\sc X10}\xspace 's concurrency features}{14}{section.2.2}
@@ -30,21 +30,59 @@
 \contentsline {subsection}{\numberline {2.3.2}{\sc X10}\xspace runtime}{18}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Summary}{18}{section.2.4}
 \contentsline {chapter}{\numberline {3}Background and High level design}{23}{chapter.3}
-\contentsline {chapter}{\numberline {4}Code generation}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}Techniques for efficient compilation of {\sc Matlab}\xspace arrays}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Static analyses for performance and extended feature support}{29}{chapter.6}
-\contentsline {chapter}{\numberline {7}Evaluation}{31}{chapter.7}
-\contentsline {section}{\numberline {7.1}{\sc MiX10}\xspace performance comparison with {\sc Matlab}\xspace , {\sc Matlab}\xspace coder, {\sc Mc2For}\xspace , and Octave}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison of {\sc X10}\xspace C++ backend and {\sc X10}\xspace Java backend}{37}{section.7.2}
-\contentsline {section}{\numberline {7.3}Comparison of Simple arrays, Region Arrays and specialized Region arrays}{40}{section.7.3}
-\contentsline {section}{\numberline {7.4}Performance improvements due to the IntegerOkay analysis}{43}{section.7.4}
-\contentsline {section}{\numberline {7.5}performance comparison for {\sc Matlab}\xspace parfor with the {\sc MiX10}\xspace generated parallel code}{46}{section.7.5}
-\contentsline {section}{\numberline {7.6}Conclusion}{49}{section.7.6}
-\contentsline {chapter}{\numberline {8}Related work}{51}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{53}{chapter.9}
+\contentsline {section}{\numberline {3.1}Background}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}High level design of the {\sc MiX10}\xspace compiler}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}the {\sc MiX10}\xspace intermediate representation}{27}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Techniques for efficient compilation of {\sc Matlab}\xspace arrays}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simple Arrays or Region Arrays}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Compilation to Simple arrays}{30}{subsection.4.1.1}
+\contentsline {paragraph}{When to use simple rail-backed arrays:}{30}{paragraph*.5}
+\contentsline {paragraph}{Column-major indexing:}{30}{paragraph*.6}
+\contentsline {subsection}{\numberline {4.1.2}Compilation to Region Arays}{31}{subsection.4.1.2}
+\contentsline {paragraph}{Array construction:}{31}{paragraph*.7}
+\contentsline {paragraph}{Array access:}{32}{paragraph*.8}
+\contentsline {paragraph}{Rank specialization:}{33}{paragraph*.9}
+\contentsline {section}{\numberline {4.2}Handling the colon expression}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Array growth}{34}{section.4.3}
+\contentsline {chapter}{\numberline {5}Handling {\sc Matlab}\xspace builtins}{37}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}{\sc MiX10}\xspace builtin support framework}{38}{subsection.5.0.1}
+\contentsline {chapter}{\numberline {6}Code generation for the sequential core}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Methods}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Types, Assignments and Declarations}{45}{section.6.2}
+\contentsline {section}{\numberline {6.3}Loops}{46}{section.6.3}
+\contentsline {section}{\numberline {6.4}Conditionals}{47}{section.6.4}
+\contentsline {section}{\numberline {6.5}Array access and Colon operator}{48}{section.6.5}
+\contentsline {paragraph}{Accessing individual elements:}{48}{paragraph*.10}
+\contentsline {paragraph}{Accessing a set of elements:}{48}{paragraph*.11}
+\contentsline {section}{\numberline {6.6}Function calls}{50}{section.6.6}
+\contentsline {section}{\numberline {6.7}Cell Arrays}{51}{section.6.7}
+\contentsline {chapter}{\numberline {7}Code generation for concurrency in {\sc Matlab}\xspace }{53}{chapter.7}
+\contentsline {section}{\numberline {7.1}Code generation for the {\sc Matlab}\xspace \texttt {parfor} loop construct}{54}{section.7.1}
+\contentsline {section}{\numberline {7.2}Introducing concurrency controls in {\sc Matlab}\xspace }{56}{section.7.2}
+\contentsline {section}{\numberline {7.3}parallelizing vectorized instructions:}{57}{section.7.3}
+\contentsline {chapter}{\numberline {8}Static analyses for performance and extended feature support}{59}{chapter.8}
+\contentsline {section}{\numberline {8.1}Safely using integer variables: \emph {IntegerOkay} Analysis}{59}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Need for declaring variables to be of integer type}{60}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Effect on performance}{60}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Overview of the \emph {IntegerOkay} Analysis}{62}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}The analysis}{63}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}An example}{63}{subsection.8.1.5}
+\contentsline {chapter}{\numberline {9}Evaluation}{65}{chapter.9}
+\contentsline {subsection}{\numberline {9.0.6}Benchmarks}{65}{subsection.9.0.6}
+\contentsline {subsection}{\numberline {9.0.7}Experimental setup}{66}{subsection.9.0.7}
+\contentsline {subsection}{\numberline {9.0.8}{\sc X10}\xspace Compiler variations}{66}{subsection.9.0.8}
+\contentsline {subsection}{\numberline {9.0.9}Overall {\sc MiX10}\xspace performance}{68}{subsection.9.0.9}
+\contentsline {subsection}{\numberline {9.0.10}{\sc X10}\xspace C++ backend vs. {\sc X10}\xspace Java backend}{71}{subsection.9.0.10}
+\contentsline {subsubsection}{When not to use the {\sc X10}\xspace \texttt {-O}}{73}{subsubsection*.18}
+\contentsline {subsection}{\numberline {9.0.11}Simple vs. Region arrays}{73}{subsection.9.0.11}
+\contentsline {subsection}{\numberline {9.0.12}Effect of IntegerOkay analysis}{75}{subsection.9.0.12}
+\contentsline {subsection}{\numberline {9.0.13}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace parallel code}{76}{subsection.9.0.13}
+\contentsline {subsection}{\numberline {9.0.14}Conclusion}{78}{subsection.9.0.14}
+\contentsline {chapter}{\numberline {10}Related work}{79}{chapter.10}
+\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{81}{chapter.11}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}
-\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{55}{appendix.A}
-\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{57}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{59}{appendix.C}
-\contentsline {chapter}{\bibname }{61}{appendix.D}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{83}{appendix.A}
+\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{93}{appendix.B}
+\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{95}{appendix.C}
+\contentsline {chapter}{\bibname }{99}{appendix.D}
