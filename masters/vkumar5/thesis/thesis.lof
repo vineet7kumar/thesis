@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Example of introduced concurrency controls, {\sc Matlab}\xspace with introduced concurrency on the left, generated {\sc X10}\xspace on the right.\relax }}{57}{figure.caption.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Performance of {\sc MiX10}\xspace vs other state-of-the-art static compilers, reported as speedups relative to Mathworks' {\sc Matlab}\xspace , higher is better.\relax }}{69}{figure.caption.16}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Performance of {\sc MiX10}\xspace vs other state-of-the-art static compilers, reported as speedups relative to Mathworks' {\sc Matlab}\xspace , higher is better.\relax }}{75}{figure.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

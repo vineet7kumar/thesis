@@ -64,25 +64,27 @@
 \contentsline {section}{\numberline {8.1}Safely using integer variables: \emph {IntegerOkay} Analysis}{59}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Need for declaring variables to be of integer type}{60}{subsection.8.1.1}
 \contentsline {subsection}{\numberline {8.1.2}Effect on performance}{60}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Overview of the \emph {IntegerOkay} Analysis}{62}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.3}An overview of the \emph {IntegerOkay} Analysis}{62}{subsection.8.1.3}
 \contentsline {subsection}{\numberline {8.1.4}The analysis}{63}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}An example}{63}{subsection.8.1.5}
-\contentsline {chapter}{\numberline {9}Evaluation}{65}{chapter.9}
-\contentsline {subsection}{\numberline {9.0.6}Benchmarks}{65}{subsection.9.0.6}
-\contentsline {subsection}{\numberline {9.0.7}Experimental setup}{66}{subsection.9.0.7}
-\contentsline {subsection}{\numberline {9.0.8}{\sc X10}\xspace Compiler variations}{66}{subsection.9.0.8}
-\contentsline {subsection}{\numberline {9.0.9}Overall {\sc MiX10}\xspace performance}{68}{subsection.9.0.9}
-\contentsline {subsection}{\numberline {9.0.10}{\sc X10}\xspace C++ backend vs. {\sc X10}\xspace Java backend}{71}{subsection.9.0.10}
-\contentsline {subsubsection}{When not to use the {\sc X10}\xspace \texttt {-O}}{73}{subsubsection*.18}
-\contentsline {subsection}{\numberline {9.0.11}Simple vs. Region arrays}{73}{subsection.9.0.11}
-\contentsline {subsection}{\numberline {9.0.12}Effect of IntegerOkay analysis}{75}{subsection.9.0.12}
-\contentsline {subsection}{\numberline {9.0.13}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace parallel code}{76}{subsection.9.0.13}
-\contentsline {subsection}{\numberline {9.0.14}Conclusion}{78}{subsection.9.0.14}
-\contentsline {chapter}{\numberline {10}Related work}{79}{chapter.10}
-\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{81}{chapter.11}
+\contentsline {subsubsection}{STEP 1 : Initialization}{64}{subsubsection*.15}
+\contentsline {subsubsection}{STEP 2: Fixed point solver}{66}{subsubsection*.16}
+\contentsline {subsection}{\numberline {8.1.5}An example}{68}{subsection.8.1.5}
+\contentsline {chapter}{\numberline {9}Evaluation}{71}{chapter.9}
+\contentsline {section}{\numberline {9.1}Benchmarks}{71}{section.9.1}
+\contentsline {section}{\numberline {9.2}Experimental setup}{72}{section.9.2}
+\contentsline {section}{\numberline {9.3}{\sc X10}\xspace Compiler variations}{72}{section.9.3}
+\contentsline {section}{\numberline {9.4}Overall {\sc MiX10}\xspace performance}{74}{section.9.4}
+\contentsline {section}{\numberline {9.5}{\sc X10}\xspace C++ backend vs. {\sc X10}\xspace Java backend}{77}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}When not to use the {\sc X10}\xspace \texttt {-O}}{79}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.6}Simple vs. Region arrays}{79}{section.9.6}
+\contentsline {section}{\numberline {9.7}Effect of IntegerOkay analysis}{81}{section.9.7}
+\contentsline {section}{\numberline {9.8}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace parallel code}{82}{section.9.8}
+\contentsline {section}{\numberline {9.9}Conclusion}{84}{section.9.9}
+\contentsline {chapter}{\numberline {10}Related work}{85}{chapter.10}
+\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{87}{chapter.11}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}
-\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{83}{appendix.A}
-\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{93}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{95}{appendix.C}
-\contentsline {chapter}{\bibname }{99}{appendix.D}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{89}{appendix.A}
+\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{99}{appendix.B}
+\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{101}{appendix.C}
+\contentsline {chapter}{\bibname }{105}{appendix.D}

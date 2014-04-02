@@ -1,0 +1,39 @@
+The work presented in this paper provides an alternative to Mathworks' de
+facto proprietary implementation of \matlab.   Our approach is open and
+extensible and leverages the high-performance computing abilities of
+\xten.
+
+Although our focus is on handling \matlab itself, notable open source
+alternatives of \matlab like Scilab\cite{Scilab}, Julia\cite{julia},
+NumPy\cite{numpy} and Octave\cite{Octave} provide limited concurrency features.
+They concentrate on providing open library support and have not tackled the
+problems of static compilation.  We are investigating if there is any way of
+sharing some of their library support with \mixten.  The MEGHA
+project\cite{megha} provides an interesting approach to map \matlab array
+operations to CPUs and GPUs, but supports only a very small subset of \matlab.  
+
+%As discussed in \secref{Sec:Background}, this work builds upon the
+%previous work from the \mclab group, including the front-end, the \mcsaf
+%analysis framework~\cite{JesseThesis,McSAFecoop12} analysis framework,
+%and the \matlab Tamer~\cite{TamerPaper}.
+
+There have been  previous research projects on static compilation of
+\matlab which focused particularly on the array-based subset of \matlab
+and developed advanced static analyses for determining shapes and sizes
+of arrays.  For example, FALCON \cite{falcon} is a \matlab to {\sc
+Fortran90} translator with sophisticated type inference algorithms.
+The McLab group has previously implemented a prototype Fortran 95
+generator~\cite{McForThesis}, and has more recently developed the next generation
+Fortran generator, \mctwofor~\cite{mc2for} in parallel with the \mixten project.   Some of the
+solutions are shared between the projects, especially the parts which
+extend the Tamer.  
+
+\textit{MATLAB Coder} is a commercial compiler by MathWorks\cite{MATLABCoder},
+which produces C code for a subset of \matlab. 
+
+In terms of source-to-source compilers for \xten, we are aware of two
+other projects.  StreamX10 is a stream programming framework based on
+\xten~\cite{Wei-2012}.  StreamX10  includes a compiler which translates
+programs in COStream to parallel \xten code.  Tetsu discusses the design
+of a Ruby-based DSL for parallel programming that is compiled to
+\xten~\cite{Tetsu-2011}.

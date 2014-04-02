@@ -1,16 +1,8 @@
-In this chapter we present two key analyses introduced in the \mclab toolkit as
-part of the \mixten compiler, and are reusable by other compilers built on top
-of the \mclab toolkit. The first analysis is the \emph{IntegerOkay} analysis
-that identifies the variables in the \matlab program that can be safely
-declared as integer in a statically typed target language like \xten, thus
-eliminating the performance overhead associated with otherwise necessary double
-to integer typecasts. The second analysis, called \emph{isComplex} analysis,
-identifies the numerical values in the source \matlab program that are of
-complex type, thus enabling support for code generation for programs that
-involve complex numerical values.
-
-\section{Safely using integer variables: \emph{IntegerOkay}
-Analysis}\label{sec:intok}
+\begin{comment}
+What is integerokay analysis ?
+why do we need it ?
+How do we do it ?
+\end{comment}
 
 In this section we present the \emph{IntegerOkay} analysis to identify
 which variables in the source \matlab program can be safely declared to
@@ -53,7 +45,7 @@ To solve this problem, we designed and implemented the
 safely declared to be of \texttt{Long} type, thus eliminating the need
 for costly typecasting on these variables.
 
-\subsection{Effect on performance}
+\subsection{An example}
 
 To understand the effect on performance caused by typecasting consider a
 simple example of \xten code shown in listing \ref{lst:dbl_lng_tc} that just loops
@@ -98,12 +90,10 @@ static def useLongs(scale:Double, n:Long){
 \end{lstlisting}
 
 \begin{table}[htbp]
-\begin{center}
 \input{tables/intok.tex}
 \caption{Running times (in seconds) for listings \ref{lst:dbl_lng_tc} and
 \ref{lst:dbl_lng_notc}, smaller is better}
 \label{tab:intoktable}
-\end{center}
 \end{table}
 
 Table \ref{tab:intoktable} shows running times (in seconds) for these
@@ -124,8 +114,8 @@ comparatively lower slowdowns for the Java code. Section
 benefits obtained by using \emph{IntegerOkay} analysis on our benchmark
 set.
 
-\subsection{An overview of the \emph{IntegerOkay} Analysis}
-\label{subsec:overview}
+\subsection{\emph{IntegerOkay} Analysis}
+
 The basic idea behind the \emph{IntegerOkay} analysis is that, for each 
 variable \verb|x|, if for every use and every definition of \verb|x| in the
 program \verb|x| can be safely assumed to be an integer, i.e. its
@@ -187,209 +177,6 @@ variables that are \emph{IntegerOkay} at all points in the program,
 until we reach a fixed point. Note that since we never downgrade a
 variable to \emph{Not IntegerOkay} or \emph{Conditionally IntegerOkay},
 our iterative algorithm will always terminate. 
-
-
-\subsection{The analysis}
-
-The input to the analysis is a set of all the double variables in the program,
-a set of definitions for each of the variables in this set, and a set of all
-the uses for each of the variables in this variable set. The aim is to output a
-set of variables that can be safely declared as integers.
-
-Let $V$ be a set of all the variables $v$ that are initially of double type in
-the source \matlab program. Let $D_{v}$ be a set of all the definitions $d$ for
-variable $v$, and $U_{v}$ be a set of all the uses $u$ for variable $v$. 
-
-\subsubsection{STEP 1 : Initialization}
-
-As mentioned in \secref{subsec:overview}, the analysis initializes each
-definition and each use of every variable to one of the three abstract values
-and assigns a set of dependency variables if the assigned abstract value is
-conditionally \emph{IntegerOkay}. 
-
-The analysis represents these three abstract values by the following state
-values : \texttt{IntOk}, \texttt{CondIntOk}, and \texttt{NotIntOk} for is
-\emph{IntegerOkay}, conditionally \emph{IntegerOkay}, and not
-\emph{IntegerOkay} respectively.  Furthermore, let $IOstate_{vd}$ be the state
-of variable $v$ for definition $d$ , and $IOstate_{vu}$ be the state of
-variable $v$ for use $u$. Also, let $IOdeps_{vd}$ be a set of variables on
-which the \texttt{CondIntOk} state for variable $v$ for definition $d$ depends on.
-Similarly, let $IOdeps_{vu}$ be a set of variables on which the \texttt{CondIntOk}
-state for variable $v$ for use $u$ depends on. The analysis starts with an
-initial value of eavery $IOstate_{vd}$ and $IOstate_{vu}$ set to
-\texttt{NotIntOk}, and every $IOdeps_{vd}$ and $IOdeps_{vu}$ set to $\emptyset$.
-
-Listing \ref{lst:initialization} gives the algorithm for the initialization
-step of the analysis.
-
-\begin{lstlisting}[language=bash, caption={algorithm for the
-initialization step of the \intok analysis}, label={lst:initialization}]
-Function initialize($V$, $D_{v}$, $U_{v}$)
-  For each $v$ $\in$ $V$
-    For each $d$ $\in$ $D_{v}$
-      $IOstate_{vd}$ $\leftarrow$ getIOstateDef($v$, $d$)
-      If $IOstate_{vd}$ == CondIntOk
-        $IOdeps_{vd}$ $\leftarrow$ getIOdepsDef($v$, $d$)
-      End
-    End
-    For each $u$ $\in$ $U_{v}$
-      $IOstate_{vu}$ $\leftarrow$ getIOstateUse($v$, $u$)
-      If $IOstate_{vu}$ == CondIntOk
-        $IOdeps_{vu}$ $\leftarrow$ getIOdepsUse($v$, $u$)
-      End
-    End
-  End
-End
-
-Function getIOstateDef($v$, $d$)
-  # Return one of the three states,
-  # IntOk, CondIntOk or NotIntOk
-  # based on the rules defined for the definition $d$.
-End
-
-Function getIOstateUse($v$, $u$)
-  # Return one of the three states,
-  # IntOk, CondIntOk or NotIntOk
-  # based on the rules defined for the use $u$.
-End
-
-Function getIOdepsDef($v$, $d$)
-  # Based on the rules defined for the definition $d$,
-  # return a set of variables on which
-  # CondIntOk state of $v$ depends.
-End
-
-Function getIOdepsUse($v$, $u$)
-  # Based on the rules defined for the use $u$,
-  # return a set of variables on which
-  # CondIntOk state of $v$ depends.
-End
-
-\end{lstlisting}
-
-\begin{description}
-\item[Rules:] The initialization algorithm uses a set of rules to determine the
-state of a variable in a particular definition or use. These rules are also
-used to identify the dependencies if a variable is in \texttt{CondIntOk}
-state.For the definition of a variable, these rules are defined as follows:
-\begin{enumerate}
-\item If the definition is a constant assignment, check the value of the
-constant on RHS. If it is a real integer, the defined variable is
-\texttt{IntOk}.
-\item If the variable is defined in a copy statement, its state is
-\texttt{CondIntOk} and is dependent on the RHS variable. 
-\item If the definition is an assignment to a builtin function call, check
-whether the builtin: (1) always safely returns an integer (eg. floor(), ceil(),
-etc.) - state is \texttt{IntOk}; (2) always returns a double (eg. pi()) - state
-is \texttt{NotIntOk}; (3) safely returns an integer depending on the type of
-input arguments (eg. plus(), minus(), etc.) - state is \texttt{CondIntOk} and
-dependency is all the variables in the input argument except the defined
-variable itself.
-\item If the definition is an assignment to an array access, the state is set
-to \texttt{CondIntOk} and the dependency is the array variable.
-\item For any other case, state is \texttt{NotIntOk}.
-\end{enumerate}  
-For the use of a variable, following are the rules followed:
-\begin{enumerate}
-\item If the variable is used as an array index, its state is set to
-\texttt{IntOk}.
-\item If the variable is used as an argument to a builtin function, such that:
-(1) it's type does not affect the correctness of the result (eg. plus()) - its
-state is set to \texttt{IntOk}; (2) If its type affects the correctness of the
-result (eg. divide()) - its state is set to \texttt{NotIntOk}; 
-\item If the variable is used in a copy statement, its state is \texttt{IntOk}.
-\item For any other case, the state remains as \texttt{NotIntOk}.   
-\end{enumerate}
-\end{description}
-
-\subsubsection{STEP 2: Fixed point solver}
-
-Once the initial state has been assigned for each use and each definition of
-every variable, in STEP 1, the next step is to find the variables that can be
-of integer type across the program. The fixed point solver iteratively finds
-these variables until a fixed point is reached and no more variables are safe
-to be defined as integers.
-
-The input to the fixed point solver is the output from the initialization step,
-$V$, $D_{v}$, and $U_{v}$, with initial state values and dependencies,
-$IOstate_{vd}$, $IOstate_{vu}$, $IOdeps_{vd}$, and $IOdeps_{vu}$. 
-
-The output of the fixed point solver is $V'$, the set of variables $v'$ that
-can be safely defined as integers. Fixed point solver also defines the variable
-$IOstate_{v}$ that stores the final state value for the variable $v$ in the
-program, independent of any use or definition. For each variable $v$,
-$IOstate_{v}$ is assigned an initial empty value \texttt{~}. $V'$ is initially
-set to $\emptyset$.
-
-Listing \ref{lst:fps} provides an algorithm for this fixed point solver.
-
-\begin{lstlisting}[language=bash, caption={algorithm for the
-fixed point solver of the \intok analysis}, label={lst:fps}]
-Function fixedPointSolver($V$, $D_{v}$, $U_{v}$)
-  FixedPointLoop:
-  For each $v$ $\in$ $V$
-    For each $d$ $\in$ $D_{v}$
-      $IOstate_{v}$ $\leftarrow$ $IOstate_{v}$ $\bowtie$ $IOstate_{vd}$
-    End
-    For each $u$ $\in$ $U_{v}$
-      $IOstate_{v}$ $\leftarrow$ $IOstate_{v}$ $\bowtie$ $IOstate_{vu}$
-    End
-    If $IOstate_{v}$ == IntOk
-      $v'$ $\leftarrow$ $v$
-      $V$ $\leftarrow$ $V$ - $v'$ 
-      $V'$ $\leftarrow$ $V'$ $\cup$ $v'$ 
-      resolveDependencies($V$, $D_{v}$, $U_{v}$, $v'$)
-    End
-  End
-  Repeat FixedPointLoop until no more changes to $V'$
-End
-
-Function resolveDependencies($V$, $D_{v}$, $U_{v}$, $v'$)
-  For each $v$ $\in$ $V$
-    For each $d$ $\in$ $D_{v}$
-      $IOdeps_{vd}$ $\leftarrow$ $IOdeps_{vd}$ - $v'$
-      If $IOdeps_{vd}$ == $\emptyset$
-        $IOState_{vd}$ $\leftarrow$ IntOk
-      End
-    End
-    For each $u$ $\in$ $U_{v}$
-      $IOdeps_{vu}$ $\leftarrow$ $IOdeps_{vu}$ - $v'$
-      If $IOdeps_{vu}$ == $\emptyset$
-        $IOState_{vu}$ $\leftarrow$ IntOk
-      End
-    End
-  End
-End
-
-\end{lstlisting}
-
-Note that the algorithm uses a $\bowtie$ operator to merge the state values of
-various definitions and uses of a variable to obtain its final state. Table
-\ref{Tab:merge} gives a definition of the $\bowtie$ operator used by this
-analysis. In the table, \texttt{CondIntOk}($\emptyset$) is the case when
-$IOdeps_{vd} \cup IOdeps_{vu} = \emptyset$ and \texttt{CondIntOk}($\hat\emptyset$) 
-is the case when $IOdeps_{vd} \cup IOdeps_{vu} \ne \emptyset$.
-\begin{table}[htpb]
-\centering
-\begin{tabular}{|c||c|c|c|c|}
-\hline
-$\bowtie$                        & \texttt{IntOk}    &
-\texttt{CondIntOk}($\emptyset$) & \texttt{CondIntOk}($\hat\emptyset$) & \texttt{NotIntOk}
-\\ \hline \hline
-\texttt{IntOk}                   & \texttt{IntOk}    & \texttt{IntOk}
-& \texttt{NotIntOk}       & \texttt{NotIntOk} \\ \hline
-\texttt{CondIntOk}($\emptyset$)  & \texttt{IntOk}    & \texttt{IntOk}
-& \texttt{NotIntOk}       & \texttt{NotIntOk} \\ \hline
-\texttt{CondIntOk}($\hat\emptyset$) & \texttt{NotIntOk} & \texttt{NotIntOk}
-& \texttt{NotIntOk}       & \texttt{NotIntOk} \\ \hline
-\texttt{NotIntOk}                & \texttt{NotIntOk} & \texttt{NotIntOk}
-& \texttt{NotIntOk}       & \texttt{NotIntOk} \\ \hline
-\end{tabular}
-\caption{Definition of the $\bowtie$ merge operator}
-\label{Tab:merge}
-\end{table}
-
-\subsection{An example}
 
 Consider the following pseudocode for example:
 \begin{verbatim}
