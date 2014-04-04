@@ -11,6 +11,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage{placeins}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -70,7 +72,7 @@
 % Note: yap does not support rotating, so convert .dvi to .pdf and then
 %    preview the .pdf file
 % for algorithms
-\usepackage[algo2e, algochapter, ruled, linesnumbered, lined]{algorithm2e}
+%\usepackage[algo2e, algochapter, ruled, linesnumbered, lined]{algorithm2e}
 %% Make sure that the bibliography is listed in the table of contents,
 %% but that the table of contents itself is not.
 % XXX: doesn't seem to work
@@ -168,7 +170,8 @@
 
 
 
-
+\algnewcommand{\Lcomment}[1]{\State \(\triangleright\){\color{gray}{\footnotesize
+\textit {#1}}}}
 %\ifdraft
 %  \pagestyle{myheadings} \markright{Draft \today: Please do not 
 %  redistribute.}
@@ -179,10 +182,10 @@
 % Set the value of the margin of all algorithms.
 % The default value is \leftskip plus \parindent 
 %  when the algorithm2e package is loaded. 
-\incmargin{\parindent} %increase one more \parindent to the default 
+%\incmargin{\parindent} %increase one more \parindent to the default 
 % Set font of comment in algorithms
-\newcommand{\algcommentfont}[1]{{\small \texttt{#1}}}
-\SetCommentSty{algcommentfont}
+\algnewcommand{\algcommentfont}[1]{{\small \texttt{#1}}}
+%\SetCommentSty{algcommentfont}
 
 %----------Matlab---------------------
 \newcommand{\abc}{\textsl{abc}\xspace}
@@ -414,7 +417,7 @@ language}\label{chap:Xten}
 \input{text/codegencon}
 
 
-\chapter{Static analyses for performance and extended feature support} 
+\chapter{The \emph{IntegerOkay} analysis} 
 \label{chap:Analyses}
 \input{text/analyses}
 %IntegerOkay
@@ -426,8 +429,19 @@ language}\label{chap:Xten}
 \chapter{Related work} \label{chap:Related}
 \input{text/related}
 
-\chapter{Conclusions and Future Work} \label{chap:Conclusions}
+\chapter{Conclusions and future Work} \label{chap:Conclusions}
 \input{text/conclusions}
+
+% -- Bibliography -------------------------------------------------------------
+
+%\addtocontents{toc}{\protect\addvspace{10pt}}
+
+%\bibliographystyle{plain}
+
+\bibliographystyle{web-alpha} %- originally in jesse thesis
+%\bibliography{strings, thesis}
+\bibliography{progtools,matlab,jun,refs,refs_short}
+
 
 \appendix % -- Appendices -----------------------------------------------------
 
@@ -451,16 +465,6 @@ language}\label{chap:Xten}
 
 %\chapter{\matlab Language Subset (?)}
 
-
-% -- Bibliography -------------------------------------------------------------
-
-%\addtocontents{toc}{\protect\addvspace{10pt}}
-
-%\bibliographystyle{plain}
-
-\bibliographystyle{web-alpha} %- originally in jesse thesis
-%\bibliography{strings, thesis}
-\bibliography{progtools,matlab,jun,refs,refs_short}
 
 % -- Glossary & Index ---------------------------------------------------------
 

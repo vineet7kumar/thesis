@@ -15,51 +15,55 @@ Warning--entry type for "pct" isn't style-file defined
 Warning--entry type for "numpy" isn't style-file defined
 --line 149 of file matlab.bib
 Database file #3: jun.bib
+Warning--entry type for "freemat" isn't style-file defined
+--line 35 of file jun.bib
 Database file #4: refs.bib
 Database file #5: refs_short.bib
 Warning--I didn't find a database entry for "AntonThesis"
 Warning--to sort, need author or key in Octave
 Warning--to sort, need author or key in jastaddurl
+Warning--empty institution in coman
+Warning--empty institution in 898821
 Warning--empty publisher in specs
-You've used 26 entries,
+You've used 37 entries,
             2703 wiz_defined-function locations,
-            719 strings with 7636 characters,
-and the built_in function-call counts, 9752 in all, are:
-= -- 962
-> -- 383
-< -- 20
-+ -- 128
-- -- 124
-* -- 568
-:= -- 1471
-add.period$ -- 79
-call.type$ -- 26
-change.case$ -- 154
-chr.to.int$ -- 23
-cite$ -- 31
-duplicate$ -- 425
-empty$ -- 854
-format.name$ -- 160
-if$ -- 2129
-int.to.chr$ -- 4
+            792 strings with 9870 characters,
+and the built_in function-call counts, 15018 in all, are:
+= -- 1509
+> -- 623
+< -- 29
++ -- 211
+- -- 206
+* -- 936
+:= -- 2271
+add.period$ -- 118
+call.type$ -- 37
+change.case$ -- 239
+chr.to.int$ -- 33
+cite$ -- 44
+duplicate$ -- 646
+empty$ -- 1260
+format.name$ -- 254
+if$ -- 3272
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 133
-num.names$ -- 74
-pop$ -- 254
+missing$ -- 19
+newline$ -- 188
+num.names$ -- 107
+pop$ -- 348
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 262
 quote$ -- 0
-skip$ -- 368
+skip$ -- 552
 stack$ -- 0
-substring$ -- 405
-swap$ -- 90
-text.length$ -- 20
-text.prefix$ -- 13
+substring$ -- 670
+swap$ -- 151
+text.length$ -- 29
+text.prefix$ -- 16
 top$ -- 0
-type$ -- 229
-warning$ -- 3
-while$ -- 79
-width$ -- 27
-write$ -- 327
-(There were 9 warnings)
+type$ -- 328
+warning$ -- 5
+while$ -- 129
+width$ -- 39
+write$ -- 481
+(There were 12 warnings)
