@@ -77,11 +77,11 @@
 \contentsline {section}{\numberline {9.9}Summary}{82}{section.9.9}
 \contentsline {chapter}{\numberline {10}Related Work}{83}{chapter.10}
 \contentsline {section}{\numberline {10.1}Alternatives to {\sc Matlab}\xspace }{83}{section.10.1}
-\contentsline {section}{\numberline {10.2}Other {\sc Matlab}\xspace compilers}{84}{section.10.2}
-\contentsline {section}{\numberline {10.3}Compilers targeting {\sc X10}\xspace }{86}{section.10.3}
+\contentsline {section}{\numberline {10.2}Other {\sc Matlab}\xspace Compilers}{84}{section.10.2}
+\contentsline {section}{\numberline {10.3}Compilers Targeting {\sc X10}\xspace }{86}{section.10.3}
 \contentsline {chapter}{\numberline {11}Conclusions and Future Work}{87}{chapter.11}
 \contentsline {section}{\numberline {11.1}Conclusions}{87}{section.11.1}
-\contentsline {section}{\numberline {11.2}Future work}{89}{section.11.2}
+\contentsline {section}{\numberline {11.2}Future Work}{89}{section.11.2}
 \contentsline {chapter}{\bibname }{91}{chapter.12}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}

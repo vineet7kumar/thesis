@@ -65,11 +65,11 @@
 \BOOKMARK [1][-]{section.9.9}{Summary}{chapter.9}% 65
 \BOOKMARK [0][-]{chapter.10}{Related Work}{}% 66
 \BOOKMARK [1][-]{section.10.1}{Alternatives to Matlab}{chapter.10}% 67
-\BOOKMARK [1][-]{section.10.2}{Other Matlab compilers}{chapter.10}% 68
-\BOOKMARK [1][-]{section.10.3}{Compilers targeting X10}{chapter.10}% 69
+\BOOKMARK [1][-]{section.10.2}{Other Matlab Compilers}{chapter.10}% 68
+\BOOKMARK [1][-]{section.10.3}{Compilers Targeting X10}{chapter.10}% 69
 \BOOKMARK [0][-]{chapter.11}{Conclusions and Future Work}{}% 70
 \BOOKMARK [1][-]{section.11.1}{Conclusions}{chapter.11}% 71
-\BOOKMARK [1][-]{section.11.2}{Future work}{chapter.11}% 72
+\BOOKMARK [1][-]{section.11.2}{Future Work}{chapter.11}% 72
 \BOOKMARK [0][-]{chapter.12}{Bibliography}{}% 73
 \BOOKMARK [0][-]{appendix.A}{XML structure for builtin framework}{}% 74
 \BOOKMARK [0][-]{appendix.B}{MiX10 IR Grammar}{}% 75

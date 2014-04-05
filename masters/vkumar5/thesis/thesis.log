@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  5 APR 2014 02:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  5 APR 2014 02:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,7 +1651,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 475.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1578B6FD2A01FFCC5BB6754210B424C7;5130.
+(rerunfilecheck)             Checksum: 6FD8C1701171B5FAE3C9CD7BC9528D84;5130.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1684,7 +1684,7 @@ f-texlive/fonts/type1/urw/times/utmb8a.pfb></opt/local/share/texmf-texlive/font
 s/type1/urw/times/utmbi8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/t
 imes/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
 b></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (126 pages, 782312 bytes).
+Output written on thesis.pdf (126 pages, 782291 bytes).
 PDF statistics:
  2331 PDF objects out of 2487 (max. 8388607)
  2148 compressed objects within 22 object streams
