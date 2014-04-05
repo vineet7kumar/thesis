@@ -63,14 +63,14 @@
 \contentsline {section}{\numberline {8.4}The Analysis Algorithm}{61}{section.8.4}
 \contentsline {subsection}{\numberline {8.4.1}STEP 1 : Initialization}{61}{subsection.8.4.1}
 \contentsline {subsection}{\numberline {8.4.2}STEP 2: The Fixed Point Solver}{62}{subsection.8.4.2}
-\contentsline {section}{\numberline {8.5}An example}{67}{section.8.5}
+\contentsline {section}{\numberline {8.5}An Example}{67}{section.8.5}
 \contentsline {chapter}{\numberline {9}Evaluation}{69}{chapter.9}
 \contentsline {section}{\numberline {9.1}Benchmarks}{69}{section.9.1}
 \contentsline {section}{\numberline {9.2}Experimental Setup}{70}{section.9.2}
 \contentsline {section}{\numberline {9.3}{\sc X10}\xspace Compiler Variations}{70}{section.9.3}
 \contentsline {section}{\numberline {9.4}Overall {\sc MiX10}\xspace Performance}{72}{section.9.4}
 \contentsline {section}{\numberline {9.5}{\sc X10}\xspace C++ Backend vs. {\sc X10}\xspace Java Backend}{75}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}When not to use the {\sc X10}\xspace \texttt {-O}}{77}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.1}When Not to Use the {\sc X10}\xspace \texttt {-O}}{77}{subsection.9.5.1}
 \contentsline {section}{\numberline {9.6}Simple vs. Region Arrays}{77}{section.9.6}
 \contentsline {section}{\numberline {9.7}Effect of the IntegerOkay Analysis}{79}{section.9.7}
 \contentsline {section}{\numberline {9.8}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace Parallel Code}{80}{section.9.8}

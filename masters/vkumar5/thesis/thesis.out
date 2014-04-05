@@ -51,14 +51,14 @@
 \BOOKMARK [1][-]{section.8.4}{The Analysis Algorithm}{chapter.8}% 51
 \BOOKMARK [2][-]{subsection.8.4.1}{STEP 1 : Initialization}{section.8.4}% 52
 \BOOKMARK [2][-]{subsection.8.4.2}{STEP 2: The Fixed Point Solver}{section.8.4}% 53
-\BOOKMARK [1][-]{section.8.5}{An example}{chapter.8}% 54
+\BOOKMARK [1][-]{section.8.5}{An Example}{chapter.8}% 54
 \BOOKMARK [0][-]{chapter.9}{Evaluation}{}% 55
 \BOOKMARK [1][-]{section.9.1}{Benchmarks}{chapter.9}% 56
 \BOOKMARK [1][-]{section.9.2}{Experimental Setup}{chapter.9}% 57
 \BOOKMARK [1][-]{section.9.3}{X10 Compiler Variations}{chapter.9}% 58
 \BOOKMARK [1][-]{section.9.4}{Overall MiX10 Performance}{chapter.9}% 59
 \BOOKMARK [1][-]{section.9.5}{X10 C++ Backend vs. X10 Java Backend}{chapter.9}% 60
-\BOOKMARK [2][-]{subsection.9.5.1}{When not to use the X10-O}{section.9.5}% 61
+\BOOKMARK [2][-]{subsection.9.5.1}{When Not to Use the X10-O}{section.9.5}% 61
 \BOOKMARK [1][-]{section.9.6}{Simple vs. Region Arrays}{chapter.9}% 62
 \BOOKMARK [1][-]{section.9.7}{Effect of the IntegerOkay Analysis}{chapter.9}% 63
 \BOOKMARK [1][-]{section.9.8}{Matlab parfor vs. MiX10 Parallel Code}{chapter.9}% 64
