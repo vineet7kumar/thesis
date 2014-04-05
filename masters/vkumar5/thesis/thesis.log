@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  4 APR 2014 07:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=pdflatex 2014.1.27)  5 APR 2014 02:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1159,13 +1159,13 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ] [2]
 R{\'e}sum{\'e}
-(./text/abstract-fr.tex) [3
+(./text/abstract-fr.tex [3
 
-] [4
-
-]
+]) [4]
 Acknowledgements
-(./text/acknowledgements.tex) [5] [6
+(./text/acknowledgements.tex) [5
+
+] [6
 
 ]
 Table of Contents
@@ -1208,10 +1208,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  [7] [8]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 63.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 59.
  [9]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
 )
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
@@ -1272,14 +1272,7 @@ Overfull \hbox (15.57854pt too wide) in paragraph at lines 85--87
 antics-
  []
 
-[3]
-Overfull \hbox (1.80547pt too wide) in paragraph at lines 134--141
-\T1/ptm/m/sc/12 Mat-lab \T1/ptm/m/n/12 im-ple-men-ta-tion, \T1/ptm/m/sc/12 Mat-
-lab \T1/ptm/m/n/12 coder that com-piles \T1/ptm/m/sc/12 Mat-lab \T1/ptm/m/n/12 
-to C and \T1/ptm/m/sc/12 Mc2For
- []
-
-) [4] [5] [6
+[3] [4]) [5] [6
 
 ]
 Chapter 2.
@@ -1290,52 +1283,47 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
-
-Overfull \hbox (15.475pt too wide) in paragraph at lines 30--36
-\T1/ptm/m/n/12 lan-guage that fo-cuses on sim-plic-ity of im-ple-ment-ing nu-me
-r-i-cal com-pu-ta-tion ap-pli-ca-tion [[]].
- []
-
-[7]
+ [7]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 80.
  [8]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 88.
+(Font)              scaled to size 10.40245pt on input line 97.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 88.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 88.
+(Font)              scaled to size 10.40245pt on input line 97.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 92.
+(Font)              scaled to size 13.67995pt on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 92.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 92.
+(Font)              scaled to size 13.67995pt on input line 101.
  [9] [10]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 175.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 184.
  [11] [12] [13]
-Overfull \hbox (8.48705pt too wide) in paragraph at lines 309--321
+Overfull \hbox (8.48705pt too wide) in paragraph at lines 320--332
 []\T1/ptm/m/sc/12 X10 \T1/ptm/m/n/12 al-lows the pro-gram-mer to de-fine \T1/pc
 r/m/n/12 Boolean \T1/ptm/m/n/12 ex-pres-sions (re-stricted)
  []
 
 [14]
-Overfull \hbox (1.82031pt too wide) in paragraph at lines 363--371
+Overfull \hbox (1.82031pt too wide) in paragraph at lines 374--382
 \T1/ptm/m/n/12 Global ter-mi-na-tion of an ac-tiv-ity can be con-verted to lo-c
 al ter-mi-na-tion by us-ing the \T1/pcr/m/n/12 finish
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 374.
+[15]
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 385.
 
-(/opt/local/share/texmf-texlive/tex/latex/psnfss/ts1pcr.fd
+ (/opt/local/share/texmf-texlive/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [15] [16] [17]
+) [16] [17]
 Package epstopdf Info: Source file: <Figures/x10compiler.eps>
 (epstopdf)                    date: 2014-02-06 16:46:46
 (epstopdf)                    size: 3427635 bytes
@@ -1344,54 +1332,37 @@ Package epstopdf Info: Source file: <Figures/x10compiler.eps>
 (epstopdf)                    size: 78626 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/x10compiler-eps-co
 nverted-to.pdf Figures/x10compiler.eps>
-(epstopdf)             \includegraphics on input line 473.
+(epstopdf)             \includegraphics on input line 483.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/x10compiler-eps-converted-to.pdf, id=710, 1505.625pt x 1129.21875pt>
+<Figures/x10compiler-eps-converted-to.pdf, id=697, 1505.625pt x 1129.21875pt>
 File: Figures/x10compiler-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/x10compiler-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/x10compiler-eps-converted-to.pdf used on input
- line 473.
+ line 483.
 (pdftex.def)             Requested size: 346.89731pt x 260.16284pt.
-Package epstopdf Info: Source file: <Figures/x10runtime.eps>
-(epstopdf)                    date: 2014-02-06 16:46:46
-(epstopdf)                    size: 2889034 bytes
-(epstopdf)             Output file: <Figures/x10runtime-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-20 02:51:55
-(epstopdf)                    size: 47391 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/x10runtime-eps-con
-verted-to.pdf Figures/x10runtime.eps>
-(epstopdf)             \includegraphics on input line 505.
-Package epstopdf Info: Output file is already uptodate.
+ [18 <./Figures/x10compiler-eps-converted-to.pdf>]
 
-<Figures/x10runtime-eps-converted-to.pdf, id=713, 675.52374pt x 707.64375pt>
-File: Figures/x10runtime-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/x10runtime-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/x10runtime-eps-converted-to.pdf used on input 
-line 505.
-(pdftex.def)             Requested size: 346.89731pt x 363.39862pt.
-
-
-LaTeX Warning: Reference `chap:Codegen' on page 18 undefined on input line 514.
-
-
-
-LaTeX Warning: Citation `AntonThesis' on page 18 undefined on input line 521.
-
-[18]) [19] [20 <./Figures/x10compiler-eps-converted-to.pdf>] [21 <./Figures/x10
-runtime-eps-converted-to.pdf>] [22
+pdfTeX warning: pdflatex (file ./Figures/x10rt.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<Figures/x10rt.pdf, id=707, 342.27875pt x 236.885pt>
+File: Figures/x10rt.pdf Graphic file (type pdf)
+ <use Figures/x10rt.pdf>
+Package pdftex.def Info: Figures/x10rt.pdf used on input line 515.
+(pdftex.def)             Requested size: 333.88924pt x 231.09749pt.
+)
+[19 <./Figures/x10rt.pdf>] [20
 
 ]
 Chapter 3.
-(./text/design.tex <Figures/overview.pdf, id=744, 480.79625pt x 568.1225pt>
+(./text/design.tex <Figures/overview.pdf, id=743, 480.79625pt x 568.1225pt>
 File: Figures/overview.pdf Graphic file (type pdf)
 
 <use Figures/overview.pdf>
 Package pdftex.def Info: Figures/overview.pdf used on input line 12.
 (pdftex.def)             Requested size: 231.26378pt x 273.26784pt.
- [23] [24 <./Figures/overview.pdf>] [25]
+ [21] [22 <./Figures/overview.pdf>] [23]
 Package epstopdf Info: Source file: <Figures/x10.eps>
 (epstopdf)                    date: 2014-03-29 13:07:10
 (epstopdf)                    size: 10000 bytes
@@ -1400,7 +1371,7 @@ Package epstopdf Info: Source file: <Figures/x10.eps>
 (epstopdf)                    size: 10364 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/x10-eps-converted-
 to.pdf Figures/x10.eps>
-(epstopdf)             \includegraphics on input line 125.
+(epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
 <Figures/x10-eps-converted-to.pdf, id=781, 362.35374pt x 391.4625pt>
@@ -1408,13 +1379,13 @@ File: Figures/x10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/x10-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/x10-eps-converted-to.pdf used on input line 12
-5.
+4.
 (pdftex.def)             Requested size: 231.26378pt x 249.84224pt.
- [26 <./Figures/x10-eps-converted-to.pdf>] [27]) [28]
-Chapter 4.
-(./text/arrays.tex [29
+ [24 <./Figures/x10-eps-converted-to.pdf>]) [25] [26
 
-] [30] [31] [32] [33]
+]
+Chapter 4.
+(./text/arrays.tex [27] [28] [29] [30] [31]
 Overfull \hbox (44.0231pt too wide) in paragraph at lines 237--242
 []\T1/ptm/m/n/12 We have im-ple-mented over-loaded ver-sions of the \T1/pcr/m/n
 /12 getSubArray() \T1/ptm/m/n/12 and the \T1/pcr/m/n/12 setSubArray()
@@ -1427,67 +1398,48 @@ un-time via the \T1/pcr/m/n/12 horzcat() \T1/ptm/m/n/12 and the \T1/pcr/m/n/12
 vertcat()
  []
 
-[34]) [35] [36
+[32]) [33] [34
 
 ]
 Chapter 5.
-(./text/builtins.tex [37]
+(./text/builtins.tex [35]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 64.
 
-[38] [39] [40]) [41] [42
+[36] [37] [38]) [39] [40
 
 ]
 Chapter 6.
-(./text/codegenseq.tex [43] [44]
-Overfull \hbox (4.17416pt too wide) in paragraph at lines 81--95
+(./text/codegenseq.tex [41] [42]
+Overfull \hbox (4.17416pt too wide) in paragraph at lines 80--92
 []\T1/pcr/m/n/12 UByte, UShort, UInt \T1/ptm/m/n/12 and []\T1/pcr/m/n/12 ULong\
 T1/ptm/m/n/12 , in-te-ger val-ues are mapped to []\T1/pcr/m/n/12 Byte, Short, I
 nt
  []
 
-
-LaTeX Warning: Reference `sec:builtins' on page 45 undefined on input line 106.
-
-
-[45] [46]
-Overfull \hbox (156.3305pt too wide) in paragraph at lines 183--190
-\T1/ptm/m/n/12 lent if-else state-ments by the Tamer. It also re-cur-sively con
--verts a state-ment like []\T1/pcr/m/n/12 if (B1) S1 elseif (B2) S2 else S3
- []
-
-[47] [48] [49] [50] [51]) [52]
+[43] [44] [45] [46] [47]) [48]
 Chapter 7.
 (./text/codegencon.tex
-
-LaTeX Warning: Reference `subsec:conceval' on page 53 undefined on input line 1
-0.
-
-
-LaTeX Warning: Reference `sec:XX' on page 53 undefined on input line 18.
-
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 24.
-[53
 
-] [54] [55]
-Overfull \hbox (6.9425pt too wide) in paragraph at lines 132--134
+Overfull \hbox (8.5821pt too wide) in paragraph at lines 24--24
+ |[]\T1/phv/b/n/17.28 Code Gen-er-a-tion for the \T1/ptm/m/sc/17.28 Mat-lab \T1
+/pcr/b/n/17.28 parfor \T1/phv/b/n/17.28 Loop Con-
+ []
+
+[49
+
+] [50] [51]
+Overfull \hbox (6.9425pt too wide) in paragraph at lines 134--136
 []\T1/ptm/m/n/12 Statements iden-ti-fied to be re-duc-tion state-ments are made
  atomic by us-ing the []\T1/pcr/m/n/12 atomic
  []
 
+[52] [53]) [54] [55] [56
 
-LaTeX Warning: Reference `subsec:parfor_results' on page 56 undefined on input 
-line 156.
-
-[56] [57]
-Overfull \hbox (7.1321pt too wide) in paragraph at lines 237--255
-[]\T1/ptm/m/n/12 Our so-lu-tion to the prob-lem is to in-tro-duce a par-al-leli
-za-tion spe-cial-iza-tion in the \T1/ptm/m/sc/12 MiX10\T1/ptm/m/n/12 's
- []
-
-) [58]
+]
 Chapter 8.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <20.74> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 420.
@@ -1495,32 +1447,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <20.74> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 420.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 (Font)              scaled to size 19.70294pt on input line 420.
-(./text/analyses.tex [59
-
-] [60] (./tables/intok.tex)
+(./text/analyses.tex [57] [58] (./tables/intok.tex)
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 (Font)              scaled to size 16.41594pt on input line 127.
- [61] [62]
-Overfull \hbox (4.74431pt too wide) in paragraph at lines 210--223
+ [59] [60]
+Overfull \hbox (4.74431pt too wide) in paragraph at lines 214--231
 []\T1/ptm/m/n/12 The anal-y-sis rep-re-sents these three ab-stract val-ues by t
 he fol-low-ing state val-ues : \T1/pcr/m/n/12 IntOk\T1/ptm/m/n/12 ,
  []
 
-[63]
+[61]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 227.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 310.
+put line 233.
 
-Overfull \hbox (2.91547pt too wide) in paragraph at lines 518--519
+
+LaTeX Warning: Float too large for page by 6.68161pt on input line 288.
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 317.
+
+Overfull \hbox (6.1824pt too wide) in paragraph at lines 525--526
  [][] 
  []
 
-[64] [65] [66] [67] [68] [69]) [70]
+[62] [63] [64] [65] [66] [67]) [68]
 Chapter 9.
 (./text/evaluation.tex
 Overfull \hbox (19.70016pt too wide) in paragraph at lines 22--35
@@ -1528,7 +1482,7 @@ Overfull \hbox (19.70016pt too wide) in paragraph at lines 22--35
 ]] and OT-TER [[]],
  []
 
-[71
+[69
 
 ] (./tables/benchmarks.tex
 Underfull \hbox (badness 3735) in paragraph at lines 7--7
@@ -1605,48 +1559,40 @@ Overfull \hbox (6.86505pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
-[72] [73] <Figures/final/overall_perf.pdf, id=1374, 582.175pt x 467.7475pt>
+[70] [71] <Figures/final/overall_perf.pdf, id=1357, 582.175pt x 467.7475pt>
 File: Figures/final/overall_perf.pdf Graphic file (type pdf)
 
 <use Figures/final/overall_perf.pdf>
 Package pdftex.def Info: Figures/final/overall_perf.pdf used on input line 97.
 (pdftex.def)             Requested size: 433.62pt x 348.39735pt.
- [74] [75 <./Figures/final/overall_perf.pdf>] [76] (./tables/cpp_vs_java.tex) [
-77] [78]
+ [72] [73 <./Figures/final/overall_perf.pdf>] [74] (./tables/cpp_vs_java.tex) [
+75] [76]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 275.
-
-
-LaTeX Warning: Reference `Sec:XtenArrays' on page 79 undefined on input line 30
-6.
-
-[79] (./tables/simple_vs_region.tex)
-Overfull \hbox (28.10094pt too wide) in paragraph at lines 316--320
+ [77]
+(./tables/simple_vs_region.tex)
+Overfull \hbox (2.72736pt too wide) in paragraph at lines 316--320
  [] 
  []
 
-
-LaTeX Warning: Reference `Sec:CompileArrays' on page 80 undefined on input line
- 329.
-
-[80] (./tables/int_vs_double.tex) [81] [82] (./tables/parfor_vs_x10.tex)
-[83]) [84]
+[78] (./tables/int_vs_double.tex) [79] [80] (./tables/parfor_vs_x10.tex)
+[81]) [82]
 Chapter 10.
-(./text/related.tex [85
+(./text/related.tex [83
 
-] [86] [87]
+] [84] [85]
 Overfull \hbox (18.22409pt too wide) in paragraph at lines 104--114
 \T1/ptm/m/n/12 In terms of source-to-source com-pil-ers for \T1/ptm/m/sc/12 X10
 \T1/ptm/m/n/12 , we are aware of two other projects. StreamX10
  []
 
-) [88]
+) [86]
 Chapter 11.
-(./text/conclusions.tex [89
+(./text/conclusions.tex [87
 
-] [90]) [91] (./thesis.bbl [92]
+] [88]) [89] (./thesis.bbl [90]
 Bibliography
-[93
+[91
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 84--88
@@ -1659,7 +1605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--88
 \T1/pcr/m/n/12 / / x10-[]lang . org / documentation / tutorials /
  []
 
-[94]
+[92]
 Underfull \hbox (badness 1014) in paragraph at lines 131--134
 []\T1/ptm/m/n/12 MathWorks.   MAT-LAB Coder.  [][]$\T1/pcr/m/n/12 http : / / ww
 w . mathworks . com /
@@ -1682,37 +1628,30 @@ Underfull \hbox (badness 5203) in paragraph at lines 147--151
 s . com / company /
  []
 
-[95]
+[93]
 Underfull \hbox (badness 6016) in paragraph at lines 206--210
 []\T1/ptm/m/n/12 The Math-works.  Tech-nol-ogy Back-grounder: Ac-cel-er-at-ing 
 MAT-
  []
 
-[96]) [97] [98
+[94]) [95] [96
 
 ]
 Appendix A.
-(./text/builtinxml.tex [99] [100] [101] [102] [103] [104] [105] [106]) [107]
-[108
+(./text/builtinxml.tex [97] [98] [99] [100] [101] [102] [103] [104]) [105]
+[106
 
 ]
 Appendix B.
-(./text/iscomplexprop.tex) [109] [110
-
-]
-Appendix C.
-(./text/irgrammar.tex [111] [112] [113])
+(./text/irgrammar.tex [107] [108] [109])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 475.
- [114]
+ [110]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 475.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A257EF63BFAA503D6056FF5E9FDC0178;5310.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 1578B6FD2A01FFCC5BB6754210B424C7;5130.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1721,16 +1660,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 475.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 563 ({)
+### simple group (level 1) entered at line 570 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15350 strings out of 493315
- 217486 string characters out of 6139670
+ 15312 strings out of 493315
+ 216868 string characters out of 6139670
  474711 words of memory out of 5000000
- 17301 multiletter control sequences out of 15000+600000
+ 17287 multiletter control sequences out of 15000+600000
  156028 words of font info for 186 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
- 39i,14n,45p,507b,2135s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,45p,507b,2133s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/sh
@@ -1745,10 +1684,10 @@ f-texlive/fonts/type1/urw/times/utmb8a.pfb></opt/local/share/texmf-texlive/font
 s/type1/urw/times/utmbi8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/t
 imes/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
 b></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (130 pages, 826010 bytes).
+Output written on thesis.pdf (126 pages, 782312 bytes).
 PDF statistics:
- 2359 PDF objects out of 2487 (max. 8388607)
- 2172 compressed objects within 22 object streams
- 1065 named destinations out of 1200 (max. 500000)
- 650 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2331 PDF objects out of 2487 (max. 8388607)
+ 2148 compressed objects within 22 object streams
+ 1044 named destinations out of 1200 (max. 500000)
+ 626 words of extra memory for PDF output out of 10000 (max. 10000000)
 

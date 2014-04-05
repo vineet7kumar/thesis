@@ -71,31 +71,30 @@ code with minimal loss of readability and performance rather than the
 actual implementation.
 
 The code below shows the \xten code for the \matlab builtin method
-\verb|plus(a,b)|.
+\verb|plus(a,b)| involving 2-dimensional simple arrays.
 
 \noindent
 \begin{lstlisting}[language=X10,numbers=none]
 public static def 
-  plus(a: Array[Double], b:Array[Double])
-	{a.rank == b.rank}{
-		val x = new Array[Double](a.region);
-		for (p in a.region){
+  plus(a: Array_2[Double], b:Array_2[Double]){
+		val x = new Array_2[Double](a.numElems_1, a.numElems_2);
+		for (p in a.indices()){
 			x(p) = a(p)+ b(p);
 		}
   	return x;
 }
 	
-public static def plus(a:Double, b:Array[Double]){
-	val x = new Array[Double](b.region);
-	for (p in b.region){
+public static def plus(a:Double, b:Array_2[Double]){
+	val x = new Array_2[Double](b.numElems_1, b.numElems_2);
+	for (p in b.indices()){
 		x(p) = a+ b(p);
 	}
 	return x;
 }
 	
-public static def plus(a:Array[Double], b:Double){
-	val x = new Array[Double](a.region);
-	for (p in a.region){
+public static def plus(a:Array_2[Double], b:Double){
+	val x = new Array_2[Double](a.numElems_1, a.numElems_2);
+	for (p in a.indices()){
 		x(p) = a(p)+ b;
 	}
 	return x;
@@ -109,11 +108,13 @@ public static def plus(a:Double, b:Double){
 \end{lstlisting}
 
 This \xten code contains four overloaded versions (and it still does not
-contain methods to support complex values and of types other than Double) based 
-on whether the arguments are scalar or array and their relative position
+contain methods to support complex values, variables of types other than Double,
+simple arrays of other dimensions, and region arrays) based 
+on whether the arguments are scalar or Array\_2 and their relative position
 in the list of arguments. 
 
-Including all the overloaded versions in the generated \xten code would result
+Including all the overloaded versions and versions specialized for arrays of
+different dimensions or region arrays, in the generated \xten code would result
 in lot of lookup overhead, would require producing redundant code (versions
 of methods with arguments of similar shape but different types will have the
 same algorithm) and would generate large code with less readability. Instead we
@@ -142,7 +143,7 @@ structure of Tame IR, any call to a builtin almost always contains zero, one or
 two arguments. For builtin calls like \texttt{horzcat} and \texttt{vertcat}
 which may contain variable number of arguments, \mixten packs all the arguments
 in a \texttt{Rail} and passes a single argument of type \texttt{Rail}.
-Accordingly, the builtin is implemented in \emph{Type 2} category and receive a
+Accordingly, these builtins are implemented in \emph{Type 2} category and receive a
 single argument of type \texttt{Rail}.
 
 We build an XML file that contains the method bodies for each category for
@@ -158,7 +159,7 @@ specialization for the method (simple array or region array); and (2) generate
 the correct method header and select the corresponding builtin template in the
 required specialization for that method.  The generated methods are finally
 written to a \xten class file named \verb|Mix10.x10|. In the code generated for
-actual \matlab program the call to a builtin method is simply replaced by a
+actual \matlab program, the call to a builtin method is simply replaced by a
 call to the corresponding method in the Mix10 class. For example, \matlab
 expression \verb|plus(a,b)| is translated to \xten expression
 \verb|Mix10.plus(a,b)|. Appendix \ref{chap:Builtinxml} demonstrates the

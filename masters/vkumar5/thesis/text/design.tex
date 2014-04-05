@@ -96,24 +96,23 @@ call graph,  the types and shapes of variables, and X10-specific
 information.   These Tamer outputs are provided to the code generator,
 which generates \xten code, and which is the main focus of this paper.
 
-The \xten source code generator actually gets inputs from two places.
-It uses the Tamer IR it receives from the the Tamer to drive the code
-generation,  but for expressions referring to built-in \matlab functions
-it interacts with the \textit{Built-in Handler} which used the built-in
-template file we provide.  
+The \xten source code generator actually gets inputs from two places.  It uses
+the Tamer IR it receives from the the Tamer to drive the code generation,  but
+for expressions referring to built-in \matlab functions it interacts with the
+\textit{Built-in Handler} which used the built-in template file we provide.  We
+describe the functioning of the
+built-in handler in \chapref{chap:Builtins}. 
 
-We describe the functioning of the
-built-in handler in \chapref{chap:Builtins} and code generation strategy for the
-sequential core of \matlab in \chapref{chap:CodegenSeq}. \chapref{chap:Arrays}
-concentrates on generating efficient code for \matlab arrays and
-\chapref{chap:CodegenCon} describes our strategy to generate parallel \xten
-code for \matlab \texttt{parfor} construct, and introducing \xten like
-concurrency constructs in \matlab. The focus of this thesis is to address
-challenges in generating \emph{efficient} \xten
-code whose performance is comparable to state-of-the-art tools that
-generate more traditional imperative languages like C and Fortran.
+\chapref{chap:Arrays} concentrates on generating efficient code for \matlab
+arrays.  \chapref{chap:CodegenSeq} describes the code generation strategy for
+the sequential core of \matlab, while \chapref{chap:CodegenCon} describes our
+strategy to generate parallel \xten code for \matlab \texttt{parfor} construct,
+and introducing \xten like concurrency constructs in \matlab. The focus of this
+thesis is to address challenges in generating \emph{efficient} \xten code whose
+performance is comparable to state-of-the-art tools that generate more
+traditional imperative languages like C and Fortran.
 
-\section{High level design of the \mixten compiler}
+\section{High-level Design of the \mixten Compiler}
 
 The \mixten code generator is the key component which makes the
 translation from the Tamer IR, which is based on \matlab programming
@@ -137,9 +136,9 @@ with the inputs from the builtin handler and the \xten IR generator (after the
 \xten specific analyses and transformations have been done), the \xten source
 code generator generates the resultatnt \xten source code.
 
-\subsection{the \mixten intermediate representation}
+\subsection{The \mixten Intermediate Representation}
 
-the \mixten IR is a low-level, three address like intermediate representation
+The \mixten IR is a low-level, three address like intermediate representation
 that is similar in design to the Tamer IR and abstracts the \xten constructs
 while capturing the static information required to generate the \xten source
 code.
@@ -156,7 +155,7 @@ at the \mixten IR level.  It is our intent to put any analysis or transformation
 that is not \xten-specific into the Tamer IR, so that other back-ends can
 benefit from those improvements.   However, optimizations and  transformations
 that are specific to \xten programming constructs (such as points and regions)
-and semantics will need to be done on the \mixten IR.Although we currently do
+and semantics will need to be done on the \mixten IR. Although we currently do
 not transform the \mixten IR very much, the ultimate goal is to support a
 variety of analyses and transformations that can be used to: (1) produce more
 efficient \xten code, and (2) produce more readable \xten code.  
@@ -179,13 +178,13 @@ instrumentation code for the generated \xten code.
 Appendix \ref{chap:irgrammar} provides the JastAdd implementation of the \mixten IR
 grammar.
 
-As shown in \figref{Fig:x10}, the \xten source code generator actually
-gets inputs from two places.   It uses the \mixten IR to drive the code
-generation,  but for expressions referring to built-in \matlab functions
-it interacts with the \textit{Built-in Handler}.  In 
-\chapref{chap:Builtins}, we discuss this process in in more detail, and in
-the subsequent chapters,  \chapref{chap:CodegenSeq} and
-\chapref{chap:CodegenCon} we address the source code
-generation for the key \xten constructs.
-
+%As shown in \figref{Fig:x10}, the \xten source code generator actually
+%gets inputs from two places.   It uses the \mixten IR to drive the code
+%generation,  but for expressions referring to built-in \matlab functions
+%it interacts with the \textit{Built-in Handler}.  In 
+%\chapref{chap:Builtins}, we discuss this process in in more detail, and in
+%the subsequent chapters,  \chapref{chap:CodegenSeq} and
+%\chapref{chap:CodegenCon} we address the source code
+%generation for the key \xten constructs.
+%
 

@@ -13,82 +13,77 @@
 \contentsline {chapter}{\listtablename }{xiii}{chapter.VI}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Contributions}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Thesis Outline}{4}{section.1.2}
-\contentsline {chapter}{\numberline {2}Introduction to {\sc X10}\xspace programming language}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview of {\sc X10}\xspace 's key sequential features}{8}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Object-oriented features}{9}{subsection.2.1.1}
+\contentsline {section}{\numberline {1.2}Thesis Outline}{5}{section.1.2}
+\contentsline {chapter}{\numberline {2}Introduction to the {\sc X10}\xspace Programming Language}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview of {\sc X10}\xspace 's Key Sequential Features}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Object-oriented Features}{9}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Statements}{11}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Arrays}{12}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Types}{13}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Overview of {\sc X10}\xspace 's concurrency features}{14}{section.2.2}
+\contentsline {section}{\numberline {2.2}Overview of {\sc X10}\xspace 's Concurrency Features}{14}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Async}{15}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Finish}{15}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Atomic}{16}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}At}{17}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Overview of {\sc X10}\xspace 's implementation and runtime}{17}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}{\sc X10}\xspace implementation}{17}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}{\sc X10}\xspace runtime}{18}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Summary}{18}{section.2.4}
-\contentsline {chapter}{\numberline {3}Background and High level design}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Background}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}High level design of the {\sc MiX10}\xspace compiler}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}the {\sc MiX10}\xspace intermediate representation}{27}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Techniques for efficient compilation of {\sc Matlab}\xspace arrays}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simple Arrays or Region Arrays}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Compilation to Simple arrays}{30}{subsection.4.1.1}
-\contentsline {paragraph}{When to use simple rail-backed arrays:}{30}{paragraph*.5}
-\contentsline {paragraph}{Column-major indexing:}{30}{paragraph*.6}
-\contentsline {subsection}{\numberline {4.1.2}Compilation to Region Arays}{31}{subsection.4.1.2}
-\contentsline {paragraph}{Array construction:}{31}{paragraph*.7}
-\contentsline {paragraph}{Array access:}{32}{paragraph*.8}
-\contentsline {paragraph}{Rank specialization:}{33}{paragraph*.9}
-\contentsline {section}{\numberline {4.2}Handling the colon expression}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Array growth}{34}{section.4.3}
-\contentsline {chapter}{\numberline {5}Handling {\sc Matlab}\xspace builtins}{37}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}{\sc MiX10}\xspace builtin support framework}{38}{subsection.5.0.1}
-\contentsline {chapter}{\numberline {6}Code generation for the sequential core}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Methods}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Types, Assignments and Declarations}{45}{section.6.2}
-\contentsline {section}{\numberline {6.3}Loops}{46}{section.6.3}
-\contentsline {section}{\numberline {6.4}Conditionals}{47}{section.6.4}
-\contentsline {section}{\numberline {6.5}Array access and Colon operator}{48}{section.6.5}
-\contentsline {paragraph}{Accessing individual elements:}{48}{paragraph*.10}
-\contentsline {paragraph}{Accessing a set of elements:}{48}{paragraph*.11}
-\contentsline {section}{\numberline {6.6}Function calls}{50}{section.6.6}
-\contentsline {section}{\numberline {6.7}Cell Arrays}{51}{section.6.7}
-\contentsline {chapter}{\numberline {7}Code generation for concurrency in {\sc Matlab}\xspace }{53}{chapter.7}
-\contentsline {section}{\numberline {7.1}Code generation for the {\sc Matlab}\xspace \texttt {parfor} loop construct}{54}{section.7.1}
-\contentsline {section}{\numberline {7.2}Introducing concurrency controls in {\sc Matlab}\xspace }{56}{section.7.2}
-\contentsline {section}{\numberline {7.3}parallelizing vectorized instructions:}{57}{section.7.3}
-\contentsline {chapter}{\numberline {8}The \emph {IntegerOkay} analysis}{59}{chapter.8}
-\contentsline {section}{\numberline {8.1}Need for declaring variables to be of integer type}{59}{section.8.1}
-\contentsline {section}{\numberline {8.2}Effect on performance}{60}{section.8.2}
-\contentsline {section}{\numberline {8.3}An overview of the \emph {IntegerOkay} Analysis}{62}{section.8.3}
-\contentsline {section}{\numberline {8.4}The analysis}{63}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}STEP 1 : Initialization}{63}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}STEP 2: Fixed point solver}{64}{subsection.8.4.2}
-\contentsline {section}{\numberline {8.5}An example}{69}{section.8.5}
-\contentsline {chapter}{\numberline {9}Evaluation}{71}{chapter.9}
-\contentsline {section}{\numberline {9.1}Benchmarks}{71}{section.9.1}
-\contentsline {section}{\numberline {9.2}Experimental setup}{72}{section.9.2}
-\contentsline {section}{\numberline {9.3}{\sc X10}\xspace Compiler variations}{72}{section.9.3}
-\contentsline {section}{\numberline {9.4}Overall {\sc MiX10}\xspace performance}{74}{section.9.4}
-\contentsline {section}{\numberline {9.5}{\sc X10}\xspace C++ backend vs. {\sc X10}\xspace Java backend}{77}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}When not to use the {\sc X10}\xspace \texttt {-O}}{79}{subsection.9.5.1}
-\contentsline {section}{\numberline {9.6}Simple vs. Region arrays}{79}{section.9.6}
-\contentsline {section}{\numberline {9.7}Effect of IntegerOkay analysis}{81}{section.9.7}
-\contentsline {section}{\numberline {9.8}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace parallel code}{82}{section.9.8}
-\contentsline {section}{\numberline {9.9}Conclusion}{84}{section.9.9}
-\contentsline {chapter}{\numberline {10}Related work}{85}{chapter.10}
-\contentsline {section}{\numberline {10.1}Alternatives to {\sc Matlab}\xspace }{85}{section.10.1}
-\contentsline {section}{\numberline {10.2}Other {\sc Matlab}\xspace compilers}{86}{section.10.2}
-\contentsline {section}{\numberline {10.3}Compilers targeting {\sc X10}\xspace }{88}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusions and future Work}{89}{chapter.11}
-\contentsline {section}{\numberline {11.1}Conclusions}{89}{section.11.1}
-\contentsline {section}{\numberline {11.2}Future work}{91}{section.11.2}
-\contentsline {chapter}{\bibname }{93}{chapter.12}
+\contentsline {section}{\numberline {2.3}Overview of {\sc X10}\xspace 's Implementation and Runtime}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}{\sc X10}\xspace Implementation}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}{\sc X10}\xspace Runtime}{19}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Background and High-level Design of {\sc MiX10}\xspace }{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Background}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}High-level Design of the {\sc MiX10}\xspace Compiler}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}The {\sc MiX10}\xspace Intermediate Representation}{25}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Techniques for Efficient Compilation of {\sc Matlab}\xspace Arrays}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simple Arrays or Region Arrays}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Compilation to Simple Arrays}{28}{subsection.4.1.1}
+\contentsline {paragraph}{When to use simple rail-backed arrays:}{28}{paragraph*.5}
+\contentsline {paragraph}{Column-major indexing:}{28}{paragraph*.6}
+\contentsline {subsection}{\numberline {4.1.2}Compilation to Region Arrays}{29}{subsection.4.1.2}
+\contentsline {paragraph}{Array construction:}{29}{paragraph*.7}
+\contentsline {paragraph}{Array access:}{30}{paragraph*.8}
+\contentsline {paragraph}{Rank specialization:}{31}{paragraph*.9}
+\contentsline {section}{\numberline {4.2}Handling the Colon Expression}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Array Growth}{32}{section.4.3}
+\contentsline {chapter}{\numberline {5}Handling {\sc Matlab}\xspace Builtins}{35}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}{\sc MiX10}\xspace builtin support framework}{36}{subsection.5.0.1}
+\contentsline {chapter}{\numberline {6}Code Generation for the Sequential Core}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Methods}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Types, Assignments and Declarations}{43}{section.6.2}
+\contentsline {section}{\numberline {6.3}Loops}{44}{section.6.3}
+\contentsline {section}{\numberline {6.4}Conditionals}{46}{section.6.4}
+\contentsline {section}{\numberline {6.5}Function Calls}{46}{section.6.5}
+\contentsline {section}{\numberline {6.6}Cell Arrays}{47}{section.6.6}
+\contentsline {chapter}{\numberline {7}Code Generation for Concurrency in {\sc Matlab}\xspace }{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}Code Generation for the {\sc Matlab}\xspace \texttt {parfor} Loop Construct}{50}{section.7.1}
+\contentsline {section}{\numberline {7.2}Introducing Concurrency Controls in {\sc Matlab}\xspace }{52}{section.7.2}
+\contentsline {section}{\numberline {7.3}Parallelizing Vectorized Instructions}{53}{section.7.3}
+\contentsline {chapter}{\numberline {8}The \emph {IntegerOkay} Analysis}{57}{chapter.8}
+\contentsline {section}{\numberline {8.1}Need for Declaring Variables to be of Integer Type}{57}{section.8.1}
+\contentsline {section}{\numberline {8.2}Effect on Performance}{58}{section.8.2}
+\contentsline {section}{\numberline {8.3}An Overview of the \emph {IntegerOkay} Analysis}{60}{section.8.3}
+\contentsline {section}{\numberline {8.4}The Analysis Algorithm}{61}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}STEP 1 : Initialization}{61}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}STEP 2: The Fixed Point Solver}{62}{subsection.8.4.2}
+\contentsline {section}{\numberline {8.5}An example}{67}{section.8.5}
+\contentsline {chapter}{\numberline {9}Evaluation}{69}{chapter.9}
+\contentsline {section}{\numberline {9.1}Benchmarks}{69}{section.9.1}
+\contentsline {section}{\numberline {9.2}Experimental Setup}{70}{section.9.2}
+\contentsline {section}{\numberline {9.3}{\sc X10}\xspace Compiler Variations}{70}{section.9.3}
+\contentsline {section}{\numberline {9.4}Overall {\sc MiX10}\xspace Performance}{72}{section.9.4}
+\contentsline {section}{\numberline {9.5}{\sc X10}\xspace C++ Backend vs. {\sc X10}\xspace Java Backend}{75}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}When not to use the {\sc X10}\xspace \texttt {-O}}{77}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.6}Simple vs. Region Arrays}{77}{section.9.6}
+\contentsline {section}{\numberline {9.7}Effect of the IntegerOkay Analysis}{79}{section.9.7}
+\contentsline {section}{\numberline {9.8}{\sc Matlab}\xspace parfor vs. {\sc MiX10}\xspace Parallel Code}{80}{section.9.8}
+\contentsline {section}{\numberline {9.9}Summary}{82}{section.9.9}
+\contentsline {chapter}{\numberline {10}Related Work}{83}{chapter.10}
+\contentsline {section}{\numberline {10.1}Alternatives to {\sc Matlab}\xspace }{83}{section.10.1}
+\contentsline {section}{\numberline {10.2}Other {\sc Matlab}\xspace compilers}{84}{section.10.2}
+\contentsline {section}{\numberline {10.3}Compilers targeting {\sc X10}\xspace }{86}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusions and Future Work}{87}{chapter.11}
+\contentsline {section}{\numberline {11.1}Conclusions}{87}{section.11.1}
+\contentsline {section}{\numberline {11.2}Future work}{89}{section.11.2}
+\contentsline {chapter}{\bibname }{91}{chapter.12}
 \addvspace {10pt}
 \contentsline {part}{Appendices}{}{}
-\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{99}{appendix.A}
-\contentsline {chapter}{\numberline {B}isComplex analysis Propagation Language}{109}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\sc MiX10}\xspace IR Grammar}{111}{appendix.C}
+\contentsline {chapter}{\numberline {A}XML structure for builtin framework}{97}{appendix.A}
+\contentsline {chapter}{\numberline {B}{\sc MiX10}\xspace IR Grammar}{107}{appendix.B}

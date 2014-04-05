@@ -19,7 +19,6 @@ Warning--entry type for "freemat" isn't style-file defined
 --line 35 of file jun.bib
 Database file #4: refs.bib
 Database file #5: refs_short.bib
-Warning--I didn't find a database entry for "AntonThesis"
 Warning--to sort, need author or key in Octave
 Warning--to sort, need author or key in jastaddurl
 Warning--empty institution in coman
@@ -27,7 +26,7 @@ Warning--empty institution in 898821
 Warning--empty publisher in specs
 You've used 37 entries,
             2703 wiz_defined-function locations,
-            792 strings with 9870 characters,
+            790 strings with 9848 characters,
 and the built_in function-call counts, 15018 in all, are:
 = -- 1509
 > -- 623
@@ -66,4 +65,4 @@ warning$ -- 5
 while$ -- 129
 width$ -- 39
 write$ -- 481
-(There were 12 warnings)
+(There were 11 warnings)

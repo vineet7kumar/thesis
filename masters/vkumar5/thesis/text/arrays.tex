@@ -20,7 +20,7 @@ Fortran code (via the \mctwofor compiler), was not straightforward, and required
 deeper understanding of the \xten array system and
 careful handling of several features of the \matlab arrays.
 
-\section{Simple Arrays or Region Arrays}
+\section{Simple Arrays or Region Arrays}\label{Sec:CompileArrays}
 
 As described in Section \ref{subsec:ArrayDesc}, \xten provides two higher level
 abstractions for arrays, simple arrays, a high performance but rigid
@@ -30,7 +30,7 @@ the simple arrays whenever possible, and to fall back to the region arrays when
 necessary. Note that it is possible to force the \mixten compiler to use region
 arrays via a switch, for experimentation purposes.
 
-\subsection{Compilation to Simple arrays}\label{sec:compsimple}
+\subsection{Compilation to Simple Arrays}\label{sec:compsimple}
 In dealing with the simple
 rail-backed arrays, there were two important challenges.  First, we needed to
 determine when it is safe to use the simple rail-backed arrays,  and second, we
@@ -78,7 +78,7 @@ the simple arrays is used to get the number of elements in the \verb|i|th
 dimension of the array.  
 
 
-\subsection{Compilation to Region Arays}
+\subsection{Compilation to Region Arrays}
 
 With \matlab's dynamic nature and unconventional semantics, it is not
 always possible to statically determine the shape of an arrays 
@@ -184,7 +184,7 @@ specialization provided better performance compared to
 unspecialized code as shown in section~\ref{sec:EvalArrays}.
 
 
-\section{Handling the colon expression}
+\section{Handling the Colon Expression}
 
 \matlab allows the use of an expression such as \verb|a:b| (or
 \texttt{colon(a,b)}) to create a vector of integers 
@@ -241,7 +241,7 @@ version of the Helper class.  \mixten provides the correct version of the Helper
 class, based on what kind of arrays are used.
 
 
-\section{Array growth} 
+\section{Array Growth} 
 
 \matlab allows explicit array growth during runtime via the \texttt{horzcat()}
 and the \texttt{vertcat()} builtin functions for array concatenation operations. 

@@ -28,32 +28,32 @@ production, can benefit from MIX10 by quickly convert- ing MATLAB prototypes to
 C++ or Java programs via X10
 
 On one hand, all the aforementioned characteristics of \matlab make it a very
-user-friendly and thus popular application to develop software among a
+user-friendly and thus a popular application to develop software among a
 non-programmer community. On the other hand, these same characteristics make
 \matlab a difficult language to compile statically. Even the de facto standard,
 Mathworks' implementation of \matlab is essentially an interpreter with a
 \emph{JIT accelarator}\cite{matlabjit} which is generally slower than statically
 compiled languages. GNU Octave, which is a popular open source alternative to
-\matlab and is mostly compatible with \matlab, is also implemented as an
-interpreter\cite{Octave}.  Lack of formal language specification, unconventional
-semantics and closed source make it even harder to write a compiler for \matlab.
-These are some of the challenges that \mixten shares with other static compilers
-which convert \matlab to C or Fortran. However, targeting \xten
-raises some significant new challenges.   For example, \xten is an
+\matlab and is mostly compatible with \matlab, introduced JIT compilation only
+in its most recent release 3.8 in March 2014. Before that it was implemented
+only as an interpreter\cite{Octave}.  Lack of formal language specification,
+unconventional semantics and closed source make it even harder to write a
+compiler for \matlab.  These are some of the challenges that \mixten shares with
+other static compilers which convert \matlab to C or Fortran. However, targeting
+\xten raises some significant new challenges.   For example, \xten is an
 object-oriented,  heap-based, language with varying levels of high-level
-abstractions for arrays and iterators of arrays.     An open question
-was whether or not it was possible to generate \xten code that both
-maintains the \matlab semantics,  but also leads to code that is as
-efficient as state-of-the-art translators that target C and Fortran.
-Finding an effective and efficient translation from \matlab to \xten was
-not obvious, and this thesis reports on the key problems we encountered
-and the solutions that we designed and implemented in our \mixten system.
-By demonstrating that we can generate sequential \xten code that is as
-efficient as generated C or Fortran code,  we then enabled the
-possibility of leveraging the high performance nature of \xten's parallel
-constructs.   To demonstrate this, we exposed scalable concurrency in \matlab
-via \xten and examined how to use \xten features
-to provide a good implementation for \matlab's \parfor construct.
+abstractions for arrays and iterators of arrays.     An open question was
+whether or not it was possible to generate \xten code that both maintains the
+\matlab semantics,  but also leads to code that is as efficient as
+state-of-the-art translators that target C and Fortran.  Finding an effective
+and efficient translation from \matlab to \xten was not obvious, and this thesis
+reports on the key problems we encountered and the solutions that we designed
+and implemented in our \mixten system.  By demonstrating that we can generate
+sequential \xten code that is as efficient as generated C or Fortran code,  we
+then enabled the possibility of leveraging the high performance nature of
+\xten's parallel constructs.   To demonstrate this, we exposed scalable
+concurrency in \matlab via \xten and examined how to use \xten features to
+provide a good implementation for \matlab's \parfor construct.
 %Furthermore, the use of arrays as default data type and the dynamicity of the
 %base types and shapes of arrays also make it harder to add support for
 %concurrency in a static \matlab compiler.  Mathworks' proprietary solution for
@@ -102,7 +102,11 @@ language in context of being used as a target language and provide techniques
 to compile \matlab arrays to two different representations of arrays provided
 by \xten.
 
-\item[Code generation strategies:]  There
+\item[Builtin handling framework:] We have designed and implemented a
+template-based system that allows us to generate specialized \xten code for a
+collection of important \matlab builtin operations.
+
+\item[Code generation strategies for the sequential core:]  There
 are some very significant differences between the semantics of \matlab
 and \xten.  A key difference is that \matlab is dynamically-typed,
 whereas \xten is statically-typed.   Furthermore, the type rules are
@@ -111,33 +115,50 @@ the appropriate explicit type conversion rules, so as to match the
 \matlab semantics.   Other \matlab features, such as multiple returns
 from functions, a non-standard semantics for \texttt{for} loops, and a
 very general range operator, must also be handled correctly.
-\mixten not only supports all the key sequential constructs but also supports
-concurrency constructs like \parfor and can handle vectorized instructions in a
-concurrent fashion.
-We have also designed and implemented a template-based system that allows us to
-generate specialized \xten code for a collection of important \matlab builtin
-operations.
 
-\item[Static analyses:] We provide a set of reusable static analyses for
-performance optimization and extended support for \matlab features. These
-analyses include: \begin{itemize} \item \emph{IntegerOkay analysis} - We provide
-an analysis to automatically identify variables that can be safely declared to
-be of type \texttt{Int} (or \texttt{Long}) without affecting the correctness of
-the generated \xten code. This helps to eliminate most of, otherwise necessary,
-typecast operations which our experiments showed to be a major performance
-bottleneck in the generated code; \item \emph{isComplex value analysis} - We
-designed an analysis for identification of complex numerical values in a \matlab
-program. This helped us to extend \mixten compiler to also generate \xten code
-for \matlab programs that involve use of complex numerical values.
-\end{itemize}
+\item[Code generation for concurrency in \matlab:] \mixten not only supports all
+the key sequential constructs but also supports concurrency constructs like
+\parfor and can handle vectorized instructions in a concurrent fashion. We have
+also introduced \xten-like concurrency constructs in \matlab via structured
+comments.
+
+\item[Safe use of integer variables:]  Even after determining the
+correct use of \xten arrays,  we were still faced with a performance gap
+between the code generated by the C/Fortran systems,
+and the generated \xten code generated by \mixten.
+Furthermore,  we found that the \mixten system using the
+\xten Java backend was often generating
+better code than with the \xten C++ backend,  which was counter-intuitive.
+
+We determined that a key remaining problem was overhead due to casting
+doubles to integers.  This casting overhead was quite high, and was
+substantially higher for the C++ back-end than for the Java back-end
+(since the casting instructions are handled efficiently by the Java VM).
+This casting problem arises because the default data type for \matlab
+variables is double - even variables used to iterate through arrays, and
+to  index into arrays typically have double type, even though they hold
+integral values.  To tackle this issue we developed an
+\emph{IntegerOkay} analysis which determines which double variables can
+be safely converted to integer variables in the generated \xten code,
+hence greatly reducing the number of casting operations needed.
   
-\item[Working implementation and performance results:] We have implemented the
+\item[Open implementation:] We have implemented the
 \mixten compiler over various \matlab compiler tools provided by the \mclab
 toolkit.  In the process we also implemented some enhancements to these existing
-tools.  We provide performance results for different \xten backends over a set
-of benchmarks and compare them with results from other \matlab compilers
-including Mathworks' \matlab implementation, \matlab coder that compiles \matlab
-to C and \mctwofor that compiles \matlab to Fortran.
+tools. Our implementation is extensible and allows for others to make further
+improvements to the generated \xten code, or to reuse the analyses to generate
+code for other target languages.  
+
+\item[Experimental evaluation:]
+We have experimented with our \mixten implementation on a set of
+benchmarks.  Our results show that our generated code is almost an order
+of magnitude faster than the Mathworks' standard JIT-based system,  and is
+competitive with other state-of-the-art tools that generate C/Fortran.
+Our more detailed results show the importance of using our
+customized and optimized \xten array representations, and we
+demonstrate the effectiveness of the \emph{IntegerOkay} analysis.
+Finally, we show that our \xten-based treatment of \parfor
+significantly outperforms \matlab on our benchmarks.
 
 \end{description}
 
@@ -154,7 +175,7 @@ tools upon which \mixten is implemented, presents a high-level design of
 \chapref{chap:Arrays}  we compare the two kinds of arrays provided by \xten,
 identify when each of them must be used in the generated code, identify and
 address challenges involved in efficient compilation of \matlab arrays.
-\chapref{chap:Builtins} describes the builting handling framework used by
+\chapref{chap:Builtins} describes the builtin handling framework used by
 \mixten to generate specialized code for \matlab builtins used in the source
 program.  \chapref{chap:CodegenSeq} gives a description of efficient and
 effective code generation strategies for the core sequential constructs of
@@ -163,10 +184,9 @@ construct is provided in \chapref{chap:CodegenCon}, which also describes our
 strategy to introduce concurrency constructs in \matlab.  In
 \chapref{chap:Analyses} we provide a description of the \emph{IntegerOkay}
 analysis to identify variables that are safe to be declared as \texttt{Long}
-type, and \emph{isComplex} analysis to identify complex numerical values in
-\matlab to support programs that use complex numbers.  \chapref{chap:Evaluation}
+type. \chapref{chap:Evaluation}
 provides performance results for code generated using \mixten for a suite of
-benchmarks. It gives a comaprison between performance achieved by \mixten
+benchmarks. It gives a comparison between performance achieved by \mixten
 generated code and that generated by the \matlab coder and \mctwofor compilers.
 \chapref{chap:Related} provides an overview of related work and
 \chapref{chap:Conclusions} concludes and outlines possible future work.
