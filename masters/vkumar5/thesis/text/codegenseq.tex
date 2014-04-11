@@ -4,10 +4,13 @@ shape.  Even scalar values are $1\times1$ matrices. Vectors are
 $1\times n$ or $n \times 1$ matrices. All the values are by default of
 type \verb+double+.  \matlab naturally supports imaginary components for
 all numerical values and almost all operators and library functions
-support complex inputs. In the rest of this section we describe some of
+support complex inputs. In the rest of this chapter we describe some of
 the key features of \matlab that demonstrate what makes \matlab 
 different and challenging to compile statically and techniques used by
-\mixten to translate these ``wild" features to \xten.
+\mixten to translate these ``wild" features to \xten. We provide necessary
+details on the various \matlab constructs as we discuss them, however for the
+readers who are totally unfamiliar with \matlab, we suggest reading chapter 2 of
+the M.Sc. thesis on the Tamer framework~\cite{adubra12}. 
 
 \section{Methods}
 
@@ -375,10 +378,10 @@ static def cellTest (a: Double)
 		var mc_t7: Double = 100;
 		var mc_t1: Array[Double] = new Array[Double](Mix10.mtimes(n, mc_t7));
 		var myCell: Rail[Any] = [mc_t0 as Any ,mc_t1 as Any];
-		var mc_t9: Double = 1 - 1;
-		var mc_t10: Double = 2 - 1;
+		var mc_t9: Double = 1;
+		var mc_t10: Double = 2;
 		var x: Array[Double];
-		x = myCell(mc_t9 as Long, mc_t10 as Long) as Array[Double];
+		x = myCell(mc_t9 as Long -1, mc_t10 as Long -1) as Array[Double];
 		return x;
 	}
 \end{lstlisting}

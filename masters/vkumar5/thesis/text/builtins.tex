@@ -61,7 +61,7 @@ For a language with open-sourced libraries, it would be possible to actually
 compile the library methods to \xten.  However,  many \matlab libraries 
 are closed source and thus it is not possible to translate them to \xten.
 
-\subsection{\mixten builtin support framework}
+\subsection{ The \mixten Builtin Support Framework}
 
 We decided to write our own \xten implementations of the commonly used
 \matlab builtin methods. Currently we have implemented
@@ -110,7 +110,7 @@ public static def plus(a:Double, b:Double){
 This \xten code contains four overloaded versions (and it still does not
 contain methods to support complex values, variables of types other than Double,
 simple arrays of other dimensions, and region arrays) based 
-on whether the arguments are scalar or Array\_2 and their relative position
+on whether the arguments are scalar or \texttt{Array\_2} and their relative position
 in the list of arguments. 
 
 Including all the overloaded versions and versions specialized for arrays of
@@ -168,9 +168,12 @@ structure of the builtin XML with an example implementation of the builtin
 
 Using the above approach not only improves the readability of the generated
 code, but it also allows for future extensibility, better maintenance and more
-specialization. One of the specialization that we plan to add in future is the
+specialization. Specializations that we plan to add in future are: (1) the
 ability to use the Global Matrix Library for the available methods in it and
-whenever the data size is large enough. We also encourage advanced users to
+whenever the data size is large enough; and (2) concurrent versions of the
+relevant builtins to support the execution of vector instructions in parallel
+fashion, as
+described in section \ref{sec:parvec}. We also encourage advanced users to
 mdoify the generated \texttt{Mix10.x10} file to enhance or add builtin
 implementations for higher performance of the generated code. 
 

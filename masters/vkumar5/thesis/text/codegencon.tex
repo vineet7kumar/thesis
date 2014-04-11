@@ -17,7 +17,7 @@ the elements of the vector.
 
 \secref{sec:XX} gives an introduction to the concurrency controls in \xten.
 Readers not familiar with \xten may find it useful to read it before continuing
-with this section.
+with this chapter.
 
 
 
@@ -230,7 +230,7 @@ static def parallelfoo (a: Array_1[Double]){
 introduced concurrency on the left, generated \xten on the right.}\label{fig:concex}
 \end{figure}
 
-\section{Parallelizing Vectorized Instructions} 
+\section{Parallelizing Vectorized Instructions}\label{sec:parvec} 
 The use of vectorized instructions is another optimization technique
 used by \matlab to speedup single operations on multiple scalar values by
 combining scalar values in a vector and executing the operation on the
@@ -248,9 +248,9 @@ based on the size of the vector.
 We implemented a concurrent version of the relevant builtin operations that can
 operate in a parallel fashion on vectors of arbitrary sizes.\footnote{Currently,
 these concurrent builtin implementations are not integrated into the builtin
-handling framework. However, due to the extensible nature of the builtins
-handling framework, it should be straightforward to add a specialization for the
-concurrent versions of the builtins. We plan to do it as a future work.} We also
+handling framework. However, due to the extensible nature of the builtin
+handling framework, it should be straightforward to add a specialization for
+a concurrent version of the builtins. We plan to do it as a future work.} We also
 introduced a compiler switch for \mixten that lets programmers specify a
 vector length threshold for all builtins or a specific builtin above
 which the concurrent version of the builtin will be executed. For
@@ -269,7 +269,7 @@ threshold for \verb|sin()| and \verb|cos()| to \verb|1000| and to
 As a future work, we plan to extensively evaluate the concurrent execution for
 the vectorized instructions. It would be interesting to study the performance 
 variations of concurrently executing vector instructions, with varying
-threshold vector length values on different parallel architectures.   
+threshold vector length values and on different parallel architectures.   
 
 
 
