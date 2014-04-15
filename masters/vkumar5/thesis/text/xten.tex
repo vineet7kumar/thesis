@@ -392,17 +392,21 @@ Console.OUT.println("a(1) = " + a(1));
 //...
 \end{lstlisting}
 
-\subsection{Atomic} The statement \texttt{atomic S} ensures that the statement \texttt{S} is
-executed in a single step with respect to all other activities in the system.
-When \texttt{S} is being executed in one activity all other activities
-containing \texttt{s} are suspended. However, the \texttt{atomic} statement 
-\texttt{S} must be 
-\emph{sequential}, \emph{non-blocking} and \emph{local}. Consider the code
-fragment in listing \ref{lst:x10Atomic}. It asynchronously adds \texttt{Long}
-values to a linked-list \texttt{list} and simultaneously holds the size of the
-list in a variable \texttt{size}. The use of \texttt{atomic} guarantees that no
-other operation, in any activity, is executed in between (or simultaneously
-with) these two operations, which is necessary to ensure correctness of the
+\subsection{Atomic} The statement \texttt{atomic S} ensures that the statement
+\texttt{S} is executed in a single step with respect to all other activities
+in the system.  When \texttt{S} is being executed in one activity all other
+activities containing \texttt{s} are suspended. However, the \texttt{atomic}
+statement \texttt{S} must be \emph{sequential} (it should not contain an
+\texttt{async} or \texttt{finish} staement), \emph{non-blocking} (it should
+not contain a blocking construct like \texttt{when}, explained below) and
+\emph{local} (in this context, local means place-local, that is, it must not
+contain an \texttt{at} construct, explained in \secref{sec:places}).  Consider
+the code fragment in listing \ref{lst:x10Atomic}. It asynchronously adds
+\texttt{Long} values to a linked-list \texttt{list} and simultaneously holds
+the size of the list in a variable \texttt{size}. The use of \texttt{atomic}
+guarantees that no other operation, in any activity, is executed in between
+(or simultaneously with) these two operations, which is necessary to ensure
+correctness of the
 program.
 
 \begin{lstlisting}[caption={Example use of \texttt{atomic}

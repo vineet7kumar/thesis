@@ -132,7 +132,7 @@ analysis works. A detailed algorithm for it is provided in the next section
 (section \ref{sec:algo}).
 The basic idea behind the \emph{IntegerOkay} analysis is that, for each 
 variable \verb|x|, if for every use and every definition of \verb|x| in the
-program \verb|x| can be safely assumed to be an integer, i.e. its
+given \matlab function, \verb|x| can be safely assumed to be an integer, i.e. its
 declaration as an integer does not change the result of the program,
 then it can be declared as an integer. Thus, the problem boils down to
 answering the question of whether each use or a definition,
@@ -156,17 +156,27 @@ this particular use. As another example, consider the definition
 \texttt{x = 3.14}. Here, since assuming \verb|x| to be an integer will
 result in an error, x is not \emph{IntegerOkay}. 
 
-\item \emph{Conditionally IntegerOkay}: The variable \verb|x| can be
-an integer if for the use or definition in question, the variables on
-which its value depends on, are \emph{IntegerOkay} everywhere in the
-program. For example, in a definition like \texttt{x = a+b}, \verb|x|
-can be an integer if both \verb|a| and \verb|b| are integers. We say
-\verb|x| is conditionally \emph{IntegerOkay} and depends on \verb|a| and
-\verb|b|. Note that in this particular use of \verb|a| and \verb|b| (as
-operands of the plus operator), since their type does not affect the
-result value of the plus operator, \verb|a| and \verb|b| are
-\emph{IntegerOkay}.        
-
+\item \emph{Conditionally IntegerOkay}: It is possible to have a case where a
+variable \verb|x|, for a particular use or def in the function, is an integer
+only if some other variable, say \verb|y|, is \emph{IntegerOkay} everywhere
+in the given function. In such a case, we say that \verb|x| is
+\emph{conditionally IntegerOkay} and \emph{depends} on \verb|y|. 
+%The variable \verb|x| can be an integer if for the use or definition in
+%question, the variables on which its value depends on, are \emph{IntegerOkay}
+%everywhere in the program. 
+For example, in a definition like \texttt{x = a+b}, \verb|x| can be an integer
+if both \verb|a| and \verb|b| can be integers everywhere in the function. We
+say \verb|x| is conditionally \emph{IntegerOkay} and depends on \verb|a| and
+\verb|b|. 
+%Note that in this particular use of \verb|a| and \verb|b| (as
+%operands of the plus operator), since their type does not affect the result
+%value of the plus operator, \verb|a| and \verb|b| are \emph{IntegerOkay}.        
+Note that these particular uses of \verb|a| and \verb|b| are
+\emph{IntegerOkay} because the \texttt{plus()} builtin can be used with
+integers safely. However, some other statement may constrain the solution. For
+example, a definition of the form \texttt{a = 3.2} somewhere in the function
+would mean that \verb|a| is not \emph{IntegerOkay} everywhere and thus
+\verb|x| is not \emph{IntegerOkay}.
 \end{enumerate}   
 
 In our \mixten compiler we solve the \emph{IntegerOkay} problem using a
@@ -181,13 +191,13 @@ $x$ is removed from the dependency lists of all the variables that are
 list for a particular use or definition of a variable is empty, it is
 upgraded to be \emph{IntegerOkay} for that particular use or definition.
 
-If a variable is not \emph{IntegerOkay} at some point in the program or
-its dependency list does not become empty for some point in the program
+If a variable is not \emph{IntegerOkay} at some point in the function or
+its dependency list does not become empty for some point in the function
 (say, for circular dependency), it cannot be declared as an integer.
 Since, every time we declare a variable to be integer, one or more
 \emph{Conditionally IntegerOkay} variables might be upgraded to
 \emph{IntegerOkay}, we iteratively repeat the process of finding
-variables that are \emph{IntegerOkay} at all points in the program,
+variables that are \emph{IntegerOkay} at all points in the function,
 until we reach a fixed point. Note that since we never downgrade a
 variable to \emph{Not IntegerOkay} or \emph{Conditionally IntegerOkay},
 our iterative algorithm will always terminate. 
@@ -195,7 +205,26 @@ our iterative algorithm will always terminate.
 
 \section{The Analysis Algorithm}\label{sec:algo}
 
-The input to the analysis is a set of all the double variables in the program,
+The \emph{IntegerOkay} analysis is an intra-procedural, flow-insensitive and
+path-insensitive analysis. The basic idea behind identifying whether a
+variable can be declared as an integer is that if a variable can safely be an
+integer for its every definition and every use in the function, independent of
+any other variable's type, then it can be declared to be an integer for the
+entire function. It is important that any variable identified as
+\emph{IntegerOkay} must be safe to be declared as an integer, thus the
+analysis takes a conservative approach and identifies a variable as
+\texttt{IntegerOkay} only when it is completely unambiguous. This eliminates
+any false-positives (a variable is identified as \texttt{IntegerOkay}, when in
+fact it is not \texttt{IntegerOkay}) but may lead to some false-negatives (a
+variable is identified not \texttt{IntegerOkay}, when in fact it could be
+\texttt{intgerOkay}). For example, if a variable \texttt{i} is used as an
+array index variable and also used as an argument to the \texttt{rdivide()}
+builtin call somewhere in the function, the analysis identifies it as not
+\texttt{IntegerOkay}, even though under the assumption that the function would
+execute without any runtime errors, \texttt{i} would be \texttt{IntegerOkay}
+(use of a non-integral value as an array index results in a runtime error).       
+
+The input to the analysis is a set of all the double variables in the function,
 a set of definitions for each of the variables in this set, and a set of all
 the uses for each of the variables in this variable set. The aim is to output a
 set of variables that can be safely declared as integers.
@@ -322,8 +351,8 @@ the state of the variable in question.
 \Lcomment{Let $v$ be a variable and $u$ be a use expression of $v$}
 \Lcomment{Let $u.deps$ be the dependency list of variable $v$ for use $u$}
 \Lcomment{if $v$ is used as an array index in $u$}
-\Lcomment{assuming that the use of $v$ as array index is correct in the \matlab
-program}
+%\Lcomment{assuming that the use of $v$ as array index is correct in the \matlab
+%program}
   \If {$\textsc{IsUseArrayIndex}$($u$)}
     \State \textbf{return} \texttt{IntOk}
   \EndIf
@@ -558,10 +587,10 @@ line 5, we do not include \verb|y| in its own dependency list, since if
 we say, \verb|y| is conditionally \emph{IntegerOkay} and depends on
 \verb|y|, it is safe to declare \verb|y| as integer as long as it does
 not have any other dependencies and is \emph{IntegerOkay} everywhere
-else in the program. 
+else in the function. 
 
 The fixed-point solver for this example proceeds as follows.  We look
-for variables that are \emph{IntegerOkay} at every point in the program.
+for variables that are \emph{IntegerOkay} at every point in the function.
 \verb|x| and \verb|i| are two such variables and we can declare them to
 be an integer. We also remove x from the dependency list of definition
 of \verb|z| on line 3, and \verb|i| from the dependency list of
