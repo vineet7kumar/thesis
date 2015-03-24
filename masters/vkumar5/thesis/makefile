@@ -43,4 +43,6 @@ copyfigs:
 
 clean:
 	rm -f *.dvi *.aux *.log *.ps *.toc *.lof *.lot *.lol *.out *.bbl *.blg images/figs/*.pdf images/figs/*.eps
+gitclean: clean
+	git rm *.dvi *.aux *.log *.ps *.toc *.lof *.lot *.out *.bbl *.blg 
 
